@@ -121,10 +121,10 @@ layers:
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
-  - Sft+{
+  - {t: '[', s: '{'}
   - '{'
   - '}'
-  - Sft+}
+  - {t: ']', s: '}'}
   - {t: \, s: '|'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -200,6 +200,6 @@ combos:
 - p: [1, 15, 29]
   k: '&soft_off'
 - p: [0, 1]
-  k: (LGUI(L))
+  k: LGUI(L)
 - p: [20, 21]
-  k: (LGUI(V))
+  k: LGUI(V)
