@@ -35,126 +35,87 @@
 // BEHAVIORS
 // =========================
 / {
-    behaviors {
-        // Shift / Caps
-        td0: td0 {
+      behaviors {
+         // Shift / Caps
+         td0: td0 {
             compatible = "zmk,behavior-tap-dance";
             display-name = "Shift/Caps Lock Tap Dance";
             #binding-cells = <0>;
             tapping-term-ms = <250>;
             bindings = <&kp LEFT_SHIFT>, <&kp CAPS>;
-        };
+         };
 
-        // n / ñ
-        td_n_enhe: td_n_enhe {
+         // n / ñ
+         td_n_enhe: td_n_enhe {
             compatible = "zmk,behavior-tap-dance";
             display-name = "n/ñ Tap Dance";
             #binding-cells = <0>;
             tapping-term-ms = <250>;
             bindings = <&kp N>, <&kp N_TILDE>;
-        };
+         };
 
-        // Win + Shift + S
-        td_win_shift_s: td_win_shift_s {
+         // Win + Shift + S
+         td_win_shift_s: td_win_shift_s {
             compatible = "zmk,behavior-tap-dance";
             label = "TD_WIN_SHIFT_S";
             #binding-cells = <0>;
             tapping-term-ms = <250>;
-            bindings = <&kp S>, <&kp LS(LGUI(S))>;
-        };
+            bindings = <&kp S>, <&mac_win_shift_s>;
+         };
 
-        // Win + L
-        td_win_l: td_win_l {
+         // Win + L
+         td_win_l: td_win_l {
             compatible = "zmk,behavior-tap-dance";
             label = "TD_WIN_L";
             #binding-cells = <0>;
             tapping-term-ms = <250>;
             bindings = <&kp L>, <&kp LGUI(L)>;
-        };
+         };
 
-        // Win + V
-        td_win_v: td_win_v {
+         // Win + V
+         td_win_v: td_win_v {
             compatible = "zmk,behavior-tap-dance";
             label = "TD_WIN_V";
             #binding-cells = <0>;
             tapping-term-ms = <250>;
             bindings = <&kp V>, <&kp LGUI(V)>;
-        };
-
-        // Macros Unicode para acentos directos
-        mac_acute_a: mac_acute_a {
+         };
+         
+         mac_win_shift_s: mac_win_shift_s {
             compatible = "zmk,behavior-macro";
-            label = "Á";
+            label = "Win+Shift+S";
             #binding-cells = <0>;
-            bindings = <&kp U00E1>;
-        };
-        mac_acute_e: mac_acute_e {
-            compatible = "zmk,behavior-macro";
-            label = "É";
-            #binding-cells = <0>;
-            bindings = <&kp U00E9>;
-        };
-        mac_acute_i: mac_acute_i {
-            compatible = "zmk,behavior-macro";
-            label = "Í";
-            #binding-cells = <0>;
-            bindings = <&kp U00ED>;
-        };
-        mac_acute_o: mac_acute_o {
-            compatible = "zmk,behavior-macro";
-            label = "Ó";
-            #binding-cells = <0>;
-            bindings = <&kp U00F3>;
-        };
-        mac_acute_u: mac_acute_u {
-            compatible = "zmk,behavior-macro";
-            label = "Ú";
-            #binding-cells = <0>;
-            bindings = <&kp U00FA>;
-        };
-    };
+            bindings = <&kp LGUI>, <&kp LSHFT>, <&kp S>;
+         };
+      };
 
-    // =========================
-    // ENCODERS
-    // =========================
-    rgb_encoder: rgb_encoder {
-        compatible = "zmk,behavior-sensor-rotate";
-        #sensor-binding-cells = <0>;
-        bindings = <&rgb_ug RGB_BRI>, <&rgb_ug RGB_BRD>;
-    };
+      // =========================
+      // ENCODERS
+      // =========================
+      rgb_encoder: rgb_encoder {
+         compatible = "zmk,behavior-sensor-rotate";
+         #sensor-binding-cells = <0>;
+         bindings = <&rgb_ug RGB_BRI>, <&rgb_ug RGB_BRD>;
+      };
 
-    scroll_encoder: scroll_encoder {
-        compatible = "zmk,behavior-sensor-rotate";
-        #sensor-binding-cells = <0>;
-        bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
-        tap-ms = <100>;
-    };
+      scroll_encoder: scroll_encoder {
+         compatible = "zmk,behavior-sensor-rotate";
+         #sensor-binding-cells = <0>;
+         bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
+         tap-ms = <100>;
+      };
 
-    // =========================
-    // COMBOS
-    // =========================
-    combos {
-        compatible = "zmk,combos";
+      // =========================
+      // COMBOS
+      // =========================
+      combos {
+         compatible = "zmk,combos";
 
-        softoff {
-            bindings = <&soft_off>;
-            key-positions = <1 15 29>;
-        };
-
-        // Q + W → Win + L
-        combo_win_lock {
-            timeout-ms = <30>;
-            key-positions = <0 1>; // índices reales para Q y W en tu matriz
-            bindings = <&kp LGUI(L)>;
-        };
-
-        // N + M → Win + V
-        combo_clipboard {
-            timeout-ms = <30>;
-            key-positions = <20 21>; // índices reales para N y M
-            bindings = <&kp LGUI(V)>;
-        };
-    };
+         softoff {
+               bindings = <&soft_off>;
+               key-positions = <1 15 29>;
+         };
+      };
 
     // =========================
     // KEYMAP
