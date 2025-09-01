@@ -81,12 +81,12 @@
          //    bindings = <&kp V>, <&kp LGUI(V)>;
          // };
          
-         // mac_win_shift_s: mac_win_shift_s {
-         //    compatible = "zmk,behavior-macro";
-         //    label = "Win+Shift+S";
-         //    #binding-cells = <0>;
-         //    bindings = <&kp LGUI>, <&kp LSHFT>, <&kp S>;
-         // };
+         mac_win_shift_s: mac_win_shift_s {
+            compatible = "zmk,behavior-macro";
+            label = "Win+Shift+S";
+            #binding-cells = <0>;
+            bindings = <&kp LGUI>, <&kp LSHFT>, <&kp S>;
+         };
       };
 
       // =========================
