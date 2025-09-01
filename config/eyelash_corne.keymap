@@ -194,7 +194,7 @@
             display-name = "COMB|OPE";
             bindings = <
                 &kp ESC  &kp PRINTSCREEN  &kp SCROLLLOCK  &kp PAUSE_BREAK  &none  &none                            &mmv MOVE_UP                &kp UNDER  &kp MINUS  &kp PLUS  &kp EQUAL  &kp SLASH  &kp BSPC
-                &none    &none  &none  &none  &none  &none                                         &mmv MOVE_LEFT  &mkp LCLK  &mmv MOVE_RIGHT  &kp LBKT   &kp LBRC   &kp RBRC  &kp RBKT   &kp BSLH   &none
+                &none    &none  &none  &none  &none  &none                                         &mmv MOVE_LEFT  &mkp LCLK  &mmv MOVE_RIGHT  &kp LBRK   &kp LBRC   &kp RBRC  &kp RBRK   &kp BSLH   &none
                 &none    &none  &none  &kp C_PREV  &kp C_MUTE  &kp C_NEXT                &kp C_PP                  &mmv MOVE_DOWN              &kp TILDE  &kp GRAVE  &kp PIPE  &mkp LCLK  &mkp MCLK  &mkp RCLK
                                                           &trans  &trans  &kp SPACE                                                            &kp ENTER  &kp K_APPLICATION  &trans
             >;
