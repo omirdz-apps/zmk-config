@@ -194,4 +194,25 @@
             display-name = "COMB|OPE";
             bindings = <
                 &kp ESC  &kp PRINTSCREEN  &kp SCROLLLOCK  &kp PAUSE_BREAK  &none  &none                            &mmv MOVE_UP                &kp UNDER  &kp MINUS  &kp PLUS  &kp EQUAL  &kp SLASH  &kp BSPC
-                &none    &none  &none  &none  &none  &none                                         &mmv MOVE_LEFT  &mkp LCLK  &mmv MOVE_RIGHT  &kp LBKT   &kp
+                &none    &none  &none  &none  &none  &none                                         &mmv MOVE_LEFT  &mkp LCLK  &mmv MOVE_RIGHT  &kp LBKT   &kp LBRC   &kp RBRC  &kp RBKT   &kp BSLH   &none
+                &none    &none  &none  &kp C_PREV  &kp C_MUTE  &kp C_NEXT                &kp C_PP                  &mmv MOVE_DOWN              &kp TILDE  &kp GRAVE  &kp PIPE  &mkp LCLK  &mkp MCLK  &mkp RCLK
+                                                          &trans  &trans  &kp SPACE                                                            &kp ENTER  &kp K_APPLICATION  &trans
+            >;
+            sensor-bindings = <&scroll_encoder>;
+        };
+
+        // =========================
+        // Capa SISTEMA / MANTENIMIENTO
+        // =========================
+        layer_3 {
+            display-name = "SYSTEM";
+            bindings = <
+                &none  &none  &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR                     &mmv MOVE_UP                &bt BT_CLR_ALL  &bt BT_CLR    &bt BT_SEL 0  &none  &none  &sys_reset
+                &none  &none  &rgb_ug RGB_SPI  &rgb_ug RGB_BRI &rgb_ug RGB_BRD  &none               &mmv MOVE_LEFT  &mkp LCLK  &mmv MOVE_RIGHT  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &none  &none  &bootloader
+                &none  &none  &none            &none           &none            &out OUT_USB     &kp C_PP           &mmv MOVE_DOWN              &out OUT_BLE    &none         &none         &none  &none  &studio_unlock
+                                           &trans          &trans           &tog 0                                                          &tog 0          &trans        &trans
+            >;
+            sensor-bindings = <&scroll_encoder>;
+        };
+    };
+};
