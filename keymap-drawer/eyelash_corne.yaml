@@ -12,7 +12,7 @@ layers:
   - G
   - C
   - R
-  - L
+  - '&td_win_l'
   - {t: '$$mdi:backspace$$', type: backspace}
   - $$mdi:keyboard-tab$$
   - A
