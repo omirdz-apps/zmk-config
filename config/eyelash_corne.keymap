@@ -172,7 +172,7 @@
                 &kp ESC  &kp SQT   &kp COMMA  &kp DOT  &kp P      &kp Y                             &kp UP                &kp F        &kp G     &kp C   &kp R       &td_win_l        &kp BSPC
                 &kp TAB  &kp A     &kp O      &kp E    &kp U      &kp I                   &kp LEFT  &kp ENTER  &kp RIGHT  &kp D        &kp H     &kp T   &td_n_enhe  &td_win_shift_s  &kp ACUTE
                 &td0     &kp SEMI  &kp Q      &kp J    &kp K      &kp X        &kp C_PP             &kp DOWN              &kp B        &kp M     &kp W   &td_win_v   &kp Z            &kp LGUI
-                                          &tog 1   &kp LCTRL  &lt 3 SPACE                                             &lt 3 ENTER  &kp RALT  &tog 2
+                                          &tog(1)   &kp LCTRL  &lt(3) SPACE                                             &lt(3) ENTER  &kp RALT  &tog(2)
             >;
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
@@ -207,10 +207,10 @@
         layer_3 {
             display-name = "SYSTEM";
             bindings = <
-                &none  &none  &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR                     &mmv MOVE_UP                &bt BT_CLR_ALL  &bt BT_CLR    &bt BT_SEL 0  &none  &none  &sys_reset
-                &none  &none  &rgb_ug RGB_SPI  &rgb_ug RGB_BRI &rgb_ug RGB_BRD  &none               &mmv MOVE_LEFT  &mkp LCLK  &mmv MOVE_RIGHT  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &none  &none  &bootloader
+                &none  &none  &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR                     &mmv MOVE_UP                &bt BT_CLR_ALL  &bt BT_CLR    &bt BT_SEL(0)  &none  &none  &sys_reset
+                &none  &none  &rgb_ug RGB_SPI  &rgb_ug RGB_BRI &rgb_ug RGB_BRD  &none               &mmv MOVE_LEFT  &mkp LCLK  &mmv MOVE_RIGHT  &bt BT_SEL(1)    &bt BT_SEL(2)  &bt BT_SEL(3)  &none  &none  &bootloader
                 &none  &none  &none            &none           &none            &out OUT_USB     &kp C_PP           &mmv MOVE_DOWN              &out OUT_BLE    &none         &none         &none  &none  &studio_unlock
-                                           &trans          &trans           &tog 0                                                          &tog 0          &trans        &trans
+                                           &trans          &trans           &tog(0)                                                          &tog(0)          &trans        &trans
             >;
             sensor-bindings = <&scroll_encoder>;
         };
