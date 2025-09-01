@@ -127,9 +127,9 @@
         default_layer {
             display-name = "DVORAK";
             bindings = <
-                &kp ESC  &kp SQT   &kp COMMA  &kp DOT  &kp P      &kp Y                             &kp UP                &kp F        &kp G     &kp C   &kp R       &kp L        &kp BSPC
-                &kp TAB  &kp A     &kp O      &kp E    &kp U      &kp I                   &kp LEFT  &kp ENTER  &kp RIGHT  &kp D        &kp H     &kp T   &kp N  &kp S  &none
-                &td0     &kp SEMI  &kp Q      &kp J    &kp K      &kp X        &kp C_PP             &kp DOWN              &kp B        &kp M     &kp W   &kp V   &kp Z            &kp LGUI
+                &kp ESC  &kp SQT   &kp COMMA  &kp DOT  &kp P      &kp Y                             &kp UP                &kp F        &kp G     &kp C   &kp R  &kp L   &kp BSPC
+                &kp TAB  &kp A     &kp O      &kp E    &kp U      &kp I                   &kp LEFT  &kp ENTER  &kp RIGHT  &kp D        &kp H     &kp T   &kp N  &kp S   &none
+                &td0     &kp SEMI  &kp Q      &kp J    &kp K      &kp X        &kp C_PP             &kp DOWN              &kp B        &kp M     &kp W   &kp V  &kp Z   &kp LGUI
                                           &tog 1   &kp LCTRL  &lt 3 SPACE                                             &lt 3 ENTER  &kp RALT  &tog 2
             >;
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
