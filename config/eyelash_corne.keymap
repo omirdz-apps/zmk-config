@@ -1,5 +1,8 @@
-#define ZMK_POINTING_DEFAULT_MOVE_VAL 1200  // 600
-#define ZMK_POINTING_DEFAULT_SCRL_VAL 25   // 10
+// =========================
+// CONFIGURACIÓN GLOBAL
+// =========================
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 1200  // antes 600
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 25    // antes 10
 
 #include <input/processors.dtsi>
 #include <zephyr/dt-bindings/input/input-event-codes.h>
@@ -10,34 +13,113 @@
 #include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/rgb.h>
 
+// Escaladores de movimiento y scroll
 &mmv_input_listener { input-processors = <&zip_xy_scaler 2 1>; };
-
 &msc_input_listener { input-processors = <&zip_scroll_scaler 2 1>; };
 
+// Scroll config
 &msc {
-    acceleration-exponent = <1>;      // 0
-    time-to-max-speed-ms = <100>;       // 300
-    delay-ms = <0>;                   // 0
+    acceleration-exponent = <1>;
+    time-to-max-speed-ms = <100>;
+    delay-ms = <0>;
 };
 
+// Mouse move config
 &mmv {
     time-to-max-speed-ms = <500>;
     acceleration-exponent = <1>;
     trigger-period-ms = <16>;
 };
 
+// Apagado suave
 &soft_off { hold-time-ms = <2000>; };
 
+// =========================
+// BEHAVIORS
+// =========================
 / {
     behaviors {
+        // Shift / Caps
         td0: td0 {
             compatible = "zmk,behavior-tap-dance";
             display-name = "Shift/Caps Lock Tap Dance";
             #binding-cells = <0>;
+            tapping-term-ms = <250>;
             bindings = <&kp LEFT_SHIFT>, <&kp CAPS>;
+        };
+
+        // n / ñ
+        td_n_enhe: td_n_enhe {
+            compatible = "zmk,behavior-tap-dance";
+            display-name = "n/ñ Tap Dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <250>;
+            bindings = <&kp N>, <&kp N_TILDE>;
+        };
+
+        // Win + Shift + S
+        td_win_shift_s: tap_dance_win_shift_s {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_WIN_SHIFT_S";
+            #binding-cells = <0>;
+            tapping-term-ms = <250>;
+            bindings = <&kp S>, <&kp (LSHFT(LGUI(S)))>;
+        };
+
+        // Win + L
+        td_win_l: tap_dance_win_l {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_WIN_L";
+            #binding-cells = <0>;
+            tapping-term-ms = <250>;
+            bindings = <&kp L>, <&kp (LGUI(L))>;
+        };
+
+        // Win + V
+        td_win_v: tap_dance_win_v {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_WIN_V";
+            #binding-cells = <0>;
+            tapping-term-ms = <250>;
+            bindings = <&kp V>, <&kp (LGUI(V))>;
+        };
+
+        // Macros Unicode para acentos directos
+        mac_acute_a: mac_acute_a {
+            compatible = "zmk,behavior-macro";
+            label = "Á";
+            #binding-cells = <0>;
+            bindings = <&kp U00E1>;
+        };
+        mac_acute_e: mac_acute_e {
+            compatible = "zmk,behavior-macro";
+            label = "É";
+            #binding-cells = <0>;
+            bindings = <&kp U00E9>;
+        };
+        mac_acute_i: mac_acute_i {
+            compatible = "zmk,behavior-macro";
+            label = "Í";
+            #binding-cells = <0>;
+            bindings = <&kp U00ED>;
+        };
+        mac_acute_o: mac_acute_o {
+            compatible = "zmk,behavior-macro";
+            label = "Ó";
+            #binding-cells = <0>;
+            bindings = <&kp U00F3>;
+        };
+        mac_acute_u: mac_acute_u {
+            compatible = "zmk,behavior-macro";
+            label = "Ú";
+            #binding-cells = <0>;
+            bindings = <&kp U00FA>;
         };
     };
 
+    // =========================
+    // ENCODERS
+    // =========================
     rgb_encoder: rgb_encoder {
         compatible = "zmk,behavior-sensor-rotate";
         #sensor-binding-cells = <0>;
@@ -48,10 +130,12 @@
         compatible = "zmk,behavior-sensor-rotate";
         #sensor-binding-cells = <0>;
         bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
-
         tap-ms = <100>;
     };
 
+    // =========================
+    // COMBOS
+    // =========================
     combos {
         compatible = "zmk,combos";
 
@@ -59,57 +143,55 @@
             bindings = <&soft_off>;
             key-positions = <1 15 29>;
         };
+
+        // Q + W → Win + L
+        combo_win_lock {
+            timeout-ms = <30>;
+            key-positions = <0 1>; // índices reales para Q y W en tu matriz
+            bindings = <&kp (LGUI(L))>;
+        };
+
+        // N + M → Win + V
+        combo_clipboard {
+            timeout-ms = <30>;
+            key-positions = <20 21>; // índices reales para N y M
+            bindings = <&kp (LGUI(V))>;
+        };
     };
 
+    // =========================
+    // KEYMAP
+    // =========================
     keymap {
         compatible = "zmk,keymap";
 
+        // Capa base DVORAK
         default_layer {
-            display-name = "QWERTY";
+            display-name = "DVORAK";
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp E     &kp R  &kp T                               &kp UP                &kp Y        &kp U  &kp I      &kp O    &kp P     &kp BSPC
-&td0       &kp A  &kp S  &kp D     &kp F  &kp G                     &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LCTRL  &kp Z  &kp X  &kp C     &kp V  &kp B        &kp SPACE              &kp DOWN              &kp N        &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
-                         &kp LGUI  &mo 1  &lt 3 SPACE                                               &lt 3 ENTER  &mo 2  &kp RALT
+                &kp ESC  &kp SQT   &kp COMMA  &kp DOT  &kp P      &kp Y                             &kp UP                &kp F        &kp G     &kp C   &kp R       &td_win_l        &kp BSPC
+                &kp TAB  &kp A     &kp O      &kp E    &kp U      &kp I                   &kp LEFT  &kp ENTER  &kp RIGHT  &kp D        &kp H     &kp T   &td_n_enhe  &td_win_shift_s  &kp ACUTE
+                &td0     &kp SEMI  &kp Q      &kp J    &kp K      &kp X        &kp C_PP             &kp DOWN              &kp B        &kp M     &kp W   &td_win_v   &kp Z            &kp LGUI
+                                          &tog 1   &kp LCTRL  &lt 3 SPACE                                             &lt 3 ENTER  &kp RALT  &tog 2
             >;
-
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
+        // FN | SYM | NUM
         lower_layer {
-            display-name = "NUMBER";
+            display-name = "FN|SY|NU";
             bindings = <
-&trans  &kp N1           &kp N2          &kp N3        &kp N4        &kp N5                                         &mmv MOVE_UP                     &kp N6           &kp N7           &kp N8           &kp N9           &kp N0    &kp BSPC
-&trans  &bt BT_CLR_ALL   &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3                   &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LEFT         &kp DOWN         &kp UP           &kp RIGHT        &kp HOME  &kp PG_UP
-&trans  &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &trans        &trans        &rgb_ug RGB_EFF  &kp C_MUTE                    &mmv MOVE_DOWN                   &rgb_ug RGB_EFR  &rgb_ug RGB_SPI  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp END   &kp PG_DN
-                                         &trans        &trans        &trans                                                                          &kp INS          &kp DEL          &trans
+                &kp F1     &kp F2     &kp F3  &kp F4    &kp F5    &kp F6                               &mmv MOVE_UP                  &kp F7     &kp F8    &kp F9     &kp F10   &kp F11   &kp F12
+                &kp PG_UP  &kp EXCL   &kp AT  &kp HASH  &kp DLLR  &kp PRCNT            &mmv MOVE_LEFT  &mkp LCLK   &mmv MOVE_RIGHT   &kp CARET  &kp AMPS  &kp ASTRK  &kp LPAR  &kp RPAR  &kp INS
+                &kp PG_DN  &kp N1     &kp N2  &kp N3    &kp N4    &kp N5     &kp C_PP                  &mmv MOVE_DOWN                &kp N6     &kp N7    &kp N8     &kp N9    &kp N0    &kp DEL
+                                          &trans    &kp HOME  &kp SPACE                                                          &kp ENTER  &kp END   &trans
             >;
-
             sensor-bindings = <&scroll_encoder>;
         };
 
+        // COMBOS | OPERADORES
         raise_layer {
-            display-name = "SYMBOL";
+            display-name = "COMB|OPE";
             bindings = <
-&trans  &kp EXCL      &kp AT        &kp HASH   &kp DLLR   &kp PRCNT                            &mmv MOVE_UP                     &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &kp BSPC
-&trans  &bt BT_CLR    &mkp LCLK     &mkp MCLK  &mkp RCLK  &mkp MB4             &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH  &kp GRAVE
-&trans  &out OUT_USB  &out OUT_BLE  &none      &none      &mkp MB5   &trans                    &mmv MOVE_DOWN                   &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE  &kp TILDE
-                                    &trans     &trans     &kp SPACE                                                             &kp RET    &trans     &trans
-            >;
-
-            sensor-bindings = <&scroll_encoder>;
-        };
-
-        layer_3 {
-            display-name = "Fn";
-            bindings = <
-&studio_unlock  &kp F1      &kp F2     &kp F3       &kp F4     &kp F5                                  &mmv MOVE_UP                     &kp F6       &kp F7     &kp F8       &kp F9      &kp F10          &kp F11
-&trans          &trans      &mkp LCLK  &mkp MCLK    &mkp RCLK  &mkp MB4                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &bootloader  &mkp LCLK  &mkp MCLK    &mkp RCLK   &kp PRINTSCREEN  &kp F12
-&trans          &sys_reset  &trans     &bootloader  &trans     &mkp MB5  &kp C_MUTE                    &mmv MOVE_DOWN                   &trans       &trans     &bootloader  &sys_reset  &kp SCROLLLOCK   &kp PAUSE_BREAK
-                                       &trans       &trans     &trans                                                                   &trans       &trans     &trans
-            >;
-
-            sensor-bindings = <&scroll_encoder>;
-        };
-    };
-};
+                &kp ESC  &kp PRINTSCREEN  &kp SCROLLLOCK  &kp PAUSE_BREAK  &none  &none                            &mmv MOVE_UP                &kp UNDER  &kp MINUS  &kp PLUS  &kp EQUAL  &kp SLASH  &kp BSPC
+                &none    &none  &none  &none  &none  &none                                         &mmv MOVE_LEFT  &mkp LCLK  &mmv MOVE_RIGHT  &kp LBKT   &kp
