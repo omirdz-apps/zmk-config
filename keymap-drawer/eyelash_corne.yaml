@@ -26,8 +26,8 @@ layers:
   - D
   - H
   - T
-  - '&td_n_enhe'
-  - S
+  - N
+  - '&td_win_shift_s'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '&td0'
   - {t: ;, s: ':'}
