@@ -199,7 +199,3 @@ layers:
 combos:
 - p: [1, 15, 29]
   k: '&soft_off'
-- p: [0, 1]
-  k: LGUI(L)
-- p: [20, 21]
-  k: LGUI(V)
