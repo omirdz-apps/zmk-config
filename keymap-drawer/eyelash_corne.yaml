@@ -43,12 +43,12 @@ layers:
   - '&td_win_v'
   - Z
   - LGUI
-  - {t: FN|SY|NU, h: toggle}
+  - '&tog(1)'
   - $$mdi:apple-keyboard-control$$
-  - {t: '$$mdi:keyboard-space$$', h: SYSTEM}
-  - {t: '$$mdi:keyboard-return$$', h: SYSTEM}
+  - '&lt(3) SPACE'
+  - '&lt(3) ENTER'
   - $$mdi:apple-keyboard-option$$
-  - {t: COMB|OPE, h: toggle}
+  - '&tog(2)'
   FN|SY|NU:
   - F1
   - F2
@@ -157,7 +157,7 @@ layers:
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - BT CLR ALL
   - $$mdi:bluetooth-off$$
-  - {h: '1', s: '$$mdi:bluetooth-connect$$'}
+  - BT(0)
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:backup-restore$$', type: bootloader}
@@ -170,9 +170,9 @@ layers:
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
-  - {h: '2', s: '$$mdi:bluetooth-connect$$'}
-  - {h: '3', s: '$$mdi:bluetooth-connect$$'}
-  - {h: '4', s: '$$mdi:bluetooth-connect$$'}
+  - BT(1)
+  - BT(2)
+  - BT(3)
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:progress-download$$
@@ -192,8 +192,8 @@ layers:
   - '&studio_unlock'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: DVORAK, h: toggle, type: held}
-  - {t: DVORAK, h: toggle, type: held alternate}
+  - '&tog(0)'
+  - '&tog(0)'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
 combos:
