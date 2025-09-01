@@ -63,7 +63,7 @@
             label = "TD_WIN_SHIFT_S";
             #binding-cells = <0>;
             tapping-term-ms = <250>;
-            bindings = <&kp S>, <&kp (LSHFT(LGUI(S)))>;
+            bindings = <&kp S>, <&kp LS(LGUI(S))>;
         };
 
         // Win + L
@@ -72,7 +72,7 @@
             label = "TD_WIN_L";
             #binding-cells = <0>;
             tapping-term-ms = <250>;
-            bindings = <&kp L>, <&kp (LGUI(L))>;
+            bindings = <&kp L>, <&kp LGUI(L)>;
         };
 
         // Win + V
@@ -81,7 +81,7 @@
             label = "TD_WIN_V";
             #binding-cells = <0>;
             tapping-term-ms = <250>;
-            bindings = <&kp V>, <&kp (LGUI(V))>;
+            bindings = <&kp V>, <&kp LGUI(V)>;
         };
 
         // Macros Unicode para acentos directos
@@ -148,14 +148,14 @@
         combo_win_lock {
             timeout-ms = <30>;
             key-positions = <0 1>; // índices reales para Q y W en tu matriz
-            bindings = <&kp (LGUI(L))>;
+            bindings = <&kp LGUI(L)>;
         };
 
         // N + M → Win + V
         combo_clipboard {
             timeout-ms = <30>;
             key-positions = <20 21>; // índices reales para N y M
-            bindings = <&kp (LGUI(V))>;
+            bindings = <&kp LGUI(V)>;
         };
     };
 
@@ -193,10 +193,10 @@
         raise_layer {
             display-name = "COMB|OPE";
             bindings = <
-                &kp ESC  &kp PRINTSCREEN  &kp SCROLLLOCK  &kp PAUSE_BREAK  &none  &none                            &mmv MOVE_UP                &kp UNDER     &kp MINUS  &kp PLUS  &kp EQUAL     &kp SLASH  &kp BSPC
-                &none    &none  &none  &none  &none  &none                                         &mmv MOVE_LEFT  &mkp LCLK  &mmv MOVE_RIGHT  &kp LS(LBRC)  &kp LBRC   &kp RBRC  &kp LS(RBRC)  &kp BSLH   &none
-                &none    &none  &none  &kp C_PREV  &kp C_MUTE  &kp C_NEXT                &kp C_PP                  &mmv MOVE_DOWN              &kp TILDE     &kp GRAVE  &kp PIPE  &mkp LCLK     &mkp MCLK  &mkp RCLK
-                                                          &trans  &trans  &kp SPACE                                                            &kp ENTER     &kp K_APPLICATION    &trans
+                &kp ESC  &kp PRINTSCREEN  &kp SCROLLLOCK  &kp PAUSE_BREAK  &none  &none                            &mmv MOVE_UP                &kp UNDER  &kp MINUS  &kp PLUS  &kp EQUAL  &kp SLASH  &kp BSPC
+                &none    &none  &none  &none  &none  &none                                         &mmv MOVE_LEFT  &mkp LCLK  &mmv MOVE_RIGHT  &kp LBKT   &kp LBRC   &kp RBRC  &kp RBKT   &kp BSLH   &none
+                &none    &none  &none  &kp C_PREV  &kp C_MUTE  &kp C_NEXT                &kp C_PP                  &mmv MOVE_DOWN              &kp TILDE  &kp GRAVE  &kp PIPE  &mkp LCLK  &mkp MCLK  &mkp RCLK
+                                                          &trans  &trans  &kp SPACE                                                            &kp ENTER  &kp K_APPLICATION  &trans
             >;
             sensor-bindings = <&scroll_encoder>;
         };
