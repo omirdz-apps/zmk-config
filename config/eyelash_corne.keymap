@@ -55,7 +55,7 @@
         };
 
         // Win + Shift + S
-        td_win_shift_s: tap_dance_win_shift_s {
+        td_win_shift_s: td_win_shift_s {
             compatible = "zmk,behavior-tap-dance";
             label = "TD_WIN_SHIFT_S";
             #binding-cells = <0>;
@@ -64,7 +64,7 @@
         };
 
         // Win + L
-        td_win_l: tap_dance_win_l {
+        td_win_l: td_win_l {
             compatible = "zmk,behavior-tap-dance";
             label = "TD_WIN_L";
             #binding-cells = <0>;
@@ -73,7 +73,7 @@
         };
 
         // Win + V
-        td_win_v: tap_dance_win_v {
+        td_win_v: td_win_v {
             compatible = "zmk,behavior-tap-dance";
             label = "TD_WIN_V";
             #binding-cells = <0>;
