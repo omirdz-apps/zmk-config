@@ -64,13 +64,13 @@
          };
 
          // // Win + L
-         // td_win_l: td_win_l {
-         //    compatible = "zmk,behavior-tap-dance";
-         //    label = "TD_WIN_L";
-         //    #binding-cells = <0>;
-         //    tapping-term-ms = <250>;
-         //    bindings = <&kp L>, <&kp LGUI(L)>;
-         // };
+         td_win_l: td_win_l {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_WIN_L";
+            #binding-cells = <0>;
+            tapping-term-ms = <250>;
+            bindings = <&kp L>, <&kp LGUI(L)>;
+         };
 
          // // Win + V
          // td_win_v: td_win_v {
@@ -127,7 +127,7 @@
         default_layer {
             display-name = "DVORAK";
             bindings = <
-                &kp ESC  &kp SQT   &kp COMMA  &kp DOT  &kp P      &kp Y                             &kp UP                &kp F        &kp G     &kp C   &kp R  &kp L   &kp BSPC
+                &kp ESC  &kp SQT   &kp COMMA  &kp DOT  &kp P      &kp Y                             &kp UP                &kp F        &kp G     &kp C   &kp R  &td_win_l  &kp BSPC
                 &kp TAB  &kp A     &kp O      &kp E    &kp U      &kp I                   &kp LEFT  &kp ENTER  &kp RIGHT  &kp D        &kp H     &kp T   &kp N  &td_win_shift_s   &none
                 &td0     &kp SEMI  &kp Q      &kp J    &kp K      &kp X        &kp C_PP             &kp DOWN              &kp B        &kp M     &kp W   &kp V  &kp Z   &kp LGUI
                                           &tog 1   &kp LCTRL  &lt 3 SPACE                                             &lt 3 ENTER  &kp RALT  &tog 2
