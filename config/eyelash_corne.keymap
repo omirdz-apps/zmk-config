@@ -97,7 +97,7 @@
             bindings = <&kp LGUI>, <&kp L>;
          };
 
-         mac_win_l: mac_win_v {
+         mac_win_v: mac_win_v {
             compatible = "zmk,behavior-macro";
             label = "Win+V";
             #binding-cells = <0>;
