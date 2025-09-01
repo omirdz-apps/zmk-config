@@ -51,9 +51,8 @@
             display-name = "n/ñ";
             #binding-cells = <0>;
             tapping-term-ms = <250>;
-            bindings = <&kp N>, <&kp RALT(N)>;
+            bindings = <&kp N>, <&kp RALT_N>;
          };
-
 
          // // Win + Shift + S
          // td_win_shift_s: td_win_shift_s {
