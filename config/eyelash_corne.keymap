@@ -87,11 +87,7 @@
             compatible = "zmk,behavior-macro";
             label = "Macro Ñ";
             #binding-cells = <0>;
-            bindings = <
-                &kp RALT DOWN
-                &kp N
-                &kp RALT UP
-            >;
+            bindings = <&kp RALT>, <&kp N>;
         };
  
          mac_win_shift_s: mac_win_shift_s {
