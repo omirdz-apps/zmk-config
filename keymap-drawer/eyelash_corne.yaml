@@ -40,7 +40,7 @@ layers:
   - B
   - M
   - W
-  - V
+  - '&td_win_v'
   - Z
   - LGUI
   - {t: FN|SY|NU, h: toggle}
