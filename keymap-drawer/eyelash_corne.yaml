@@ -15,11 +15,11 @@ layers:
   - '&td_win_l'
   - {t: '$$mdi:backspace$$', type: backspace}
   - $$mdi:keyboard-tab$$
-  - A
-  - O
-  - E
-  - U
-  - I
+  - '&td_a'
+  - '&td_o'
+  - '&td_e'
+  - '&td_u'
+  - '&td_i'
   - $$mdi:arrow-left-bold$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:arrow-right-bold$$
@@ -43,13 +43,13 @@ layers:
   - '&td_win_v'
   - Z
   - LGUI
-  - {t: FN|SY|NU, h: toggle}
+  - {t: FnSyNu, h: toggle}
   - $$mdi:apple-keyboard-control$$
   - {t: '$$mdi:keyboard-space$$', h: SYSTEM}
   - {t: '$$mdi:keyboard-return$$', h: SYSTEM}
   - $$mdi:apple-keyboard-option$$
-  - {t: COMB|OPE, h: toggle}
-  FN|SY|NU:
+  - {t: ComOpe, h: toggle}
+  FnSyNu:
   - F1
   - F2
   - F3
@@ -98,7 +98,7 @@ layers:
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - END
   - {t: '$$mdi:transfer$$', type: trans}
-  COMB|OPE:
+  ComOpe:
   - $$mdi:keyboard-esc$$
   - PRINTSCREEN
   - SCROLLLOCK
