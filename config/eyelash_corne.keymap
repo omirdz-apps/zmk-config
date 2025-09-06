@@ -36,12 +36,6 @@
 // =========================
 / {
       behaviors {
-         hmd_shift: hmd_shift {
-            compatible    = "zmk,behavior-hold-mods";
-            #binding-cells = <1>;
-            mods = <MOD_LSFT>;
-         };
-
          // Shift / Caps
          td0: td0 {
             compatible = "zmk,behavior-tap-dance";
@@ -52,65 +46,60 @@
          };
 
          td_a: td_a {
-            compatible    = "zmk,behavior-tap-dance";
+            compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tap-count     = <3>;
-            flavor        = "tap-preferred";
+            tap-count = <2>;
+            flavor = "tap-preferred";
             bindings = 
                <&kp A>
-               ,<&macro_acent_a>
-               ,<&hmd_shift &kp A>;
+               ,<&macro_acent_a>;
          };
 
          td_e: td_e {
-            compatible    = "zmk,behavior-tap-dance";
+            compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tap-count     = <3>;
-            flavor        = "tap-preferred";
+            tap-count = <2>;
+            flavor = "tap-preferred";
             bindings = 
                <&kp E>
-               ,<&macro_acent_e>
-               ,<&hmd_shift &kp E>;
+               ,<&macro_acent_e>;
          };
 
          td_i: td_i {
-            compatible    = "zmk,behavior-tap-dance";
+            compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tap-count     = <3>;
-            flavor        = "tap-preferred";
+            tap-count = <2>;
+            flavor = "tap-preferred";
             bindings = 
                <&kp I>
-               ,<&macro_acent_i>
-               ,<&hmd_shift &kp I>;
+               ,<&macro_acent_i>;
          };
 
          td_o: td_o {
-            compatible    = "zmk,behavior-tap-dance";
+            compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tap-count     = <3>;
-            flavor        = "tap-preferred";
+            tap-count = <2>;
+            flavor = "tap-preferred";
             bindings = 
                <&kp O>
-               ,<&macro_acent_o>
-               ,<&hmd_shift &kp O>;
+               ,<&macro_acent_o>;
          };
 
          td_u: td_u {
-            compatible    = "zmk,behavior-tap-dance";
+            compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tap-count     = <3>;
-            flavor        = "tap-preferred";
+            tap-count = <2>;
+            flavor = "tap-preferred";
             bindings = 
                <&kp U>
-               ,<&macro_acent_u>
-               ,<&hmd_shift &kp U>;
+               ,<&macro_acent_u>;
          };
 
          td_n_enhe: td_n_enhe {
-            compatible    = "zmk,behavior-tap-dance";
+            compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tap-count     = <2>;
-            flavor        = "tap-preferred";
+            tap-count = <2>;
+            flavor = "tap-preferred";
             bindings = 
                <&kp N>
                ,<&macro_enhe>;
@@ -146,78 +135,78 @@
 
       macros {
          macro_acent_a: macro_acent_a {
-            compatible    = "zmk,behavior-macro";
+            compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms       = <40>;
-            tap-ms        = <40>;
+            wait-ms = <40>;
+            tap-ms = <40>;
             bindings = 
-            <&macro_press    &kp LALT>
-            ,<&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N2 &kp KP_N5>
-            ,<&macro_release &kp LALT>;
+               <&macro_press    &kp LALT>
+               ,<&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N2 &kp KP_N5>
+               ,<&macro_release &kp LALT>;
          };
 
          macro_acent_e: macro_acent_e {
-            compatible    = "zmk,behavior-macro";
+            compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms       = <40>;
-            tap-ms        = <40>;
+            wait-ms = <40>;
+            tap-ms = <40>;
             bindings = 
-            <&macro_press    &kp LALT>
-            ,<&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N3 &kp KP_N3>
-            ,<&macro_release &kp LALT>;
+               <&macro_press    &kp LALT>
+               ,<&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N3 &kp KP_N3>
+               ,<&macro_release &kp LALT>;
          };
 
          macro_acent_i: macro_acent_i {
-            compatible    = "zmk,behavior-macro";
+            compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms       = <40>;
-            tap-ms        = <40>;
+            wait-ms = <40>;
+            tap-ms = <40>;
             bindings = 
-            <&macro_press    &kp LALT>
-            ,<&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N3 &kp KP_N7>
-            ,<&macro_release &kp LALT>;
+               <&macro_press    &kp LALT>
+               ,<&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N3 &kp KP_N7>
+               ,<&macro_release &kp LALT>;
          };
 
          macro_acent_o: macro_acent_o {
-            compatible    = "zmk,behavior-macro";
+            compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms       = <40>;
-            tap-ms        = <40>;
+            wait-ms = <40>;
+            tap-ms = <40>;
             bindings = 
-            <&macro_press    &kp LALT>
-            ,<&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N4 &kp KP_N3>
-            ,<&macro_release &kp LALT>;
+               <&macro_press    &kp LALT>
+               ,<&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N4 &kp KP_N3>
+               ,<&macro_release &kp LALT>;
          };
 
          macro_acent_u: macro_acent_u {
-            compatible    = "zmk,behavior-macro";
+            compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms       = <40>;
-            tap-ms        = <40>;
+            wait-ms = <40>;
+            tap-ms = <40>;
             bindings = 
-            <&macro_press    &kp LALT>
-            ,<&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N5 &kp KP_N0>
-            ,<&macro_release &kp LALT>;
+               <&macro_press    &kp LALT>
+               ,<&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N5 &kp KP_N0>
+               ,<&macro_release &kp LALT>;
          };
 
          macro_enhe: macro_enhe {
-            compatible    = "zmk,behavior-macro";
+            compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms       = <40>;
-            tap-ms        = <40>;
+            wait-ms = <40>;
+            tap-ms = <40>;
             bindings = 
-            <&macro_press    &kp LALT>
-            ,<&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N4 &kp KP_N1>
-            ,<&macro_release &kp LALT>;
+               <&macro_press    &kp LALT>
+               ,<&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N4 &kp KP_N1>
+               ,<&macro_release &kp LALT>;
          };
  
          /* Win + Shift + S */
          mac_win_shift_s: mac_win_shift_s {
-            compatible    = "zmk,behavior-macro";
-            label         = "Win+Shift+S";
+            compatible = "zmk,behavior-macro";
+            label = "Win+Shift+S";
             #binding-cells = <0>;
-            wait-ms       = <10>;
-            tap-ms        = <10>;
+            wait-ms = <10>;
+            tap-ms = <10>;
             bindings = 
                <&macro_press    &kp LGUI>
                ,<&macro_press   &kp LSFT>
@@ -228,11 +217,11 @@
 
          /* Win + L */
          mac_win_l: mac_win_l {
-            compatible    = "zmk,behavior-macro";
-            label         = "Win+L";
+            compatible = "zmk,behavior-macro";
+            label = "Win+L";
             #binding-cells = <0>;
-            wait-ms       = <10>;
-            tap-ms        = <10>;
+            wait-ms = <10>;
+            tap-ms = <10>;
             bindings =
                <&macro_press    &kp LGUI>
                ,<&macro_tap     &kp L>
@@ -241,11 +230,11 @@
 
          /* Win + V */
          mac_win_v: mac_win_v {
-            compatible    = "zmk,behavior-macro";
-            label         = "Win+V";
+            compatible = "zmk,behavior-macro";
+            label = "Win+V";
             #binding-cells = <0>;
-            wait-ms       = <10>;
-            tap-ms        = <10>;
+            wait-ms = <10>;
+            tap-ms = <10>;
             bindings = 
                <&macro_press    &kp LGUI>
                ,<&macro_tap     &kp V>
@@ -292,8 +281,8 @@
             display-name = "DVORAK";
             bindings = <
                 &kp ESC  &kp SQT   &kp COMMA  &kp DOT  &kp P      &kp Y                             &kp UP                &kp F        &kp G     &kp C   &kp R       &td_win_l         &kp BSPC
-                &kp TAB  &td_a     &td_o      &td_e    &td_u      &td_i                   &kp LEFT  &kp ENTER  &kp RIGHT  &kp D        &kp H     &kp T   &td_n_enhe  &td_win_shift_s   &none
-                &td0     &kp SEMI  &kp Q      &kp J    &kp K      &kp X        &kp C_PP             &kp DOWN              &kp B        &kp M     &kp W   &td_win_v   &kp Z             &kp LGUI
+                &kp TAB  &td_a     &td_o      &td_e    &td_u      &td_i                   &kp LEFT  &kp ENTER  &kp RIGHT  &kp D        &kp H     &kp T   &td_n_enhe  &td_win_shift_s   &kp LGUI
+                &td0     &kp SEMI  &kp Q      &kp J    &kp K      &kp X        &kp C_PP             &kp DOWN              &kp B        &kp M     &kp W   &td_win_v   &kp Z             &kp RSHIFT
                                           &tog 1   &kp LCTRL  &lt 3 SPACE                                                 &lt 3 ENTER  &kp RALT  &tog 2
             >;
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
