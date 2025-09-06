@@ -47,9 +47,9 @@
 
          td_a: td_a {
             compatible = "zmk,behavior-tap-dance";
+            display-name = "a/á Tap Dance";
             #binding-cells = <0>;
-            tap-count = <2>;
-            flavor = "tap-preferred";
+            tapping-term-ms = <50>;
             bindings = 
                <&kp A>
                ,<&macro_acent_a>;
@@ -57,9 +57,9 @@
 
          td_e: td_e {
             compatible = "zmk,behavior-tap-dance";
+            display-name = "e/é Tap Dance";
             #binding-cells = <0>;
-            tap-count = <2>;
-            flavor = "tap-preferred";
+            tapping-term-ms = <50>;
             bindings = 
                <&kp E>
                ,<&macro_acent_e>;
@@ -67,9 +67,9 @@
 
          td_i: td_i {
             compatible = "zmk,behavior-tap-dance";
+            display-name = "i/í Tap Dance";
             #binding-cells = <0>;
-            tap-count = <2>;
-            flavor = "tap-preferred";
+            tapping-term-ms = <50>;
             bindings = 
                <&kp I>
                ,<&macro_acent_i>;
@@ -77,9 +77,9 @@
 
          td_o: td_o {
             compatible = "zmk,behavior-tap-dance";
+            display-name = "o/ó Tap Dance";
             #binding-cells = <0>;
-            tap-count = <2>;
-            flavor = "tap-preferred";
+            tapping-term-ms = <50>;
             bindings = 
                <&kp O>
                ,<&macro_acent_o>;
@@ -87,22 +87,22 @@
 
          td_u: td_u {
             compatible = "zmk,behavior-tap-dance";
+            display-name = "u/ú Tap Dance";
             #binding-cells = <0>;
-            tap-count = <2>;
-            flavor = "tap-preferred";
+            tapping-term-ms = <50>;
             bindings = 
                <&kp U>
                ,<&macro_acent_u>;
          };
 
-         td_n_enhe: td_n_enhe {
+         td_n_ñ: td_n_ñ {
             compatible = "zmk,behavior-tap-dance";
+            display-name = "n/ñ Tap Dance";
             #binding-cells = <0>;
-            tap-count = <2>;
-            flavor = "tap-preferred";
+            tapping-term-ms = <50>;
             bindings = 
                <&kp N>
-               ,<&macro_enhe>;
+               ,<&macro_ñ>;
          };
 
          // // Win + Shift + S
@@ -189,7 +189,7 @@
                ,<&macro_release &kp LALT>;
          };
 
-         macro_enhe: macro_enhe {
+         macro_ñ: macro_ñ {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <40>;
@@ -281,7 +281,7 @@
             display-name = "DVORAK";
             bindings = <
                 &kp ESC  &kp SQT   &kp COMMA  &kp DOT  &kp P      &kp Y                             &kp UP                &kp F        &kp G     &kp C   &kp R       &td_win_l         &kp BSPC
-                &kp TAB  &td_a     &td_o      &td_e    &td_u      &td_i                   &kp LEFT  &kp ENTER  &kp RIGHT  &kp D        &kp H     &kp T   &td_n_enhe  &td_win_shift_s   &kp LGUI
+                &kp TAB  &td_a     &td_o      &td_e    &td_u      &td_i                   &kp LEFT  &kp ENTER  &kp RIGHT  &kp D        &kp H     &kp T   &td_n_ñ     &td_win_shift_s   &kp LGUI
                 &td0     &kp SEMI  &kp Q      &kp J    &kp K      &kp X        &kp C_PP             &kp DOWN              &kp B        &kp M     &kp W   &td_win_v   &kp Z             &kp RSHIFT
                                           &tog 1   &kp LCTRL  &lt 3 SPACE                                                 &lt 3 ENTER  &kp RALT  &tog 2
             >;
