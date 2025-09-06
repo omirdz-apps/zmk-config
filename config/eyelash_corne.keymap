@@ -106,7 +106,7 @@
                ,<&hmd_shift &kp U>;
          };
 
-         td_n: td_n {
+         td_n_enhe: td_n_enhe {
             compatible    = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tap-count     = <2>;
