@@ -29,7 +29,7 @@ layers:
   - '&td_n'
   - '&td_win_shift_s'
   - RGUI
-  - '&td_SHF'
+  - '&td_SHFT'
   - {t: ;, s: ':'}
   - Q
   - J
