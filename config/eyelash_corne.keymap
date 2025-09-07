@@ -49,7 +49,7 @@
             display-name = "a/á Tap Dance";
             #binding-cells = <0>;
             tapping-term-ms = <50>;
-            bindings = <&kp A>, <&macro_á>;
+            bindings = <&kp A>, <&macro_a>;
          };
 
          td_e: td_e {
@@ -57,7 +57,7 @@
             display-name = "e/é Tap Dance";
             #binding-cells = <0>;
             tapping-term-ms = <50>;
-            bindings = <&kp E>, <&macro_é>;
+            bindings = <&kp E>, <&macro_e>;
          };
 
          td_i: td_i {
@@ -65,7 +65,7 @@
             display-name = "i/í Tap Dance";
             #binding-cells = <0>;
             tapping-term-ms = <50>;
-            bindings = <&kp I>, <&macro_í>;
+            bindings = <&kp I>, <&macro_i>;
          };
 
          td_o: td_o {
@@ -73,7 +73,7 @@
             display-name = "o/ó Tap Dance";
             #binding-cells = <0>;
             tapping-term-ms = <50>;
-            bindings = <&kp O>, <&macro_ó>;
+            bindings = <&kp O>, <&macro_o>;
          };
 
          td_u: td_u {
@@ -81,7 +81,7 @@
             display-name = "u/ú Tap Dance";
             #binding-cells = <0>;
             tapping-term-ms = <50>;
-            bindings = <&kp U>, <&macro_ú>;
+            bindings = <&kp U>, <&macro_u>;
          };
 
          td_n: td_n {
@@ -89,7 +89,7 @@
             display-name = "n/ñ Tap Dance";
             #binding-cells = <0>;
             tapping-term-ms = <50>;
-            bindings = <&kp N>, <&macro_ñ>;
+            bindings = <&kp N>, <&macro_n>;
          };
 
          td_win_shift_s: td_win_shift_s {
@@ -118,7 +118,7 @@
       };
 
       macros {
-         macro_á: macro_a {
+         macro_a: macro_a {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = 
@@ -127,7 +127,7 @@
                <&macro_release &kp LALT>;
          };
 
-         macro_é: macro_e {
+         macro_e: macro_e {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = 
@@ -136,7 +136,7 @@
                <&macro_release &kp LALT>;
          };
 
-         macro_í: macro_i {
+         macro_i: macro_i {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = 
@@ -145,7 +145,7 @@
                <&macro_release &kp LALT>;
          };
 
-         macro_ó: macro_o {
+         macro_o: macro_o {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = 
@@ -154,7 +154,7 @@
                <&macro_release &kp LALT>;
          };
 
-         macro_ú: macro_u {
+         macro_u: macro_u {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = 
@@ -163,7 +163,7 @@
                <&macro_release &kp LALT>;
          };
 
-         macro_ñ: macro_ñ {
+         macro_n: macro_n {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = 
@@ -249,10 +249,10 @@
          default_layer {
                display-name = "DVORAK";
                bindings = <
-                  &kp ESC  &kp SQT   &kp COMMA  &kp DOT  &kp P      &kp Y                             &kp UP                &kp F         &kp G     &kp C   &kp R       &td_win_l         &kp BSPC
-                  &kp TAB  &td_a     &td_o      &td_e    &td_u      &td_i                   &kp LEFT  &kp ENTER  &kp RIGHT  &kp D         &kp H     &kp T   &td_n       &td_win_shift_s   &kp RGUI
-                  &td_SHF  &kp SEMI  &kp Q      &kp J    &kp K      &kp X        &kp C_PP             &kp DOWN              &kp B         &kp M     &kp W   &td_win_v   &kp Z             &kp RSHIFT
-                                             &tog 1   &kp LCTRL  &lt 3 SPACE                                                &lt 3 ENTER   &kp RALT  &tog 2
+                  &kp ESC   &kp SQT   &kp COMMA  &kp DOT  &kp P      &kp Y                             &kp UP                &kp F         &kp G     &kp C   &kp R       &td_win_l         &kp BSPC
+                  &kp TAB   &td_a     &td_o      &td_e    &td_u      &td_i                   &kp LEFT  &kp ENTER  &kp RIGHT  &kp D         &kp H     &kp T   &td_n       &td_win_shift_s   &kp RGUI
+                  &td_SHFT  &kp SEMI  &kp Q      &kp J    &kp K      &kp X        &kp C_PP             &kp DOWN              &kp B         &kp M     &kp W   &td_win_v   &kp Z             &kp RSHIFT
+                                                 &tog 1   &kp LCTRL  &lt 3 SPACE                                             &lt 3 ENTER   &kp RALT  &tog 2
                >;
                sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
          };
