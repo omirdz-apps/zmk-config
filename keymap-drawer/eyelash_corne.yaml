@@ -6,13 +6,13 @@ layers:
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - P
-  - Y
+  - '&td_y'
   - $$mdi:arrow-up-bold$$
   - F
   - G
-  - C
+  - '&td_c'
   - R
-  - '&td_win_l'
+  - '&td_l'
   - {t: '$$mdi:backspace$$', type: backspace}
   - $$mdi:keyboard-tab$$
   - '&td_a'
@@ -27,26 +27,26 @@ layers:
   - H
   - T
   - '&td_n'
-  - '&td_win_shift_s'
-  - RGUI
+  - '&td_s'
+  - {t: '$$mdi:keyboard-return$$', type: enter}
   - '&td_SHFT'
   - {t: ;, s: ':'}
   - Q
   - J
-  - K
-  - X
+  - '&td_k'
+  - '&td_x'
   - $$mdi:play-pause$$
   - $$mdi:arrow-down-bold$$
   - B
   - M
   - W
-  - '&td_win_v'
-  - Z
+  - '&td_v'
+  - '&td_z'
   - $$mdi:apple-keyboard-shift$$
   - {t: FnSyNu, h: toggle}
   - $$mdi:apple-keyboard-control$$
+  - {t: RGUI, h: SYSTEM}
   - {t: '$$mdi:keyboard-space$$', h: SYSTEM}
-  - {t: '$$mdi:keyboard-return$$', h: SYSTEM}
   - $$mdi:apple-keyboard-option$$
   - {t: ComOpe, h: toggle}
   FnSyNu:
@@ -92,12 +92,12 @@ layers:
   - {t: '9', s: (}
   - {t: '0', s: )}
   - $$mdi:backspace-reverse-outline$$
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: FnSyNu, h: toggle}
   - HOME
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - END
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   ComOpe:
   - $$mdi:keyboard-esc$$
   - PRINTSCREEN
@@ -141,12 +141,12 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - APPLICATION
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: ComOpe, h: toggle}
   SYSTEM:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
