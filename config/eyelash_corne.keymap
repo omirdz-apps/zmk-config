@@ -16,16 +16,16 @@
 
 // Scroll config
 &msc {
-    acceleration-exponent = <1>;
-    time-to-max-speed-ms = <100>;
-    delay-ms = <0>;
+   acceleration-exponent = <1>;
+   time-to-max-speed-ms = <100>;
+   delay-ms = <0>;
 };
 
 // Mouse move config
 &mmv {
-    time-to-max-speed-ms = <500>;
-    acceleration-exponent = <1>;
-    trigger-period-ms = <16>;
+   time-to-max-speed-ms = <500>;
+   acceleration-exponent = <1>;
+   trigger-period-ms = <16>;
 };
 
 // Apagado suave
@@ -36,7 +36,7 @@
 // =========================
 / {
       behaviors {
-         td0: td0 {
+         td_SHF: td_SHF {
             compatible = "zmk,behavior-tap-dance";
             display-name = "Shift/Caps Lock Tap Dance";
             #binding-cells = <0>;
@@ -49,7 +49,7 @@
             display-name = "a/á Tap Dance";
             #binding-cells = <0>;
             tapping-term-ms = <50>;
-            bindings = <&kp A>, <&macro_acent_a>;
+            bindings = <&kp A>, <&macro_á>;
          };
 
          td_e: td_e {
@@ -57,7 +57,7 @@
             display-name = "e/é Tap Dance";
             #binding-cells = <0>;
             tapping-term-ms = <50>;
-            bindings = <&kp E>, <&macro_acent_e>;
+            bindings = <&kp E>, <&macro_é>;
          };
 
          td_i: td_i {
@@ -65,7 +65,7 @@
             display-name = "i/í Tap Dance";
             #binding-cells = <0>;
             tapping-term-ms = <50>;
-            bindings = <&kp I>, <&macro_acent_i>;
+            bindings = <&kp I>, <&macro_í>;
          };
 
          td_o: td_o {
@@ -73,7 +73,7 @@
             display-name = "o/ó Tap Dance";
             #binding-cells = <0>;
             tapping-term-ms = <50>;
-            bindings = <&kp O>, <&macro_acent_o>;
+            bindings = <&kp O>, <&macro_ó>;
          };
 
          td_u: td_u {
@@ -81,10 +81,10 @@
             display-name = "u/ú Tap Dance";
             #binding-cells = <0>;
             tapping-term-ms = <50>;
-            bindings = <&kp U>, <&macro_acent_u>;
+            bindings = <&kp U>, <&macro_ú>;
          };
 
-         td_n_ñ: td_n_ñ {
+         td_n: td_n {
             compatible = "zmk,behavior-tap-dance";
             display-name = "n/ñ Tap Dance";
             #binding-cells = <0>;
@@ -118,70 +118,58 @@
       };
 
       macros {
-         macro_acent_a: macro_acent_a {
+         macro_á: macro_a {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <40>;
-            tap-ms = <40>;
             bindings = 
-               <&macro_press    &kp LALT>
-               ,<&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N2 &kp KP_N5>
-               ,<&macro_release &kp LALT>;
+               <&macro_press   &kp LALT>,
+               <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N2 &kp KP_N5>,
+               <&macro_release &kp LALT>;
          };
 
-         macro_acent_e: macro_acent_e {
+         macro_é: macro_e {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <40>;
-            tap-ms = <40>;
             bindings = 
-               <&macro_press    &kp LALT>
-               ,<&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N3 &kp KP_N3>
-               ,<&macro_release &kp LALT>;
+               <&macro_press   &kp LALT>,
+               <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N3 &kp KP_N3>,
+               <&macro_release &kp LALT>;
          };
 
-         macro_acent_i: macro_acent_i {
+         macro_í: macro_i {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <40>;
-            tap-ms = <40>;
             bindings = 
-               <&macro_press    &kp LALT>
-               ,<&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N3 &kp KP_N7>
-               ,<&macro_release &kp LALT>;
+               <&macro_press   &kp LALT>,
+               <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N3 &kp KP_N7>,
+               <&macro_release &kp LALT>;
          };
 
-         macro_acent_o: macro_acent_o {
+         macro_ó: macro_o {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <40>;
-            tap-ms = <40>;
             bindings = 
-               <&macro_press    &kp LALT>
-               ,<&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N4 &kp KP_N3>
-               ,<&macro_release &kp LALT>;
+               <&macro_press   &kp LALT>, 
+               <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N4 &kp KP_N3>,
+               <&macro_release &kp LALT>;
          };
 
-         macro_acent_u: macro_acent_u {
+         macro_ú: macro_u {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <40>;
-            tap-ms = <40>;
             bindings = 
-               <&macro_press    &kp LALT>
-               ,<&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N5 &kp KP_N0>
-               ,<&macro_release &kp LALT>;
+               <&macro_press   &kp LALT>,
+               <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N5 &kp KP_N0>,
+               <&macro_release &kp LALT>;
          };
 
          macro_ñ: macro_ñ {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <40>;
-            tap-ms = <40>;
             bindings = 
-               <&macro_press    &kp LALT>
-               ,<&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N4 &kp KP_N1>
-               ,<&macro_release &kp LALT>;
+               <&macro_press   &kp LALT>,
+               <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N4 &kp KP_N1>,
+               <&macro_release &kp LALT>;
          };
  
          mac_win_shift_s: mac_win_shift_s {
@@ -191,11 +179,11 @@
             wait-ms = <10>;
             tap-ms = <10>;
             bindings = 
-               <&macro_press    &kp LEFT_GUI>
-               ,<&macro_press   &kp LEFT_SHIFT>
-               ,<&macro_tap     &kp S>
-               ,<&macro_release &kp LEFT_SHIFT>
-               ,<&macro_release &kp LEFT_GUI>;
+               <&macro_press   &kp LEFT_GUI>,
+               <&macro_press   &kp LEFT_SHIFT>,
+               <&macro_tap     &kp S>,
+               <&macro_release &kp LEFT_SHIFT>,
+               <&macro_release &kp LEFT_GUI>;
          };
 
          mac_win_l: mac_win_l {
@@ -205,9 +193,9 @@
             wait-ms = <10>;
             tap-ms = <10>;
             bindings =
-               <&macro_press    &kp LEFT_SHIFT>
-               ,<&macro_tap     &kp L>
-               ,<&macro_release &kp LEFT_SHIFT>;
+               <&macro_press   &kp LEFT_SHIFT>,
+               <&macro_tap     &kp L>,
+               <&macro_release &kp LEFT_SHIFT>;
          };
 
          mac_win_v: mac_win_v {
@@ -217,9 +205,9 @@
             wait-ms = <10>;
             tap-ms = <10>;
             bindings = 
-               <&macro_press    &kp LEFT_SHIFT>
-               ,<&macro_tap     &kp V>
-               ,<&macro_release &kp LEFT_SHIFT>;
+               <&macro_press   &kp LEFT_SHIFT>,
+               <&macro_tap     &kp V>,
+               <&macro_release &kp LEFT_SHIFT>;
          };
       };
 
@@ -261,10 +249,10 @@
          default_layer {
                display-name = "DVORAK";
                bindings = <
-                  &kp ESC  &kp SQT   &kp COMMA  &kp DOT  &kp P      &kp Y                             &kp UP                &kp F        &kp G     &kp C   &kp R       &td_win_l         &kp BSPC
-                  &kp TAB  &td_a     &td_o      &td_e    &td_u      &td_i                   &kp LEFT  &kp ENTER  &kp RIGHT  &kp D        &kp H     &kp T   &td_n_ñ     &td_win_shift_s   &kp RGUI
-                  &td0     &kp SEMI  &kp Q      &kp J    &kp K      &kp X        &kp C_PP             &kp DOWN              &kp B        &kp M     &kp W   &td_win_v   &kp Z             &kp RSHIFT
-                                             &tog 1   &kp LCTRL  &lt 3 SPACE                                                 &lt 3 ENTER  &kp RALT  &tog 2
+                  &kp ESC  &kp SQT   &kp COMMA  &kp DOT  &kp P      &kp Y                             &kp UP                &kp F         &kp G     &kp C   &kp R       &td_win_l         &kp BSPC
+                  &kp TAB  &td_a     &td_o      &td_e    &td_u      &td_i                   &kp LEFT  &kp ENTER  &kp RIGHT  &kp D         &kp H     &kp T   &td_n       &td_win_shift_s   &kp RGUI
+                  &td_SHF  &kp SEMI  &kp Q      &kp J    &kp K      &kp X        &kp C_PP             &kp DOWN              &kp B         &kp M     &kp W   &td_win_v   &kp Z             &kp RSHIFT
+                                             &tog 1   &kp LCTRL  &lt 3 SPACE                                                &lt 3 ENTER   &kp RALT  &tog 2
                >;
                sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
          };
