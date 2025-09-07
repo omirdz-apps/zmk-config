@@ -48,48 +48,48 @@
             compatible = "zmk,behavior-tap-dance";
             display-name = "a/á Tap Dance";
             #binding-cells = <0>;
-            tapping-term-ms = <50>;
-            bindings = <&kp A>, <&macro_a>;
+            tapping-term-ms = <250>;
+            bindings = <&kp A>, <&mac_a>;
          };
 
          td_e: td_e {
             compatible = "zmk,behavior-tap-dance";
             display-name = "e/é Tap Dance";
             #binding-cells = <0>;
-            tapping-term-ms = <50>;
-            bindings = <&kp E>, <&macro_e>;
+            tapping-term-ms = <250>;
+            bindings = <&kp E>, <&mac_e>;
          };
 
          td_i: td_i {
             compatible = "zmk,behavior-tap-dance";
             display-name = "i/í Tap Dance";
             #binding-cells = <0>;
-            tapping-term-ms = <50>;
-            bindings = <&kp I>, <&macro_i>;
+            tapping-term-ms = <250>;
+            bindings = <&kp I>, <&mac_i>;
          };
 
          td_o: td_o {
             compatible = "zmk,behavior-tap-dance";
             display-name = "o/ó Tap Dance";
             #binding-cells = <0>;
-            tapping-term-ms = <50>;
-            bindings = <&kp O>, <&macro_o>;
+            tapping-term-ms = <250>;
+            bindings = <&kp O>, <&mac_o>;
          };
 
          td_u: td_u {
             compatible = "zmk,behavior-tap-dance";
             display-name = "u/ú Tap Dance";
             #binding-cells = <0>;
-            tapping-term-ms = <50>;
-            bindings = <&kp U>, <&macro_u>;
+            tapping-term-ms = <250>;
+            bindings = <&kp U>, <&mac_u>;
          };
 
          td_n: td_n {
             compatible = "zmk,behavior-tap-dance";
             display-name = "n/ñ Tap Dance";
             #binding-cells = <0>;
-            tapping-term-ms = <50>;
-            bindings = <&kp N>, <&macro_n>;
+            tapping-term-ms = <250>;
+            bindings = <&kp N>, <&mac_n>;
          };
 
          td_win_shift_s: td_win_shift_s {
@@ -118,7 +118,7 @@
       };
 
       macros {
-         macro_a: macro_a {
+         mac_a: mac_a {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = 
@@ -127,7 +127,7 @@
                <&macro_release &kp LALT>;
          };
 
-         macro_e: macro_e {
+         mac_e: mac_e {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = 
@@ -136,7 +136,7 @@
                <&macro_release &kp LALT>;
          };
 
-         macro_i: macro_i {
+         mac_i: mac_i {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = 
@@ -145,7 +145,7 @@
                <&macro_release &kp LALT>;
          };
 
-         macro_o: macro_o {
+         mac_o: mac_o {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = 
@@ -154,7 +154,7 @@
                <&macro_release &kp LALT>;
          };
 
-         macro_u: macro_u {
+         mac_u: mac_u {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = 
@@ -163,7 +163,7 @@
                <&macro_release &kp LALT>;
          };
 
-         macro_n: macro_n {
+         mac_n: mac_n {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = 
