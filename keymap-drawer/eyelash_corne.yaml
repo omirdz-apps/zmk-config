@@ -26,10 +26,10 @@ layers:
   - D
   - H
   - T
-  - '&td_n_ñ'
+  - '&td_n'
   - '&td_win_shift_s'
   - RGUI
-  - '&td0'
+  - '&td_SHF'
   - {t: ;, s: ':'}
   - Q
   - J
