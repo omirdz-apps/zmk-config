@@ -83,7 +83,7 @@
             tapping-term-ms = <250>;
             bindings = <&kp U>, <&mac_u>;
          };
-
+         
          td_n: td_n {
             compatible = "zmk,behavior-tap-dance";
             display-name = "n/ñ Tap Dance";
@@ -92,28 +92,68 @@
             bindings = <&kp N>, <&mac_n>;
          };
 
-         td_win_shift_s: td_win_shift_s {
+         td_c: td_c {
             compatible = "zmk,behavior-tap-dance";
-            label = "TD_WIN_SHIFT_S";
+            display-name = "c/copy Tap Dance";
             #binding-cells = <0>;
             tapping-term-ms = <250>;
-            bindings = <&kp S>, <&mac_win_shift_s>;
+            bindings = <&kp C>, <&mac_ctrl_c>;
          };
 
-         td_win_l: td_win_l {
+         td_v: td_v {
             compatible = "zmk,behavior-tap-dance";
-            label = "TD_WIN_L";
+            display-name = "v/Paste Tap Dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <250>;
+            bindings = <&kp V>, <&mac_ctrl_v>;
+         };
+
+         td_x: td_x {
+            compatible = "zmk,behavior-tap-dance";
+            display-name = "x/Cut Tap Dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <250>;
+            bindings = <&kp X>, <&mac_ctrl_x>;
+         };
+         
+         td_z: td_z {
+            compatible = "zmk,behavior-tap-dance";
+            display-name = "z/Undo Tap Dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <250>;
+            bindings = <&kp Z>, <&mac_ctrl_z>;
+         };
+         
+         td_y: td_y {
+            compatible = "zmk,behavior-tap-dance";
+            display-name = "y/Redo Tap Dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <250>;
+            bindings = <&kp Y>, <&mac_ctrl_y>;
+         };
+
+         td_l: td_l {
+            compatible = "zmk,behavior-tap-dance";
+            label = "Bloqueo";
             #binding-cells = <0>;
             tapping-term-ms = <250>;
             bindings = <&kp L>, <&mac_win_l>;
          };
 
-         td_win_v: td_win_v {
+         td_s: td_s {
             compatible = "zmk,behavior-tap-dance";
-            label = "TD_WIN_V";
+            label = "Capturar";
             #binding-cells = <0>;
             tapping-term-ms = <250>;
-            bindings = <&kp V>, <&mac_win_v>;
+            bindings = <&kp S>, <&mac_win_shift_s>;
+         };
+
+         td_k: td_k {
+            compatible = "zmk,behavior-tap-dance";
+            label = "PortaPapeles";
+            #binding-cells = <0>;
+            tapping-term-ms = <250>;
+            bindings = <&kp K>, <&mac_win_v>;
          };
       };
 
@@ -171,6 +211,66 @@
                <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N4 &kp KP_N1>,
                <&macro_release &kp LALT>;
          };
+
+         mac_ctrl_c: mac_ctrl_c {
+            compatible = "zmk,behavior-macro";
+            label = "Ctrl+C";
+            #binding-cells = <0>;
+            wait-ms = <10>;
+            tap-ms = <10>;
+            bindings = 
+               <&macro_press   &kp LEFT_CONTROL>,
+               <&macro_tap     &kp C>,
+               <&macro_release &kp LEFT_CONTROL>;
+         };
+
+         mac_ctrl_x: mac_ctrl_x {
+            compatible = "zmk,behavior-macro";
+            label = "Ctrl+X";
+            #binding-cells = <0>;
+            wait-ms = <10>;
+            tap-ms = <10>;
+            bindings = 
+               <&macro_press   &kp LEFT_CONTROL>,
+               <&macro_tap     &kp X>,
+               <&macro_release &kp LEFT_CONTROL>;
+         };
+
+         mac_ctrl_v: mac_ctrl_v {
+            compatible = "zmk,behavior-macro";
+            label = "Ctrl+V";
+            #binding-cells = <0>;
+            wait-ms = <10>;
+            tap-ms = <10>;
+            bindings = 
+               <&macro_press   &kp LEFT_CONTROL>,
+               <&macro_tap     &kp V>,
+               <&macro_release &kp LEFT_CONTROL>;
+         };
+
+          mac_ctrl_z: mac_ctrl_z {
+            compatible = "zmk,behavior-macro";
+            label = "Ctrl+Z";
+            #binding-cells = <0>;
+            wait-ms = <10>;
+            tap-ms = <10>;
+            bindings = 
+               <&macro_press   &kp LEFT_CONTROL>,
+               <&macro_tap     &kp Z>,
+               <&macro_release &kp LEFT_CONTROL>;
+         };
+         
+          mac_ctrl_y: mac_ctrl_y {
+            compatible = "zmk,behavior-macro";
+            label = "Ctrl+Y";
+            #binding-cells = <0>;
+            wait-ms = <10>;
+            tap-ms = <10>;
+            bindings = 
+               <&macro_press   &kp LEFT_CONTROL>,
+               <&macro_tap     &kp Y>,
+               <&macro_release &kp LEFT_CONTROL>;
+         };
  
          mac_win_shift_s: mac_win_shift_s {
             compatible = "zmk,behavior-macro";
@@ -193,9 +293,9 @@
             wait-ms = <10>;
             tap-ms = <10>;
             bindings =
-               <&macro_press   &kp LEFT_SHIFT>,
+               <&macro_press   &kp LEFT_GUI>,
                <&macro_tap     &kp L>,
-               <&macro_release &kp LEFT_SHIFT>;
+               <&macro_release &kp LEFT_GUI>;
          };
 
          mac_win_v: mac_win_v {
@@ -205,9 +305,9 @@
             wait-ms = <10>;
             tap-ms = <10>;
             bindings = 
-               <&macro_press   &kp LEFT_SHIFT>,
+               <&macro_press   &kp LEFT_GUI>,
                <&macro_tap     &kp V>,
-               <&macro_release &kp LEFT_SHIFT>;
+               <&macro_release &kp LEFT_GUI>;
          };
       };
 
@@ -247,52 +347,52 @@
 
          // Capa base DVORAK
          default_layer {
-               display-name = "DVORAK";
-               bindings = <
-                  &kp ESC   &kp SQT   &kp COMMA  &kp DOT  &kp P      &kp Y                             &kp UP                &kp F         &kp G     &kp C   &kp R       &td_win_l         &kp BSPC
-                  &kp TAB   &td_a     &td_o      &td_e    &td_u      &td_i                   &kp LEFT  &kp ENTER  &kp RIGHT  &kp D         &kp H     &kp T   &td_n       &td_win_shift_s   &kp RGUI
-                  &td_SHFT  &kp SEMI  &kp Q      &kp J    &kp K      &kp X        &kp C_PP             &kp DOWN              &kp B         &kp M     &kp W   &td_win_v   &kp Z             &kp RSHIFT
-                                                 &tog 1   &kp LCTRL  &lt 3 SPACE                                             &lt 3 ENTER   &kp RALT  &tog 2
-               >;
-               sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
+            display-name = "DVORAK";
+            bindings = <
+               &kp ESC   &kp SQT   &kp COMMA  &kp DOT  &kp P      &td_y                             &kp UP                &kp F        &kp G     &td_c   &kp R  &td_l  &kp BSPC
+               &kp TAB   &td_a     &td_o      &td_e    &td_u      &td_i                   &kp LEFT  &kp ENTER  &kp RIGHT  &kp D        &kp H     &kp T   &td_n  &td_s  &kp ENTER
+               &td_SHFT  &kp SEMI  &kp Q      &kp J    &td_k      &td_x        &kp C_PP             &kp DOWN              &kp B        &kp M     &kp W   &td_v  &td_z  &kp RSHIFT
+                                              &tog 1   &kp LCTRL  &lt 3 RGUI                                              &lt 3 SPACE  &kp RALT  &tog 2
+            >;
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
          };
 
          // FN | SYM | NUM
          lower_layer {
-               display-name = "FnSyNu";
-               bindings = <
-                  &kp F1     &kp F2     &kp F3  &kp F4    &kp F5    &kp F6                               &mmv MOVE_UP                  &kp F7     &kp F8    &kp F9     &kp F10   &kp F11   &kp F12
-                  &kp PG_UP  &kp EXCL   &kp AT  &kp HASH  &kp DLLR  &kp PRCNT            &mmv MOVE_LEFT  &mkp LCLK   &mmv MOVE_RIGHT   &kp CARET  &kp AMPS  &kp ASTRK  &kp LPAR  &kp RPAR  &kp INS
-                  &kp PG_DN  &kp N1     &kp N2  &kp N3    &kp N4    &kp N5     &kp C_PP                  &mmv MOVE_DOWN                &kp N6     &kp N7    &kp N8     &kp N9    &kp N0    &kp DEL
-                                             &trans    &kp HOME  &kp SPACE                                                              &kp ENTER  &kp END   &trans
-               >;
-               sensor-bindings = <&scroll_encoder>;
+            display-name = "FnSyNu";
+            bindings = <
+               &kp F1     &kp F2     &kp F3  &kp F4    &kp F5    &kp F6                               &mmv MOVE_UP                  &kp F7     &kp F8    &kp F9     &kp F10   &kp F11   &kp F12
+               &kp PG_UP  &kp EXCL   &kp AT  &kp HASH  &kp DLLR  &kp PRCNT            &mmv MOVE_LEFT  &mkp LCLK   &mmv MOVE_RIGHT   &kp CARET  &kp AMPS  &kp ASTRK  &kp LPAR  &kp RPAR  &kp INS
+               &kp PG_DN  &kp N1     &kp N2  &kp N3    &kp N4    &kp N5     &kp C_PP                  &mmv MOVE_DOWN                &kp N6     &kp N7    &kp N8     &kp N9    &kp N0    &kp DEL
+                                             &tog 1    &kp HOME  &kp SPACE                                                          &kp ENTER  &kp END   &none
+            >;
+            sensor-bindings = <&scroll_encoder>;
          };
 
          // COMBOS | OPERADORES
          raise_layer {
-               display-name = "ComOpe";
-               bindings = <
-                  &kp ESC  &kp PRINTSCREEN  &kp SCROLLLOCK  &kp PAUSE_BREAK  &none  &none                            &mmv MOVE_UP                &kp UNDER  &kp MINUS  &kp PLUS  &kp EQUAL  &kp SLASH  &kp BSPC
-                  &none    &mkp LCLK        &mkp MCLK       &mkp RCLK        &none  &none            &mmv MOVE_LEFT  &mkp LCLK  &mmv MOVE_RIGHT  &kp LBKT   &kp LBRC   &kp RBRC  &kp RBKT   &kp BSLH   &none
-                  &none    &none            &none  &kp C_PREV  &kp C_MUTE    &kp C_NEXT    &kp C_PP                  &mmv MOVE_DOWN              &kp TILDE  &kp GRAVE  &kp PIPE  &none      &none      &none
-                                                   &trans      &trans        &kp SPACE                                                           &kp ENTER  &kp K_APPLICATION  &trans
-               >;
-               sensor-bindings = <&scroll_encoder>;
+            display-name = "ComOpe";
+            bindings = <
+               &kp ESC  &kp PRINTSCREEN  &kp SCROLLLOCK  &kp PAUSE_BREAK  &none  &none                            &mmv MOVE_UP                &kp UNDER  &kp MINUS  &kp PLUS  &kp EQUAL  &kp SLASH  &kp BSPC
+               &none    &mkp LCLK        &mkp MCLK       &mkp RCLK        &none  &none            &mmv MOVE_LEFT  &mkp LCLK  &mmv MOVE_RIGHT  &kp LBKT   &kp LBRC   &kp RBRC  &kp RBKT   &kp BSLH   &none
+               &none    &none            &none  &kp C_PREV  &kp C_MUTE    &kp C_NEXT    &kp C_PP                  &mmv MOVE_DOWN              &kp TILDE  &kp GRAVE  &kp PIPE  &none      &none      &none
+                                                &none       &trans        &kp SPACE                                                           &kp ENTER  &kp K_APPLICATION    &tog 2
+            >;
+            sensor-bindings = <&scroll_encoder>;
          };
 
          // =========================
          // Capa SISTEMA / MANTENIMIENTO
          // =========================
          layer_3 {
-               display-name = "SYSTEM";
-               bindings = <
-                  &none  &none  &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR                     &mmv MOVE_UP                &bt BT_CLR_ALL  &bt BT_CLR    &bt BT_SEL 0  &none  &none  &sys_reset
-                  &none  &none  &rgb_ug RGB_SPI  &rgb_ug RGB_BRI &rgb_ug RGB_BRD  &none               &mmv MOVE_LEFT  &mkp LCLK  &mmv MOVE_RIGHT  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &none  &none  &bootloader
-                  &none  &none  &none            &none           &none            &out OUT_USB     &kp C_PP           &mmv MOVE_DOWN              &out OUT_BLE    &none         &none         &none  &none  &studio_unlock
-                                             &trans          &trans           &tog 0                                                              &tog 0          &trans        &trans
-               >;
-               sensor-bindings = <&scroll_encoder>;
+            display-name = "SYSTEM";
+            bindings = <
+               &none  &none  &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR                     &mmv MOVE_UP                &bt BT_CLR_ALL  &bt BT_CLR    &bt BT_SEL 0  &none  &none  &sys_reset
+               &none  &none  &rgb_ug RGB_SPI  &rgb_ug RGB_BRI &rgb_ug RGB_BRD  &none               &mmv MOVE_LEFT  &mkp LCLK  &mmv MOVE_RIGHT  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &none  &none  &bootloader
+               &none  &none  &none            &none           &none            &out OUT_USB     &kp C_PP           &mmv MOVE_DOWN              &out OUT_BLE    &none         &none         &none  &none  &studio_unlock
+                                          &trans          &trans           &tog 0                                                              &tog 0          &trans        &trans
+            >;
+            sensor-bindings = <&scroll_encoder>;
          };
       };
    };
