@@ -36,7 +36,7 @@
 // =========================
 / {
       behaviors {
-         td_SHF: td_SHF {
+         td_SHFT: td_SHFT {
             compatible = "zmk,behavior-tap-dance";
             display-name = "Shift/Caps Lock Tap Dance";
             #binding-cells = <0>;
