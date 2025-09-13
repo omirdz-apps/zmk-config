@@ -2,13 +2,13 @@ layout: {zmk_keyboard: eyelash_corne}
 layers:
   DVORAK:
   - $$mdi:keyboard-esc$$
-  - {t: '''', s: '"'}
-  - {t: ',', s: <}
-  - {t: ., s: '>'}
+  - '&td_sdq'
+  - '&td_clt'
+  - '&td_dgt'
   - P
   - '&td_y'
   - $$mdi:arrow-up-bold$$
-  - F
+  - '&td_f'
   - G
   - '&td_c'
   - R
@@ -21,7 +21,7 @@ layers:
   - '&td_u'
   - '&td_i'
   - $$mdi:arrow-left-bold$$
-  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:arrow-right-bold$$
   - D
   - H
@@ -30,7 +30,7 @@ layers:
   - '&td_s'
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - '&td_SHFT'
-  - {t: ;, s: ':'}
+  - '&td_sc'
   - Q
   - J
   - '&td_k'
@@ -45,7 +45,7 @@ layers:
   - $$mdi:apple-keyboard-shift$$
   - {t: FnSyNu, h: toggle}
   - $$mdi:apple-keyboard-control$$
-  - {t: RGUI, h: SYSTEM}
+  - {t: LGUI, h: SYSTEM}
   - {t: '$$mdi:keyboard-space$$', h: SYSTEM}
   - $$mdi:apple-keyboard-option$$
   - {t: ComOpe, h: toggle}
@@ -56,36 +56,36 @@ layers:
   - F4
   - F5
   - F6
-  - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
+  - PG UP
   - F7
   - F8
   - F9
   - F10
   - F11
   - F12
-  - PG UP
+  - $$mdi:keyboard-tab$$
   - '!'
   - '@'
   - '#'
   - $
   - '%'
-  - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
-  - $$mdi:mouse-left-click-outline$$
-  - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
+  - HOME
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - END
   - ^
   - '&'
   - '*'
   - (
   - )
   - INS
-  - PG DN
+  - $$mdi:apple-keyboard-shift$$
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
   - {t: '3', s: '#'}
   - {t: '4', s: $}
   - {t: '5', s: '%'}
-  - $$mdi:play-pause$$
-  - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
+  - $$mdi:volume-off$$
+  - PG DN
   - {t: '6', s: ^}
   - {t: '7', s: '&'}
   - {t: '8', s: '*'}
@@ -93,11 +93,11 @@ layers:
   - {t: '0', s: )}
   - $$mdi:backspace-reverse-outline$$
   - {t: FnSyNu, h: toggle}
-  - HOME
-  - $$mdi:keyboard-space$$
-  - {t: '$$mdi:keyboard-return$$', type: enter}
-  - END
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:apple-keyboard-control$$
+  - {t: LGUI, h: SYSTEM}
+  - {t: '$$mdi:keyboard-space$$', h: SYSTEM}
+  - $$mdi:apple-keyboard-option$$
+  - APPLICATION
   ComOpe:
   - $$mdi:keyboard-esc$$
   - PRINTSCREEN
@@ -106,10 +106,10 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
+  - '{'
+  - '}'
   - _
-  - {t: '-', s: _}
   - +
-  - {t: '=', s: +}
   - {t: /, s: '?'}
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -119,33 +119,33 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
-  - $$mdi:mouse-left-click-outline$$
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - {t: '[', s: '{'}
-  - '{'
-  - '}'
   - {t: ']', s: '}'}
+  - {t: '-', s: _}
+  - {t: '=', s: +}
   - {t: \, s: '|'}
+  - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - $$mdi:skip-previous$$
-  - $$mdi:volume-off$$
-  - $$mdi:skip-next$$
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:play-pause$$
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
-  - '~'
   - {t: '`', s: '~'}
+  - '~'
+  - '&mac_oq'
+  - '?'
   - '|'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - APPLICATION
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: ComOpe, h: toggle}
   SYSTEM:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -156,8 +156,8 @@ layers:
   - RGB EFR
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - BT CLR ALL
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:bluetooth-off$$
-  - {h: '1', s: '$$mdi:bluetooth-connect$$'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:backup-restore$$', type: bootloader}
@@ -170,10 +170,10 @@ layers:
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
+  - {h: '1', s: '$$mdi:bluetooth-connect$$'}
   - {h: '2', s: '$$mdi:bluetooth-connect$$'}
   - {h: '3', s: '$$mdi:bluetooth-connect$$'}
   - {h: '4', s: '$$mdi:bluetooth-connect$$'}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:progress-download$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -190,12 +190,12 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '&studio_unlock'
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: DVORAK, h: toggle, type: held}
-  - {t: DVORAK, h: toggle, type: held alternate}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: held}
+  - {t: '$$mdi:minus-circle-outline$$', type: held alternate}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
 combos:
 - p: [1, 15, 29]
   k: '&soft_off'
