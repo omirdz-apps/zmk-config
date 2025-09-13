@@ -49,7 +49,7 @@
             display-name = "a/á Tap Dance";
             #binding-cells = <0>;
             tapping-term-ms = <300>;
-            bindings = <&kp A>, <&mac_a>, <&kp LS(A);
+            bindings = <&kp A>, <&mac_a>, <&kp LS(A)>;
          };
 
          td_c: td_c {
