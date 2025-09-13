@@ -17,13 +17,13 @@
 // Scroll config
 &msc {
    acceleration-exponent = <1>;
-   time-to-max-speed-ms = <100>;
+   time-to-max-speed-ms = <300>;
    delay-ms = <0>;
 };
 
 // Mouse move config
 &mmv {
-   time-to-max-speed-ms = <500>;
+   time-to-max-speed-ms = <300>;
    acceleration-exponent = <1>;
    trigger-period-ms = <16>;
 };
@@ -49,7 +49,7 @@
             display-name = "a/á Tap Dance";
             #binding-cells = <0>;
             tapping-term-ms = <300>;
-            bindings = <&kp A>, <&mac_a>;
+            bindings = <&kp A>, <&mac_a>, <&kp LS(A);
          };
 
          td_c: td_c {
@@ -396,7 +396,7 @@
 
          softoff {
                bindings = <&soft_off>;
-               key-positions = <1 15 29>;
+               key-positions = <0 14 29>;
          };
       };
    
