@@ -43,159 +43,110 @@ layers:
   - '&td_v'
   - '&td_z'
   - $$mdi:apple-keyboard-shift$$
-  - {t: FnSyNu, h: toggle}
   - $$mdi:apple-keyboard-control$$
-  - {t: LGUI, h: SYSTEM}
-  - {t: '$$mdi:keyboard-space$$', h: SYSTEM}
+  - LGUI
   - $$mdi:apple-keyboard-option$$
-  - {t: ComOpe, h: toggle}
+  - $$mdi:keyboard-space$$
+  - $$mdi:apple-keyboard-option$$
+  - '&td_Layers'
   FnSyNu:
-  - F1
-  - F2
-  - F3
-  - F4
+  - $$mdi:keyboard-esc$$
   - F5
-  - F6
-  - PG UP
-  - F7
   - F8
-  - F9
+  - {t: '`', s: '~'}
+  - {t: '[', s: '{'}
+  - {t: ']', s: '}'}
+  - PG UP
+  - '&td_1'
+  - '&td_2'
+  - '&td_3'
+  - INS
+  - Ctl++
+  - {t: '$$mdi:backspace$$', type: backspace}
+  - $$mdi:keyboard-tab$$
   - F10
   - F11
-  - F12
-  - $$mdi:keyboard-tab$$
-  - '!'
-  - '@'
-  - '#'
-  - $
-  - '%'
+  - '&mac_comment'
+  - {t: /, s: '?'}
+  - {t: '=', s: +}
   - HOME
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - END
-  - ^
-  - '&'
-  - '*'
-  - (
-  - )
-  - INS
+  - '&td_4'
+  - '&td_5'
+  - '&td_6'
+  - $$mdi:backspace-reverse-outline$$
+  - Ctl+-
+  - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:apple-keyboard-shift$$
-  - {t: '1', s: '!'}
-  - {t: '2', s: '@'}
-  - {t: '3', s: '#'}
-  - {t: '4', s: $}
-  - {t: '5', s: '%'}
+  - F12
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - '&mac_uncomment'
+  - {t: '-', s: _}
+  - {t: \, s: '|'}
   - $$mdi:volume-off$$
   - PG DN
-  - {t: '6', s: ^}
-  - {t: '7', s: '&'}
-  - {t: '8', s: '*'}
-  - {t: '9', s: (}
-  - {t: '0', s: )}
-  - $$mdi:backspace-reverse-outline$$
-  - {t: FnSyNu, h: toggle}
+  - '&td_7'
+  - '&td_8'
+  - '&td_9'
+  - '&td_0'
+  - Gui+$$mdi:keyboard-space$$
+  - $$mdi:apple-keyboard-shift$$
   - $$mdi:apple-keyboard-control$$
-  - {t: LGUI, h: SYSTEM}
-  - {t: '$$mdi:keyboard-space$$', h: SYSTEM}
+  - LGUI
   - $$mdi:apple-keyboard-option$$
-  - APPLICATION
-  ComOpe:
-  - $$mdi:keyboard-esc$$
+  - $$mdi:keyboard-space$$
+  - $$mdi:apple-keyboard-option$$
+  - {t: FnSyNu, h: toggle}
+  SYSTEM:
+  - BT CLR AL
+  - {h: '4', s: '$$mdi:bluetooth-connect$$'}
+  - {h: '3', s: '$$mdi:bluetooth-connect$$'}
+  - {h: '2', s: '$$mdi:bluetooth-connect$$'}
+  - {h: '1', s: '$$mdi:bluetooth-connect$$'}
+  - $$mdi:bluetooth-off$$
+  - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - PRINTSCREEN
   - SCROLLLOCK
   - PAUSE BREAK
+  - RGB ON
+  - RGB EFF
+  - RGB BRI
+  - RGB SAI
+  - RGB SPI
+  - OUT BLE
+  - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
-  - '{'
-  - '}'
-  - _
-  - +
-  - {t: /, s: '?'}
-  - {t: '$$mdi:backspace$$', type: backspace}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - APPLICATION
+  - RGB OFF
+  - RGB EFR
+  - RGB BRD
+  - RGB SAD
+  - RGB SPD
+  - OUT USB
+  - $$mdi:play-pause$$
+  - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:mouse-left-click-outline$$
   - $$mdi:mouse-scroll-wheel$$
   - $$mdi:mouse-right-click-outline$$
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
-  - {t: '[', s: '{'}
-  - {t: ']', s: '}'}
-  - {t: '-', s: _}
-  - {t: '=', s: +}
-  - {t: \, s: '|'}
-  - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - $$mdi:play-pause$$
-  - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
-  - {t: '`', s: '~'}
-  - '~'
-  - '&mac_oq'
-  - '?'
-  - '|'
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - $$mdi:keyboard-space$$
-  - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: ComOpe, h: toggle}
-  SYSTEM:
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - RGB OFF
-  - RGB ON
-  - RGB EFF
-  - RGB EFR
-  - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
-  - BT CLR ALL
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - $$mdi:bluetooth-off$$
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:backup-restore$$', type: bootloader}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - RGB SPI
-  - RGB BRI
-  - RGB BRD
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
-  - $$mdi:mouse-left-click-outline$$
-  - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
-  - {h: '1', s: '$$mdi:bluetooth-connect$$'}
-  - {h: '2', s: '$$mdi:bluetooth-connect$$'}
-  - {h: '3', s: '$$mdi:bluetooth-connect$$'}
-  - {h: '4', s: '$$mdi:bluetooth-connect$$'}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:progress-download$$
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - OUT USB
-  - $$mdi:play-pause$$
-  - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
-  - OUT BLE
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:backup-restore$$', type: bootloader}
   - '&studio_unlock'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: held}
-  - {t: '$$mdi:minus-circle-outline$$', type: held alternate}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: SYSTEM, h: toggle}
 combos:
 - p: [0, 14, 29]
   k: '&soft_off'
