@@ -269,7 +269,7 @@
             bindings = <&kp Z>, <&kp LS(Z)>, <&kp LC(Z)>;
          };
          
-         td_z: td_g {
+         td_g: td_g {
             compatible = "zmk,behavior-tap-dance";
             display-name = "g/G/Save";
             #binding-cells = <0>;
@@ -425,7 +425,7 @@
          default_layer {
             display-name = "DVORAK";
             bindings = <
-               &kp ESC   &td_sdq  &td_clt  &td_dgt     &kp P      &td_y                          &kp UP                 &td_f        &kp G     &td_c   &kp R  &td_l  &kp BSPC
+               &kp ESC   &td_sdq  &td_clt  &td_dgt     &kp P      &td_y                          &kp UP                 &td_f        &td_g     &td_c   &kp R  &td_l  &kp BSPC
                &kp TAB   &td_a    &td_o    &td_e       &td_u      &td_i                &kp LEFT  &none      &kp RIGHT   &kp D        &kp H     &kp T   &td_n  &td_s  &kp ENTER
                &td_SHFT  &td_sc   &kp Q    &kp J       &td_k      &td_x      &kp C_PP            &kp DOWN               &kp B        &kp M     &kp W   &td_v  &td_z  &kp RSHIFT
                                            &kp LCTRL   &kp LGUI   &kp LALT                                              &kp SPACE    &kp RALT  &td_Layers
