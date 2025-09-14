@@ -274,7 +274,6 @@
          // =========================
          td_k: td_k {
             compatible = "zmk,behavior-tap-dance";
-            label = "PortaPapeles";
             #binding-cells = <0>;
             tapping-term-ms = <300>;
             bindings = <&kp K>, <&kp LG(V)>;
@@ -282,7 +281,6 @@
 
          td_l: td_l {
             compatible = "zmk,behavior-tap-dance";
-            label = "Bloqueo";
             #binding-cells = <0>;
             tapping-term-ms = <300>;
             bindings = <&kp L>, <&kp LG(L)>;
@@ -290,7 +288,6 @@
 
          td_s: td_s {
             compatible = "zmk,behavior-tap-dance";
-            label = "Capturar";
             #binding-cells = <0>;
             tapping-term-ms = <300>;
             bindings = <&kp S>, <&kp LG(LS(S))>;
@@ -354,7 +351,6 @@
  
          mac_comment: mac_comment {
             compatible = "zmk,behavior-macro";
-            label = "CTRL+K+C";
             #binding-cells = <0>;
             wait-ms = <10>;
             tap-ms = <10>;
@@ -368,7 +364,6 @@
  
          mac_uncomment: mac_uncomment {
             compatible = "zmk,behavior-macro";
-            label = "CTRL+K+U";
             #binding-cells = <0>;
             wait-ms = <10>;
             tap-ms = <10>;
