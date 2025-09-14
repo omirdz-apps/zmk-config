@@ -443,7 +443,7 @@
          system_layer {
             display-name = "SYSTEM";
             bindings = <
-               &bt BT_CLR_AL    &bt BT_SEL 3     &bt BT_SEL 2     &bt BT_SEL 1     &bt BT_SEL 0     &bt BT_CLR                            &mmv MOVE_UP                   &none  &none  &none  &kp PRINTSCREEN  &kp SCROLLLOCK  &kp PAUSE_BREAK
+               &bt BT_CLR_ALL   &bt BT_SEL 3     &bt BT_SEL 2     &bt BT_SEL 1     &bt BT_SEL 0     &bt BT_CLR                            &mmv MOVE_UP                   &none  &none  &none  &kp PRINTSCREEN  &kp SCROLLLOCK  &kp PAUSE_BREAK
                &rgb_ug RGB_ON   &rgb_ug RGB_EFF  &rgb_ug RGB_BRI  &rgb_ug RGB_SAI  &rgb_ug RGB_SPI  &out OUT_BLE                 &mmv MOVE_LEFT  &none  &mmv MOVE_RIGHT  &none  &none  &none  &none  &none  &kp K_APPLICATION
                &rgb_ug RGB_OFF  &rgb_ug RGB_EFR  &rgb_ug RGB_BRD  &rgb_ug RGB_SAD  &rgb_ug RGB_SPD  &out OUT_USB        &kp C_PP                 &mmv MOVE_DOWN          &none  &none  &none  &mkp LCLK  &mkp MCLK &mkp RCLK
                                                                   &bootloader      &sys_reset       &studio_unlock                                                       &none  &none  &tog 2
