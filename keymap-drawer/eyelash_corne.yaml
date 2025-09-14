@@ -76,7 +76,7 @@ layers:
   - '&td_5'
   - '&td_6'
   - $$mdi:backspace-reverse-outline$$
-  - Ctl+-
+  - {t: Ctl+-, s: Ctl+_}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:apple-keyboard-shift$$
   - F12
