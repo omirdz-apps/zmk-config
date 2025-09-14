@@ -431,8 +431,8 @@
          functions_layer {
             display-name = "FnSyNu";
             bindings = <
-               &kp ESC     &kp F5   &kp F8   &kp GRAVE       &kp LBKT   &kp RBKT                         &kp PG_UP            &td_1  &td_2   &td_3   &kp INS   &kp LC(+)      &kp BSPC
-               &kp TAB     &kp F10  &kp F11  &mac_comment    &kp SLASH  &kp EQUAL              &kp HOME  &none      &kp END   &td_4  &td_5   &td_6   &kp DEL   &kp LC(-)      &kp ENTER
+               &kp ESC     &kp F5   &kp F8   &kp GRAVE       &kp LBKT   &kp RBKT                         &kp PG_UP            &td_1  &td_2   &td_3   &kp INS   &kp LC(PLUS)   &kp BSPC
+               &kp TAB     &kp F10  &kp F11  &mac_comment    &kp SLASH  &kp EQUAL              &kp HOME  &none      &kp END   &td_4  &td_5   &td_6   &kp DEL   &kp LC(MINUS)  &kp ENTER
                &kp LSHIFT  &kp F12  &none    &mac_uncomment  &kp MINUS  &kp BSLH   &kp C_MUTE            &kp PG_DN            &td_7  &td_8   &td_9   &td_0     &kp LG(SPACE)  &kp RSHIFT
                                                 &kp LCTRL   &kp LGUI    &kp LALT                                              &kp SPACE     &kp RALT    &tog 1
             >;
