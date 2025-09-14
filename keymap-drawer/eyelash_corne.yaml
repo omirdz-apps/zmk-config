@@ -99,7 +99,7 @@ layers:
   - $$mdi:apple-keyboard-option$$
   - {t: FnSyNu, h: toggle}
   SYSTEM:
-  - BT CLR AL
+  - BT CLR ALL
   - {h: '4', s: '$$mdi:bluetooth-connect$$'}
   - {h: '3', s: '$$mdi:bluetooth-connect$$'}
   - {h: '2', s: '$$mdi:bluetooth-connect$$'}
