@@ -1,13 +1,13 @@
 layout: {zmk_keyboard: eyelash_corne}
 layers:
   DVORAK:
-  - $$mdi:keyboard-esc$$
+  - '&esc_soft_off'
   - '&td_sdq'
   - '&td_clt'
   - '&td_dgt'
   - P
   - '&td_y'
-  - $$mdi:arrow-up-bold$$
+  - {t: '$$mdi:arrow-up-bold$$', s: PG UP}
   - '&td_f'
   - '&td_g'
   - '&td_c'
@@ -20,9 +20,9 @@ layers:
   - '&td_e'
   - '&td_u'
   - '&td_i'
-  - $$mdi:arrow-left-bold$$
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - $$mdi:arrow-right-bold$$
+  - {t: '$$mdi:arrow-left-bold$$', s: HOME}
+  - Gui+$$mdi:keyboard-space$$
+  - {t: '$$mdi:arrow-right-bold$$', s: END}
   - D
   - H
   - T
@@ -36,7 +36,7 @@ layers:
   - '&td_k'
   - '&td_x'
   - $$mdi:play-pause$$
-  - $$mdi:arrow-down-bold$$
+  - {t: '$$mdi:arrow-down-bold$$', s: PgDn}
   - B
   - M
   - W
@@ -50,47 +50,47 @@ layers:
   - $$mdi:apple-keyboard-option$$
   - '&td_Layers'
   FnSyNu:
-  - $$mdi:keyboard-esc$$
+  - '&esc_soft_off'
   - F5
   - F8
-  - {t: '`', s: '~'}
-  - {t: '[', s: '{'}
-  - {t: ']', s: '}'}
-  - PG UP
+  - '&td_grave'
+  - '&td_lbkt'
+  - '&td_rbkt'
+  - {t: '$$mdi:arrow-up-bold$$', s: PG UP}
   - '&td_1'
   - '&td_2'
   - '&td_3'
+  - {t: Ctl+=, s: Ctl++}
   - INS
-  - {t: Ctl+Sft+=, s: Ctl+Sft++}
   - {t: '$$mdi:backspace$$', type: backspace}
   - $$mdi:keyboard-tab$$
   - F10
   - F11
   - '&mac_comment'
-  - {t: /, s: '?'}
-  - {t: '=', s: +}
-  - HOME
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - END
+  - '&td_slash'
+  - '&td_equal'
+  - {t: '$$mdi:arrow-left-bold$$', s: HOME}
+  - Gui+$$mdi:keyboard-space$$
+  - {t: '$$mdi:arrow-right-bold$$', s: END}
   - '&td_4'
   - '&td_5'
   - '&td_6'
-  - $$mdi:backspace-reverse-outline$$
   - {t: Ctl+-, s: Ctl+_}
+  - $$mdi:backspace-reverse-outline$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:apple-keyboard-shift$$
   - F12
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '&mac_uncomment'
-  - {t: '-', s: _}
-  - {t: \, s: '|'}
+  - '&td_minus'
+  - '&td_bslh'
   - $$mdi:volume-off$$
-  - PG DN
+  - {t: '$$mdi:arrow-down-bold$$', s: PgDn}
   - '&td_7'
   - '&td_8'
   - '&td_9'
   - '&td_0'
-  - Gui+$$mdi:keyboard-space$$
+  - APPLICATION
   - $$mdi:apple-keyboard-shift$$
   - $$mdi:apple-keyboard-control$$
   - LGUI
@@ -106,12 +106,12 @@ layers:
   - {h: '1', s: '$$mdi:bluetooth-connect$$'}
   - $$mdi:bluetooth-off$$
   - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - PRINTSCREEN
   - SCROLLLOCK
   - PAUSE BREAK
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - RGB ON
   - RGB EFF
   - RGB BRI
@@ -119,14 +119,14 @@ layers:
   - RGB SPI
   - OUT BLE
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - Gui+$$mdi:keyboard-space$$
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - APPLICATION
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - RGB OFF
   - RGB EFR
   - RGB BRD
@@ -135,12 +135,12 @@ layers:
   - OUT USB
   - $$mdi:play-pause$$
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:mouse-left-click-outline$$
   - $$mdi:mouse-scroll-wheel$$
   - $$mdi:mouse-right-click-outline$$
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:progress-download$$
   - {t: '$$mdi:backup-restore$$', type: bootloader}
   - '&studio_unlock'
@@ -148,5 +148,5 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: SYSTEM, h: toggle}
 combos:
-- p: [0, 14, 29]
+- p: [0, 14, 28]
   k: '&soft_off'
