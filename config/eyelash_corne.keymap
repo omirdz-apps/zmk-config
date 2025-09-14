@@ -52,6 +52,14 @@
             bindings = <&tog 1>, <&tog 2>;
          };
 
+         esc_soft_off: behavior_tap_hold {
+            compatible = "zmk,behavior-tap-hold";
+            label = "ESC_SOFT_OFF";
+            tapping-term-ms = <2000>;
+            flavor = "balanced";
+            bindings = <&kp ESC>, <&soft_off>;
+        };
+
          // =========================
          // VOCALES Y ñ
          // =========================
@@ -278,13 +286,67 @@
          };
 
          // =========================
+         // OPORADORES
+         // =========================
+         td_grave: td_grave {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp GRAVE>, <&kp LS(GRAVE)>;
+         };
+
+         td_lbkt: td_lbkt {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp LBKT>, <&kp LS(LBKT)>;
+         };
+
+         td_rbkt: td_rbkt {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp RBKT>, <&kp LS(RBKT)>;
+         };
+
+         // Slash / Equal
+         td_slash: td_slash {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp SLASH>, <&kp LS(SLASH)>;
+         };
+
+         td_equal: td_equal {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp EQUAL>, <&kp LS(EQUAL)>;
+         };
+
+         // Minus / Backslash
+         td_minus: td_minus {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp MINUS>, <&kp LS(MINUS)>;
+         };
+
+         td_bslh: td_bslh {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp BSLH>, <&kp LS(BSLH)>;
+         };
+
+         // =========================
          // ATAJOS WINDOWS
          // =========================
          td_k: td_k {
             compatible = "zmk,behavior-tap-dance";
             display-name = "k/ClipBoard";
             #binding-cells = <0>;
-            tapping-term-ms = <150>;
+            tapping-term-ms = <200>;
             bindings = <&kp K>, <&kp LG(V)>;
          };
 
@@ -292,7 +354,7 @@
             compatible = "zmk,behavior-tap-dance";
             display-name = "l/Block";
             #binding-cells = <0>;
-            tapping-term-ms = <100>;
+            tapping-term-ms = <200>;
             bindings = <&kp L>, <&kp LG(L)>;
          };
 
@@ -300,8 +362,39 @@
             compatible = "zmk,behavior-tap-dance";
             display-name = "s/ScreenCapture";
             #binding-cells = <0>;
-            tapping-term-ms = <150>;
+            tapping-term-ms = <200>;
             bindings = <&kp S>, <&kp LG(LS(S))>;
+         };
+
+         // =========================
+         // Mod-Morphs
+         // =========================
+         mm_pg_up: mm_pg_up {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp UP>, <&kp PG_UP>;
+            mods = <(MOD_LCTL)>;
+         };
+
+         mm_pg_dn: mm_pg_dn {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp DOWN>, <&kp PAGE_DOWN>;
+            mods = <(MOD_LCTL)>;
+         };
+
+         mm_pg_lf: mm_pg_lf {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT>, <&kp HOME>;
+            mods = <(MOD_LCTL)>;
+         };
+
+         mm_pg_rh: mm_pg_rh {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp RIGHT>, <&kp END>;
+            mods = <(MOD_LCTL)>;
          };
       };
 
@@ -411,7 +504,7 @@
 
          softoff {
                bindings = <&soft_off>;
-               key-positions = <0 14 29>;
+               key-positions = <0 14 28>;
          };
       };
    
@@ -425,10 +518,10 @@
          default_layer {
             display-name = "DVORAK";
             bindings = <
-               &kp ESC   &td_sdq  &td_clt  &td_dgt     &kp P      &td_y                          &kp UP                 &td_f        &td_g     &td_c   &kp R  &td_l  &kp BSPC
-               &kp TAB   &td_a    &td_o    &td_e       &td_u      &td_i                &kp LEFT  &none      &kp RIGHT   &kp D        &kp H     &kp T   &td_n  &td_s  &kp ENTER
-               &td_SHFT  &td_sc   &kp Q    &kp J       &td_k      &td_x      &kp C_PP            &kp DOWN               &kp B        &kp M     &kp W   &td_v  &td_z  &kp RSHIFT
-                                           &kp LCTRL   &kp LGUI   &kp LALT                                              &kp SPACE    &kp RALT  &td_Layers
+               &esc_soft_off  &td_sdq  &td_clt  &td_dgt  &kp P   &td_y                        &mm_pg_up                 &td_f   &td_g   &td_c   &kp R   &td_l   &kp BSPC
+               &kp TAB        &td_a    &td_o    &td_e    &td_u   &td_i             &mm_pg_lf  &kp LG(SPACE)  &mm_pg_rh  &kp D   &kp H   &kp T   &td_n   &td_s   &kp ENTER
+               &td_SHFT       &td_sc   &kp Q    &kp J    &td_k   &td_x    &kp C_PP            &mm_pg_dn                 &kp B   &kp M   &kp W   &td_v   &td_z   &kp RSHIFT
+                                          &kp LCTRL   &kp LGUI   &kp LALT                                               &kp SPACE   &kp RALT   &td_Layers
             >;
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
          };
@@ -437,10 +530,10 @@
          functions_layer {
             display-name = "FnSyNu";
             bindings = <
-               &kp ESC     &kp F5   &kp F8   &kp GRAVE       &kp LBKT   &kp RBKT                         &kp PG_UP            &td_1  &td_2   &td_3   &kp INS   &kp LC(LS(EQUAL))   &kp BSPC
-               &kp TAB     &kp F10  &kp F11  &mac_comment    &kp SLASH  &kp EQUAL              &kp HOME  &none      &kp END   &td_4  &td_5   &td_6   &kp DEL   &kp LC(MINUS)  &kp ENTER
-               &kp LSHIFT  &kp F12  &none    &mac_uncomment  &kp MINUS  &kp BSLH   &kp C_MUTE            &kp PG_DN            &td_7  &td_8   &td_9   &td_0     &kp LG(SPACE)  &kp RSHIFT
-                                                &kp LCTRL   &kp LGUI    &kp LALT                                              &kp SPACE     &kp RALT    &tog 1
+               &esc_soft_off  &kp F5   &kp F8   &td_grave       &td_lbkt   &td_rbkt                        &mm_pg_up                 &td_1   &td_2   &td_3   &kp LC(EQUAL)  &kp INS     &kp BSPC
+               &kp TAB        &kp F10  &kp F11  &mac_comment    &td_slash  &td_equal            &mm_pg_lf  &kp LG(SPACE)  &mm_pg_rh  &td_4   &td_5   &td_6   &kp LC(MINUS)  &kp DEL     &kp ENTER
+               &kp LSHIFT     &kp F12  &none    &mac_uncomment  &td_minus  &td_bslh  &kp C_MUTE            &mm_pg_dn                 &td_7   &td_8   &td_9   &td_0   &kp K_APPLICATION  &kp RSHIFT
+                                                    &kp LCTRL   &kp LGUI   &kp LALT                                                  &kp SPACE    &kp RALT   &tog 1
             >;
             sensor-bindings = <&inc_dec_kp C_NEXT C_PREV>;
          };
@@ -449,10 +542,10 @@
          system_layer {
             display-name = "SYSTEM";
             bindings = <
-               &bt BT_CLR_ALL   &bt BT_SEL 3     &bt BT_SEL 2     &bt BT_SEL 1     &bt BT_SEL 0     &bt BT_CLR                            &mmv MOVE_UP                   &none  &none  &none  &kp PRINTSCREEN  &kp SCROLLLOCK  &kp PAUSE_BREAK
-               &rgb_ug RGB_ON   &rgb_ug RGB_EFF  &rgb_ug RGB_BRI  &rgb_ug RGB_SAI  &rgb_ug RGB_SPI  &out OUT_BLE                 &mmv MOVE_LEFT  &none  &mmv MOVE_RIGHT  &none  &none  &none  &none  &none  &kp K_APPLICATION
-               &rgb_ug RGB_OFF  &rgb_ug RGB_EFR  &rgb_ug RGB_BRD  &rgb_ug RGB_SAD  &rgb_ug RGB_SPD  &out OUT_USB        &kp C_PP                 &mmv MOVE_DOWN          &none  &none  &none  &mkp LCLK  &mkp MCLK &mkp RCLK
-                                                                  &bootloader      &sys_reset       &studio_unlock                                                       &none  &none  &tog 2
+               &bt BT_CLR_ALL   &bt BT_SEL 3     &bt BT_SEL 2     &bt BT_SEL 1     &bt BT_SEL 0     &bt BT_CLR                             &mmv MOVE_UP                    &kp PRINTSCREEN  &kp SCROLLLOCK  &kp PAUSE_BREAK  &none  &none  &none
+               &rgb_ug RGB_ON   &rgb_ug RGB_EFF  &rgb_ug RGB_BRI  &rgb_ug RGB_SAI  &rgb_ug RGB_SPI  &out OUT_BLE           &mmv MOVE_LEFT  &kp LG(SPACE)  &mmv MOVE_RIGHT  &none  &none  &none  &none  &none  &none
+               &rgb_ug RGB_OFF  &rgb_ug RGB_EFR  &rgb_ug RGB_BRD  &rgb_ug RGB_SAD  &rgb_ug RGB_SPD  &out OUT_USB  &kp C_PP                 &mmv MOVE_DOWN                  &mkp LCLK  &mkp MCLK &mkp RCLK &none  &none  &none
+                                                                  &bootloader      &sys_reset       &studio_unlock                                                         &none  &none  &tog 2
             >;
             sensor-bindings = <&scroll_encoder>;
          };
