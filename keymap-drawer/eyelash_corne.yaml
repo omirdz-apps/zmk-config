@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: eyelash_corne}
 layers:
   DVORAK:
-  - '&esc_soft_off'
+  - $$mdi:keyboard-esc$$
   - '&td_sdq'
   - '&td_clt'
   - '&td_dgt'
@@ -50,7 +50,7 @@ layers:
   - $$mdi:apple-keyboard-option$$
   - '&td_Layers'
   FnSyNu:
-  - '&esc_soft_off'
+  - $$mdi:keyboard-esc$$
   - F5
   - F8
   - '&td_grave'
