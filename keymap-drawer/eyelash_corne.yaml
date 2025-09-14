@@ -61,7 +61,7 @@ layers:
   - '&td_2'
   - '&td_3'
   - INS
-  - Ctl++
+  - {t: Ctl+Sft+=, s: Ctl+Sft++}
   - {t: '$$mdi:backspace$$', type: backspace}
   - $$mdi:keyboard-tab$$
   - F10
