@@ -54,7 +54,7 @@
 
          esc_soft_off: behavior_tap_hold {
             compatible = "zmk,behavior-tap-hold";
-            #binding-cells = <2>;
+            #binding-cells = <0>;
             tapping-term-ms = <2000>;
             flavor = "balanced";
             bindings = <&kp ESC>, <&soft_off>;
@@ -518,7 +518,7 @@
          default_layer {
             display-name = "DVORAK";
             bindings = <
-               &esc_soft_off &kp ESC &soft_off  &td_sdq  &td_clt  &td_dgt  &kp P   &td_y                        &mm_pg_up                 &td_f   &td_g   &td_c   &kp R   &td_l   &kp BSPC
+               &esc_soft_off  &td_sdq  &td_clt  &td_dgt  &kp P   &td_y                        &mm_pg_up                 &td_f   &td_g   &td_c   &kp R   &td_l   &kp BSPC
                &kp TAB        &td_a    &td_o    &td_e    &td_u   &td_i             &mm_pg_lf  &kp LG(SPACE)  &mm_pg_rh  &kp D   &kp H   &kp T   &td_n   &td_s   &kp ENTER
                &td_SHFT       &td_sc   &kp Q    &kp J    &td_k   &td_x    &kp C_PP            &mm_pg_dn                 &kp B   &kp M   &kp W   &td_v   &td_z   &kp RSHIFT
                                           &kp LCTRL   &kp LGUI   &kp LALT                                               &kp SPACE   &kp RALT   &td_Layers
@@ -530,7 +530,7 @@
          functions_layer {
             display-name = "FnSyNu";
             bindings = <
-               &esc_soft_off &kp ESC &soft_off  &kp F5   &kp F8   &td_grave       &td_lbkt   &td_rbkt                        &mm_pg_up                 &td_1   &td_2   &td_3   &kp LC(EQUAL)  &kp INS     &kp BSPC
+               &esc_soft_off  &kp F5   &kp F8   &td_grave       &td_lbkt   &td_rbkt                        &mm_pg_up                 &td_1   &td_2   &td_3   &kp LC(EQUAL)  &kp INS     &kp BSPC
                &kp TAB        &kp F10  &kp F11  &mac_comment    &td_slash  &td_equal            &mm_pg_lf  &kp LG(SPACE)  &mm_pg_rh  &td_4   &td_5   &td_6   &kp LC(MINUS)  &kp DEL     &kp ENTER
                &kp LSHIFT     &kp F12  &none    &mac_uncomment  &td_minus  &td_bslh  &kp C_MUTE            &mm_pg_dn                 &td_7   &td_8   &td_9   &td_0   &kp K_APPLICATION  &kp RSHIFT
                                                     &kp LCTRL   &kp LGUI   &kp LALT                                                  &kp SPACE    &kp RALT   &tog 1
