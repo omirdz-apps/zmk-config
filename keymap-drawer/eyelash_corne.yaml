@@ -9,7 +9,7 @@ layers:
   - '&td_y'
   - $$mdi:arrow-up-bold$$
   - '&td_f'
-  - G
+  - '&td_g'
   - '&td_c'
   - R
   - '&td_l'
