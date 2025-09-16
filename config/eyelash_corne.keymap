@@ -338,17 +338,17 @@
             #binding-cells = <2>;
             flavor = "tap-preferred";
             tapping-term-ms = <300>;
-            bindings = <&mac_admin>, <&kp ESCAPE>;
+            bindings = <&mac_admin>, <&kp E>;
             display-name = "Mod-Tap-Admin";
          };
 
-
+         // Inicio
          mt_del_ini: mod_tap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "tap-preferred";
             tapping-term-ms = <300>;
-            bindings = <&mac_init>, <&kp DELETE>;
+            bindings = <&mac_init>, <&kp D>;
             display-name = "Mod-Tap-Inicio";
          };
       };
