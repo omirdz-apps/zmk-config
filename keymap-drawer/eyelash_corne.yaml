@@ -27,7 +27,7 @@ layers:
   - H
   - T
   - '&td_n'
-  - {t: S 0, h: '&mac_capt'}
+  - {t: '&mac_s', h: '&mac_capt'}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - '&td_SHFT'
   - '&td_sc'
