@@ -45,10 +45,10 @@ layers:
   - $$mdi:apple-keyboard-shift$$
   - $$mdi:apple-keyboard-control$$
   - LGUI
-  - $$mdi:apple-keyboard-option$$
-  - $$mdi:keyboard-space$$
-  - $$mdi:apple-keyboard-option$$
   - '&td_Layers'
+  - $$mdi:keyboard-space$$
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:apple-keyboard-option$$
   FnSyNu:
   - $$mdi:keyboard-esc$$
   - F5
@@ -76,7 +76,7 @@ layers:
   - '&td_5'
   - '&td_6'
   - {t: Ctl+-, s: Ctl+_}
-  - $$mdi:backspace-reverse-outline$$
+  - '&mt_del_ini'
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:apple-keyboard-shift$$
   - F12
@@ -94,10 +94,10 @@ layers:
   - $$mdi:apple-keyboard-shift$$
   - $$mdi:apple-keyboard-control$$
   - LGUI
-  - $$mdi:apple-keyboard-option$$
-  - $$mdi:keyboard-space$$
-  - $$mdi:apple-keyboard-option$$
   - {t: FnSyNu, h: toggle}
+  - $$mdi:keyboard-space$$
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:apple-keyboard-option$$
   SYSTEM:
   - BT CLR ALL
   - {h: '4', s: '$$mdi:bluetooth-connect$$'}
@@ -141,12 +141,12 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - $$mdi:progress-download$$
-  - {t: '$$mdi:backup-restore$$', type: bootloader}
-  - '&studio_unlock'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: SYSTEM, h: toggle}
+  - $$mdi:progress-download$$
+  - {t: '$$mdi:backup-restore$$', type: bootloader}
+  - '&studio_unlock'
 combos:
 - p: [0, 14, 28]
   k: '&soft_off'
