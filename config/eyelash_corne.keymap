@@ -348,7 +348,7 @@
             #binding-cells = <2>;
             flavor = "tap-preferred";
             tapping-term-ms = <300>;
-            bindings = <&mac_init>, <&kp D>;
+            bindings = <&mac_init>, <&mac_del>;
             display-name = "Mod-Tap-Inicio";
          };
       };
@@ -471,6 +471,12 @@
                <&macro_tap     &kp DELETE>,
                <&macro_release &kp LEFT_ALT>,
                <&macro_release &kp LEFT_CONTROL>;
+         };
+
+         mac_del: mac_del {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp DELETE>;
          };
       };
 
