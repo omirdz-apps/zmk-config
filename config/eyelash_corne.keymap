@@ -328,7 +328,7 @@
             #binding-cells = <2>;
             flavor = "tap-preferred";
             tapping-term-ms = <300>;
-            bindings = <&mac_capt>, <&kp S>;
+            bindings = <&mac_capt>, <&mac_s>;
             display-name = "Mod-Tap-S";
          };
 
@@ -462,6 +462,12 @@
                <&macro_tap     &kp S>,
                <&macro_release &kp LEFT_SHIFT>,
                <&macro_release &kp LEFT_GUI>;
+         };
+
+         mac_s: mac_s{
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp S>;
          };
 
          mac_admin: mac_admin {
