@@ -323,7 +323,7 @@
          };
 
          // Captura Pantalla
-         mt_s: mod_tap {
+         mt_s: mod_s {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "tap-preferred";
@@ -333,7 +333,7 @@
          };
 
          // Admin Tareas
-         mt_adm: mod_tap {
+         mt_adm: mod_adm {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "tap-preferred";
@@ -343,7 +343,7 @@
          };
 
          // Inicio
-         mt_del_ini: mod_tap {
+         mt_del_ini: mod_del_ini {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "tap-preferred";
