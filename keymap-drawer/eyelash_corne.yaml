@@ -27,7 +27,7 @@ layers:
   - H
   - T
   - '&td_n'
-  - {t: S S, h: LG(LS(S)) LGUI}
+  - '&mt_s LGUI LSHIFT S'
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - '&td_SHFT'
   - '&td_sc'
