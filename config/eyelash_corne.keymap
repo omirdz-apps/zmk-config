@@ -518,9 +518,9 @@
          default_layer {
             display-name = "DVORAK";
             bindings = <
-               &mt_adm   &td_sdq  &td_clt  &td_dgt  &kp P   &kp Y                        &mm_pg_up                 &kp F   &kp G   &kp C   &kp R   &mt_l  &kp BSPC
-               &td_TAB   &td_a    &td_o    &td_e    &td_u   &td_i             &mm_pg_lf  &kp LG(SPACE)  &mm_pg_rh  &kp D   &kp H   &kp T   &td_n   &mt_s  &kp ENTER
-               &td_SHFT  &td_sc   &kp Q    &kp J    &kp K   &kp X    &kp C_PP            &mm_pg_dn                 &kp B   &kp M   &kp W   &kp V   &kp Z  &kp RSHIFT
+               &mt_adm 0 0  &td_sdq  &td_clt  &td_dgt  &kp P   &kp Y                        &mm_pg_up                 &kp F   &kp G   &kp C   &kp R   &mt_l 0 0  &kp BSPC
+               &td_TAB      &td_a    &td_o    &td_e    &td_u   &td_i             &mm_pg_lf  &kp LG(SPACE)  &mm_pg_rh  &kp D   &kp H   &kp T   &td_n   &mt_s 0 0  &kp ENTER
+               &td_SHFT     &td_sc   &kp Q    &kp J    &kp K   &kp X    &kp C_PP            &mm_pg_dn                 &kp B   &kp M   &kp W   &kp V   &kp Z      &kp RSHIFT
                                      &kp LCTRL   &kp LGUI   &td_Layers                                             &kp SPACE   &none   &kp RALT   
             >;
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -530,9 +530,9 @@
          functions_layer {
             display-name = "FnSyNu";
             bindings = <
-               &kp ESC     &kp F5   &kp F8   &td_grave       &td_lbkt   &td_rbkt                        &mm_pg_up                 &td_1   &td_2   &td_3   &kp LC(EQUAL)  &kp INS      &kp BSPC
-               &kp TAB     &kp F10  &kp F11  &mac_comment    &td_slash  &td_equal            &mm_pg_lf  &kp LG(SPACE)  &mm_pg_rh  &td_4   &td_5   &td_6   &kp LC(MINUS)  &mt_del_ini  &kp ENTER
-               &kp LSHIFT  &kp F12  &none    &mac_uncomment  &td_minus  &td_bslh  &kp C_MUTE            &mm_pg_dn                 &td_7   &td_8   &td_9   &td_0   &kp K_APPLICATION   &kp RSHIFT
+               &kp ESC     &kp F5   &kp F8   &td_grave       &td_lbkt   &td_rbkt                        &mm_pg_up                 &td_1   &td_2   &td_3   &kp LC(EQUAL)  &kp INS          &kp BSPC
+               &kp TAB     &kp F10  &kp F11  &mac_comment    &td_slash  &td_equal            &mm_pg_lf  &kp LG(SPACE)  &mm_pg_rh  &td_4   &td_5   &td_6   &kp LC(MINUS)  &mt_del_ini 0 0  &kp ENTER
+               &kp LSHIFT  &kp F12  &none    &mac_uncomment  &td_minus  &td_bslh  &kp C_MUTE            &mm_pg_dn                 &td_7   &td_8   &td_9   &td_0   &kp K_APPLICATION       &kp RSHIFT
                                                  &kp LCTRL   &kp LGUI   &tog 1                                                    &kp SPACE   &none   &kp RALT
             >;
             sensor-bindings = <&inc_dec_kp C_NEXT C_PREV>;
