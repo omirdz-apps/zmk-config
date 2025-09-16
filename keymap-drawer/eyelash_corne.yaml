@@ -6,15 +6,15 @@ layers:
   - '&td_clt'
   - '&td_dgt'
   - P
-  - '&td_y'
+  - Y
   - {t: '$$mdi:arrow-up-bold$$', s: PG UP}
-  - '&td_f'
-  - '&td_g'
-  - '&td_c'
+  - F
+  - G
+  - C
   - R
-  - '&td_l'
+  - {t: L L, h: LGUI L LGUI}
   - {t: '$$mdi:backspace$$', type: backspace}
-  - $$mdi:keyboard-tab$$
+  - '&td_TAB'
   - '&td_a'
   - '&td_o'
   - '&td_e'
@@ -27,21 +27,21 @@ layers:
   - H
   - T
   - '&td_n'
-  - '&td_s'
+  - {t: S S, h: LG(LS(S)) LGUI}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - '&td_SHFT'
   - '&td_sc'
   - Q
   - J
-  - '&td_k'
-  - '&td_x'
+  - K
+  - X
   - $$mdi:play-pause$$
   - {t: '$$mdi:arrow-down-bold$$', s: PgDn}
   - B
   - M
   - W
-  - '&td_v'
-  - '&td_z'
+  - V
+  - Z
   - $$mdi:apple-keyboard-shift$$
   - $$mdi:apple-keyboard-control$$
   - LGUI
