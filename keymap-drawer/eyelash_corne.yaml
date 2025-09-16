@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: eyelash_corne}
 layers:
   DVORAK:
-  - '&mt_adm'
+  - {t: ESCAPE 0, h: '&mac_admin'}
   - '&td_sdq'
   - '&td_clt'
   - '&td_dgt'
@@ -12,7 +12,7 @@ layers:
   - G
   - C
   - R
-  - '&mt_l'
+  - {t: L 0, h: LGUI L 0}
   - {t: '$$mdi:backspace$$', type: backspace}
   - '&td_TAB'
   - '&td_a'
@@ -27,7 +27,7 @@ layers:
   - H
   - T
   - '&td_n'
-  - '&mt_s'
+  - {t: S 0, h: '&mac_capt'}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - '&td_SHFT'
   - '&td_sc'
@@ -76,7 +76,7 @@ layers:
   - '&td_5'
   - '&td_6'
   - {t: Ctl+-, s: Ctl+_}
-  - '&mt_del_ini'
+  - {t: '&mac_del', h: '&mac_init'}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:apple-keyboard-shift$$
   - F12
