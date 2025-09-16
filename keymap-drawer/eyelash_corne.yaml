@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: eyelash_corne}
 layers:
   DVORAK:
-  - '&mt_adm ESc'
+  - '&mt_adm'
   - '&td_sdq'
   - '&td_clt'
   - '&td_dgt'
@@ -12,7 +12,7 @@ layers:
   - G
   - C
   - R
-  - '&mt_l L'
+  - '&mt_l'
   - {t: '$$mdi:backspace$$', type: backspace}
   - '&td_TAB'
   - '&td_a'
@@ -27,7 +27,7 @@ layers:
   - H
   - T
   - '&td_n'
-  - '&mt_s S'
+  - '&mt_s'
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - '&td_SHFT'
   - '&td_sc'
