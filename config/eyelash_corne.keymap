@@ -486,8 +486,8 @@
          default_layer {
             display-name = "DVORAK";
             bindings = <
-               &mt_adm ESc   &td_sdq  &td_clt  &td_dgt  &kp P   &kp Y                        &mm_pg_up                 &kp F   &kp G   &kp C   &kp R   &mt_l L  &kp BSPC
-               &td_TAB   &td_a    &td_o    &td_e    &td_u   &td_i             &mm_pg_lf  &kp LG(SPACE)  &mm_pg_rh  &kp D   &kp H   &kp T   &td_n   &mt_s S  &kp ENTER
+               &mt_adm   &td_sdq  &td_clt  &td_dgt  &kp P   &kp Y                        &mm_pg_up                 &kp F   &kp G   &kp C   &kp R   &mt_l  &kp BSPC
+               &td_TAB   &td_a    &td_o    &td_e    &td_u   &td_i             &mm_pg_lf  &kp LG(SPACE)  &mm_pg_rh  &kp D   &kp H   &kp T   &td_n   &mt_s  &kp ENTER
                &td_SHFT  &td_sc   &kp Q    &kp J    &kp K   &kp X    &kp C_PP            &mm_pg_dn                 &kp B   &kp M   &kp W   &kp V   &kp Z  &kp RSHIFT
                                      &kp LCTRL   &kp LGUI   &kp LALT                                               &kp SPACE   &kp RALT   &td_Layers
             >;
