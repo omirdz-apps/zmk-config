@@ -12,7 +12,7 @@ layers:
   - G
   - C
   - R
-  - {t: L 0, h: LGUI L 0}
+  - {t: '&mac_l', h: '&mac_block'}
   - {t: '$$mdi:backspace$$', type: backspace}
   - '&td_TAB'
   - '&td_a'
