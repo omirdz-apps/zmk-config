@@ -40,25 +40,25 @@
             compatible = "zmk,behavior-tap-dance";
             display-name = "Shift/Caps Lock";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <250>;
             bindings = <&kp LEFT_SHIFT>, <&kp CAPS>;
+         };
+
+         td_TAB: td_TAB {
+            compatible = "zmk,behavior-tap-dance";
+            display-name = "TAB/BACK TAP";
+            #binding-cells = <0>;
+            tapping-term-ms = <250>;
+            bindings = <&kp TAB>, <&kp LS(TAB)>;
          };
 
          td_Layers: td_Layers {
             compatible = "zmk,behavior-tap-dance";
             display-name = "Intercambio L1 y L2";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <250>;
             bindings = <&tog 1>, <&tog 2>;
          };
-
-      //    esc_soft_off: behavior_tap_hold {
-      //       compatible = "zmk,behavior-tap-hold";
-      //       #binding-cells = <0>;
-      //       tapping-term-ms = <2000>;
-      //       flavor = "balanced";
-      //       bindings = <&kp ESC>, <&soft_off>;
-      //   };
 
          // =========================
          // VOCALES Y ñ
@@ -68,7 +68,7 @@
             display-name = "a/á";
             #binding-cells = <0>;
             tapping-term-ms = <250>;
-            bindings = <&kp A>, <&mac_a>, <&kp LS(A)>;
+            bindings = <&kp A>, <&mac_a>;
          };
 
          td_o: td_o {
@@ -76,7 +76,7 @@
             display-name = "o/ó";
             #binding-cells = <0>;
             tapping-term-ms = <250>;
-            bindings = <&kp O>, <&mac_o>, <&kp LS(O)>;
+            bindings = <&kp O>, <&mac_o>;
          };
 
          td_e: td_e {
@@ -84,7 +84,7 @@
             display-name = "e/é";
             #binding-cells = <0>;
             tapping-term-ms = <250>;
-            bindings = <&kp E>, <&mac_e>, <&kp LS(E)>;
+            bindings = <&kp E>, <&mac_e>;
          };
 
          td_u: td_u {
@@ -92,7 +92,7 @@
             display-name = "u/ú";
             #binding-cells = <0>;
             tapping-term-ms = <250>;
-            bindings = <&kp U>, <&mac_u>, <&kp LS(U)>;
+            bindings = <&kp U>, <&mac_u>;
          };
 
          td_i: td_i {
@@ -100,7 +100,7 @@
             display-name = "i/í";
             #binding-cells = <0>;
             tapping-term-ms = <250>;
-            bindings = <&kp I>, <&mac_i>, <&kp LS(I)>;
+            bindings = <&kp I>, <&mac_i>;
          };
          
          td_n: td_n {
@@ -108,7 +108,7 @@
             display-name = "n/ñ";
             #binding-cells = <0>;
             tapping-term-ms = <250>;
-            bindings = <&kp N>, <&mac_n>, <&kp LS(N)>;
+            bindings = <&kp N>, <&mac_n>;
          };
          
          // =========================
@@ -118,7 +118,7 @@
             compatible = "zmk,behavior-tap-dance";
             display-name = "1/!";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <250>;
             bindings = <&kp N1>, <&kp EXCL>;
          };
 
@@ -126,7 +126,7 @@
             compatible = "zmk,behavior-tap-dance";
             display-name = "2/@";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <250>;
             bindings = <&kp N2>, <&kp AT>;
          };
 
@@ -134,7 +134,7 @@
             compatible = "zmk,behavior-tap-dance";
             display-name = "3/#";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <250>;
             bindings = <&kp N3>, <&kp HASH>;
          };
 
@@ -142,7 +142,7 @@
             compatible = "zmk,behavior-tap-dance";
             display-name = "4/$";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <250>;
             bindings = <&kp N4>, <&kp DLLR>;
          };
 
@@ -150,7 +150,7 @@
             compatible = "zmk,behavior-tap-dance";
             display-name = "5/%";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <250>;
             bindings = <&kp N5>, <&kp PRCNT>;
          };
 
@@ -158,7 +158,7 @@
             compatible = "zmk,behavior-tap-dance";
             display-name = "6/^";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <250>;
             bindings = <&kp N6>, <&kp CARET>;
          };
 
@@ -166,7 +166,7 @@
             compatible = "zmk,behavior-tap-dance";
             display-name = "7/&";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <250>;
             bindings = <&kp N7>, <&kp AMPS>;
          };
 
@@ -174,7 +174,7 @@
             compatible = "zmk,behavior-tap-dance";
             display-name = "8/*";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <250>;
             bindings = <&kp N8>, <&kp ASTRK>;
          };
 
@@ -182,7 +182,7 @@
             compatible = "zmk,behavior-tap-dance";
             display-name = "9/(";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <250>;
             bindings = <&kp N9>, <&kp LPAR>;
          };
 
@@ -190,15 +190,18 @@
             compatible = "zmk,behavior-tap-dance";
             display-name = "0/)";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <250>;
             bindings = <&kp N0>, <&kp RPAR>;
          };
 
+         // =========================
+         // PUNTUACION
+         // =========================
          td_sdq: td_sdq {
             compatible = "zmk,behavior-tap-dance";
             display-name = "Single/Double Quotes";
             #binding-cells = <0>;
-            tapping-term-ms = <300>;
+            tapping-term-ms = <250>;
             bindings = <&kp SQT>, <&kp DQT>;
          };
          
@@ -206,7 +209,7 @@
             compatible = "zmk,behavior-tap-dance";
             display-name = "Comma/LessThan";
             #binding-cells = <0>;
-            tapping-term-ms = <300>;
+            tapping-term-ms = <250>;
             bindings = <&kp COMMA>, <&kp LT>;
          };
          
@@ -214,7 +217,7 @@
             compatible = "zmk,behavior-tap-dance";
             display-name = "Dot/GreaterThan";
             #binding-cells = <0>;
-            tapping-term-ms = <300>;
+            tapping-term-ms = <250>;
             bindings = <&kp DOT>, <&kp GT>;
          };
          
@@ -222,67 +225,8 @@
             compatible = "zmk,behavior-tap-dance";
             display-name = "Semicolon/Colon";
             #binding-cells = <0>;
-            tapping-term-ms = <300>;
+            tapping-term-ms = <250>;
             bindings = <&kp SEMI>, <&kp COLON>;
-         };
-         
-         // =========================
-         // ATAJOS CTRL
-         // =========================
-         td_c: td_c {
-            compatible = "zmk,behavior-tap-dance";
-            display-name = "c/C/Copy";
-            #binding-cells = <0>;
-            tapping-term-ms = <250>;
-            bindings = <&kp C>, <&kp LS(C)>, <&kp LC(C)>;
-         };
-
-         td_v: td_v {
-            compatible = "zmk,behavior-tap-dance";
-            display-name = "v/V/Paste";
-            #binding-cells = <0>;
-            tapping-term-ms = <250>;
-            bindings = <&kp V>, <&kp LS(V)>, <&kp LC(V)>;
-         };
-
-         td_x: td_x {
-            compatible = "zmk,behavior-tap-dance";
-            display-name = "x/X/Cut";
-            #binding-cells = <0>;
-            tapping-term-ms = <250>;
-            bindings = <&kp X>, <&kp LS(X)>, <&kp LC(X)>;
-         };
-
-         td_f: td_f {
-            compatible = "zmk,behavior-tap-dance";
-            display-name = "f/F/Search";
-            #binding-cells = <0>;
-            tapping-term-ms = <250>;
-            bindings = <&kp F>, <&kp LS(F)>, <&kp LC(F)>;
-         };
-         
-         td_y: td_y {
-            compatible = "zmk,behavior-tap-dance";
-            display-name = "y/Y/Redo";
-            #binding-cells = <0>;
-            tapping-term-ms = <250>;
-            bindings = <&kp Y>, <&kp LS(Y)>, <&kp LC(Y)>;
-         };
-         
-         td_z: td_z {
-            compatible = "zmk,behavior-tap-dance";
-            display-name = "z/Z/Undo";
-            #binding-cells = <0>;
-            tapping-term-ms = <250>;
-            bindings = <&kp Z>, <&kp LS(Z)>, <&kp LC(Z)>;
-         };
-         
-         td_g: td_g {
-            compatible = "zmk,behavior-tap-dance";
-            display-name = "g/G/Save";
-            #binding-cells = <0>;
-            tapping-term-ms = <250>;
-            bindings = <&kp G>, <&kp LS(G)>, <&kp LC(S)>;
          };
 
          // =========================
@@ -291,79 +235,50 @@
          td_grave: td_grave {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <250>;
             bindings = <&kp GRAVE>, <&kp LS(GRAVE)>;
          };
 
          td_lbkt: td_lbkt {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <250>;
             bindings = <&kp LBKT>, <&kp LS(LBKT)>;
          };
 
          td_rbkt: td_rbkt {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <250>;
             bindings = <&kp RBKT>, <&kp LS(RBKT)>;
          };
 
-         // Slash / Equal
          td_slash: td_slash {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <250>;
             bindings = <&kp SLASH>, <&kp LS(SLASH)>;
          };
 
          td_equal: td_equal {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <250>;
             bindings = <&kp EQUAL>, <&kp LS(EQUAL)>;
          };
 
-         // Minus / Backslash
          td_minus: td_minus {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <250>;
             bindings = <&kp MINUS>, <&kp LS(MINUS)>;
          };
 
          td_bslh: td_bslh {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <250>;
             bindings = <&kp BSLH>, <&kp LS(BSLH)>;
-         };
-
-         // =========================
-         // ATAJOS WINDOWS
-         // =========================
-         td_k: td_k {
-            compatible = "zmk,behavior-tap-dance";
-            display-name = "k/ClipBoard";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&kp K>, <&kp LG(V)>;
-         };
-
-         td_l: td_l {
-            compatible = "zmk,behavior-tap-dance";
-            display-name = "l/Block";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&kp L>, <&kp LG(L)>;
-         };
-
-         td_s: td_s {
-            compatible = "zmk,behavior-tap-dance";
-            display-name = "s/ScreenCapture";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&kp S>, <&kp LG(LS(S))>;
          };
 
          // =========================
@@ -373,28 +288,37 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp UP>, <&kp PG_UP>;
-            mods = <(MOD_LCTL)>;
+            mods = <(MOD_LGUI)>;
          };
 
          mm_pg_dn: mm_pg_dn {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp DOWN>, <&kp PAGE_DOWN>;
-            mods = <(MOD_LCTL)>;
+            mods = <(MOD_LGUI)>;
          };
 
          mm_pg_lf: mm_pg_lf {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp LEFT>, <&kp HOME>;
-            mods = <(MOD_LCTL)>;
+            mods = <(MOD_LGUI)>;
          };
 
          mm_pg_rh: mm_pg_rh {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp RIGHT>, <&kp END>;
-            mods = <(MOD_LCTL)>;
+            mods = <(MOD_LGUI)>;
+         };
+
+         mt_l: mod_tap {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <300>;
+            bindings = <&kp LGUI L>, <&kp L>;
+            display-name = "Mod-Tap";
          };
       };
 
@@ -518,10 +442,10 @@
          default_layer {
             display-name = "DVORAK";
             bindings = <
-               &kp ESC  &td_sdq  &td_clt  &td_dgt  &kp P   &td_y                        &mm_pg_up                 &td_f   &td_g   &td_c   &kp R   &td_l   &kp BSPC
-               &kp TAB        &td_a    &td_o    &td_e    &td_u   &td_i             &mm_pg_lf  &kp LG(SPACE)  &mm_pg_rh  &kp D   &kp H   &kp T   &td_n   &td_s   &kp ENTER
-               &td_SHFT       &td_sc   &kp Q    &kp J    &td_k   &td_x    &kp C_PP            &mm_pg_dn                 &kp B   &kp M   &kp W   &td_v   &td_z   &kp RSHIFT
-                                          &kp LCTRL   &kp LGUI   &kp LALT                                               &kp SPACE   &kp RALT   &td_Layers
+               &kp ESC   &td_sdq  &td_clt  &td_dgt  &kp P   &kp Y                        &mm_pg_up                 &kp F   &kp G   &kp C   &kp R   &mt_l LGUI L  &kp BSPC
+               &td_TAB   &td_a    &td_o    &td_e    &td_u   &td_i             &mm_pg_lf  &kp LG(SPACE)  &mm_pg_rh  &kp D   &kp H   &kp T   &td_n   &kp S         &kp ENTER
+               &td_SHFT  &td_sc   &kp Q    &kp J    &kp K   &kp X    &kp C_PP            &mm_pg_dn                 &kp B   &kp M   &kp W   &kp V   &kp Z         kp RSHIFT
+                                     &kp LCTRL   &kp LGUI   &kp LALT                                               &kp SPACE   &kp RALT   &td_Layers
             >;
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
          };
@@ -533,7 +457,7 @@
                &kp ESC     &kp F5   &kp F8   &td_grave       &td_lbkt   &td_rbkt                        &mm_pg_up                 &td_1   &td_2   &td_3   &kp LC(EQUAL)  &kp INS     &kp BSPC
                &kp TAB     &kp F10  &kp F11  &mac_comment    &td_slash  &td_equal            &mm_pg_lf  &kp LG(SPACE)  &mm_pg_rh  &td_4   &td_5   &td_6   &kp LC(MINUS)  &kp DEL     &kp ENTER
                &kp LSHIFT  &kp F12  &none    &mac_uncomment  &td_minus  &td_bslh  &kp C_MUTE            &mm_pg_dn                 &td_7   &td_8   &td_9   &td_0   &kp K_APPLICATION  &kp RSHIFT
-                                                    &kp LCTRL   &kp LGUI   &kp LALT                                                  &kp SPACE    &kp RALT   &tog 1
+                                                 &kp LCTRL   &kp LGUI   &kp LALT                                                  &kp SPACE    &kp RALT   &tog 1
             >;
             sensor-bindings = <&inc_dec_kp C_NEXT C_PREV>;
          };
