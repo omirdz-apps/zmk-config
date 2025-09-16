@@ -313,7 +313,7 @@
          };
 
          // Bloqueo
-         mt_l: mod_tap {
+         mt_l: mod_l{
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "tap-preferred";
