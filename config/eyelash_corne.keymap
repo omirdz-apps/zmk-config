@@ -338,7 +338,7 @@
             #binding-cells = <2>;
             flavor = "tap-preferred";
             tapping-term-ms = <300>;
-            bindings = <&mac_admin>, <&kp ESCAPE>;
+            bindings = <&mac_admin>, <&mac_esc>;
             display-name = "Mod-Tap-Admin";
          };
 
@@ -458,6 +458,12 @@
                <&macro_tap     &kp ESCAPE>,
                <&macro_release &kp LEFT_SHIFT>,
                <&macro_release &kp LEFT_CONTROL>;
+         };
+
+         mac_esc: mac_esc{
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp ESCAPE>;
          };
 
          mac_init: mac_init {
