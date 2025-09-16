@@ -312,6 +312,7 @@
             mods = <(MOD_LGUI)>;
          };
 
+         // Bloqueo
          mt_l: mod_tap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -321,6 +322,7 @@
             display-name = "Mod-Tap-L";
          };
 
+         // Captura Pantalla
          mt_s: mod_tap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -330,6 +332,7 @@
             display-name = "Mod-Tap-S";
          };
 
+         // Admin Tareas
          mt_adm: mod_tap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -339,12 +342,13 @@
             display-name = "Mod-Tap-Admin";
          };
 
-         mt_init: mod_tap {
+
+         mt_del_ini: mod_tap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "tap-preferred";
             tapping-term-ms = <300>;
-            bindings = <&mac_init>, <&kp >;
+            bindings = <&mac_init>, <&kp DELETE>;
             display-name = "Mod-Tap-Inicio";
          };
       };
@@ -511,7 +515,7 @@
                &mt_adm   &td_sdq  &td_clt  &td_dgt  &kp P   &kp Y                        &mm_pg_up                 &kp F   &kp G   &kp C   &kp R   &mt_l  &kp BSPC
                &td_TAB   &td_a    &td_o    &td_e    &td_u   &td_i             &mm_pg_lf  &kp LG(SPACE)  &mm_pg_rh  &kp D   &kp H   &kp T   &td_n   &mt_s  &kp ENTER
                &td_SHFT  &td_sc   &kp Q    &kp J    &kp K   &kp X    &kp C_PP            &mm_pg_dn                 &kp B   &kp M   &kp W   &kp V   &kp Z  &kp RSHIFT
-                                     &kp LCTRL   &kp LGUI   &kp LALT                                               &kp SPACE   &kp RALT   &td_Layers
+                                     &kp LCTRL   &kp LGUI   &td_Layers                                             &kp SPACE   &none   &kp RALT   
             >;
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
          };
@@ -520,10 +524,10 @@
          functions_layer {
             display-name = "FnSyNu";
             bindings = <
-               &kp ESC     &kp F5   &kp F8   &td_grave       &td_lbkt   &td_rbkt                        &mm_pg_up                 &td_1   &td_2   &td_3   &kp LC(EQUAL)  &kp INS     &kp BSPC
-               &kp TAB     &kp F10  &kp F11  &mac_comment    &td_slash  &td_equal            &mm_pg_lf  &kp LG(SPACE)  &mm_pg_rh  &td_4   &td_5   &td_6   &kp LC(MINUS)  &kp DEL     &kp ENTER
-               &kp LSHIFT  &kp F12  &none    &mac_uncomment  &td_minus  &td_bslh  &kp C_MUTE            &mm_pg_dn                 &td_7   &td_8   &td_9   &td_0   &kp K_APPLICATION  &kp RSHIFT
-                                                 &kp LCTRL   &kp LGUI   &kp LALT                                                  &kp SPACE    &kp RALT   &tog 1
+               &kp ESC     &kp F5   &kp F8   &td_grave       &td_lbkt   &td_rbkt                        &mm_pg_up                 &td_1   &td_2   &td_3   &kp LC(EQUAL)  &kp INS      &kp BSPC
+               &kp TAB     &kp F10  &kp F11  &mac_comment    &td_slash  &td_equal            &mm_pg_lf  &kp LG(SPACE)  &mm_pg_rh  &td_4   &td_5   &td_6   &kp LC(MINUS)  &mt_del_ini  &kp ENTER
+               &kp LSHIFT  &kp F12  &none    &mac_uncomment  &td_minus  &td_bslh  &kp C_MUTE            &mm_pg_dn                 &td_7   &td_8   &td_9   &td_0   &kp K_APPLICATION   &kp RSHIFT
+                                                 &kp LCTRL   &kp LGUI   &tog 1                                                    &kp SPACE   &none   &kp RALT
             >;
             sensor-bindings = <&inc_dec_kp C_NEXT C_PREV>;
          };
@@ -535,7 +539,7 @@
                &bt BT_CLR_ALL   &bt BT_SEL 3     &bt BT_SEL 2     &bt BT_SEL 1     &bt BT_SEL 0     &bt BT_CLR                             &mmv MOVE_UP                    &kp PRINTSCREEN  &kp SCROLLLOCK  &kp PAUSE_BREAK  &none  &none  &none
                &rgb_ug RGB_ON   &rgb_ug RGB_EFF  &rgb_ug RGB_BRI  &rgb_ug RGB_SAI  &rgb_ug RGB_SPI  &out OUT_BLE           &mmv MOVE_LEFT  &kp LG(SPACE)  &mmv MOVE_RIGHT  &none  &none  &none  &none  &none  &none
                &rgb_ug RGB_OFF  &rgb_ug RGB_EFR  &rgb_ug RGB_BRD  &rgb_ug RGB_SAD  &rgb_ug RGB_SPD  &out OUT_USB  &kp C_PP                 &mmv MOVE_DOWN                  &mkp LCLK  &mkp MCLK &mkp RCLK &none  &none  &none
-                                                                  &bootloader      &sys_reset       &studio_unlock                                                         &none  &none  &tog 2
+                                                                                    &none   &none   &tog 2                                                                 &bootloader   &sys_reset   &studio_unlock
             >;
             sensor-bindings = <&scroll_encoder>;
          };
