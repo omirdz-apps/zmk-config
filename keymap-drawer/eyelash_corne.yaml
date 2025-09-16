@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: eyelash_corne}
 layers:
   DVORAK:
-  - {t: ESCAPE 0, h: '&mac_admin'}
+  - {t: '&mac_esc', h: '&mac_admin'}
   - '&td_sdq'
   - '&td_clt'
   - '&td_dgt'
