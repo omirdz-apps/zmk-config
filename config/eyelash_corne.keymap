@@ -64,12 +64,12 @@
          };
 
          // Soft Off
-         mt_so: mod_so {
+         mt_so_bkspc: mod_so_bkspc {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "tap-preferred";
             tapping-term-ms = <200>;
-            bindings = <&soft_off>, <&kp BACKSPACE>;
+            bindings = <&soft_off>, <&mac_bkspc>;
             display-name = "Mod-Tap-Soft_Off";
          };
 
@@ -377,6 +377,9 @@
       };
 
       macros {
+         // =========================
+         // Acentos
+         // =========================
          mac_a: mac_a {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -430,7 +433,10 @@
                <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N4 &kp KP_N1>,
                <&macro_release &kp LALT>;
          };
- 
+
+         // =========================
+         // Comentarios
+         // ========================= 
          mac_comment: mac_comment {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -455,6 +461,15 @@
                <&macro_tap     &kp U>,
                <&macro_release &kp K>,
                <&macro_release &kp LEFT_CONTROL>;
+         };
+
+         // =========================
+         // Hold-Taps
+         // =========================
+         mac_bkspc: mac_bkspc{
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp BACKSPACE>;
          };
 
          mac_block: mac_block {
@@ -575,7 +590,7 @@
          default_layer {
             display-name = "DVORAK";
             bindings = <
-               &mt_adm 0 0  &td_sdq  &td_clt  &td_dgt  &kp P   &kp Y                        &mm_pg_up                 &kp F   &kp G   &kp C   &mt_l 0 0  &mt_l 0 0  &mt_so 0 0
+               &mt_adm 0 0  &td_sdq  &td_clt  &td_dgt  &kp P   &kp Y                        &mm_pg_up                 &kp F   &kp G   &kp C   &mt_l 0 0  &mt_l 0 0  &mt_so_bkspc 0 0
                &td_TAB      &td_a    &td_o    &td_e    &td_u   &td_i             &mm_pg_lf  &kp LG(SPACE)  &mm_pg_rh  &kp D   &kp H   &kp T   &td_n      &mt_s 0 0  &kp ENTER
                &td_SHFT     &td_sc   &kp Q    &kp J    &kp K   &kp X    &kp C_PP            &mm_pg_dn                 &kp B   &kp M   &kp W   &kp V      &kp Z      &kp RSHIFT
                                      &kp LCTRL   &kp LGUI   &td_Layers                                             &kp SPACE   &none   &kp RALT   
