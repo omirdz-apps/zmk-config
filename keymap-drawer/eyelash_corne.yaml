@@ -11,9 +11,9 @@ layers:
   - F
   - G
   - C
-  - R
   - {t: '&mac_l', h: '&mac_block'}
-  - {t: '$$mdi:backspace$$', type: backspace}
+  - {t: '&mac_l', h: '&mac_block'}
+  - {t: BACKSPACE 0, h: '&soft_off'}
   - '&td_TAB'
   - '&td_a'
   - '&td_o'
@@ -147,6 +147,3 @@ layers:
   - $$mdi:progress-download$$
   - {t: '$$mdi:backup-restore$$', type: bootloader}
   - '&studio_unlock'
-combos:
-- p: [0, 14, 28]
-  k: '&soft_off'
