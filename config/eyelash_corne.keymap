@@ -64,12 +64,12 @@
          };
 
          // Soft Off
-         mt_so_bkspc: mod_so_bkspc {
+         mt_so_q: mod_so_q {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "tap-preferred";
             tapping-term-ms = <200>;
-            bindings = <&soft_off>, <&mac_bkspc>;
+            bindings = <&soft_off>, <&mac_q>;
             display-name = "Mod-Tap-Soft_Off";
          };
 
@@ -466,10 +466,10 @@
          // =========================
          // Hold-Taps
          // =========================
-         mac_bkspc: mac_bkspc{
+         mac_q: mac_q{
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp BACKSPACE>;
+            bindings = <&kp Q>;
          };
 
          mac_block: mac_block {
@@ -590,10 +590,10 @@
          default_layer {
             display-name = "DVORAK";
             bindings = <
-               &mt_adm 0 0  &td_sdq  &td_clt  &td_dgt  &kp P   &kp Y                        &mm_pg_up                 &kp F   &kp G   &kp C   &mt_run 0 0  &mt_l 0 0  &mt_so_bkspc 0 0
-               &td_TAB      &td_a    &td_o    &td_e    &td_u   &td_i             &mm_pg_lf  &kp LG(SPACE)  &mm_pg_rh  &kp D   &kp H   &kp T   &td_n        &mt_s 0 0  &kp ENTER
-               &td_SHFT     &td_sc   &kp Q    &kp J    &kp K   &kp X    &kp C_PP            &mm_pg_dn                 &kp B   &kp M   &kp W   &kp V        &kp Z      &kp RSHIFT
-                                     &kp LCTRL   &kp LGUI   &td_Layers                                             &kp SPACE   &none   &kp RALT
+               &mt_adm 0 0  &td_sdq  &td_clt       &td_dgt  &kp P   &kp Y                        &mm_pg_up                 &kp F   &kp G   &kp C   &mt_run 0 0  &mt_l 0 0  &kp BSPC
+               &td_TAB      &td_a    &td_o         &td_e    &td_u   &td_i             &mm_pg_lf  &kp LG(SPACE)  &mm_pg_rh  &kp D   &kp H   &kp T   &td_n        &mt_s 0 0  &kp ENTER
+               &td_SHFT     &td_sc   &mt_so_q 0 0  &kp J    &kp K   &kp X    &kp C_PP            &mm_pg_dn                 &kp B   &kp M   &kp W   &kp V        &kp Z      &kp RSHIFT
+                                             &kp LCTRL   &kp LGUI   &td_Layers                                             &kp SPACE   &none   &kp RALT
             >;
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
          };
