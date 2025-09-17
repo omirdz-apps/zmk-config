@@ -47,7 +47,7 @@ layers:
   - LGUI
   - '&td_Layers'
   - $$mdi:keyboard-space$$
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-option$$
   FnSyNu:
   - $$mdi:keyboard-esc$$
@@ -96,7 +96,7 @@ layers:
   - LGUI
   - {t: FnSyNu, h: toggle}
   - $$mdi:keyboard-space$$
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-option$$
   SYSTEM:
   - BT CLR ALL
