@@ -11,7 +11,7 @@ layers:
   - F
   - G
   - C
-  - {t: '&mac_l', h: '&mac_block'}
+  - {t: '&mac_r', h: '&mac_run'}
   - {t: '&mac_l', h: '&mac_block'}
   - {t: '&mac_bkspc', h: '&soft_off'}
   - '&td_TAB'
