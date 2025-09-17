@@ -13,7 +13,7 @@ layers:
   - C
   - {t: '&mac_l', h: '&mac_block'}
   - {t: '&mac_l', h: '&mac_block'}
-  - {t: BACKSPACE 0, h: '&soft_off'}
+  - {t: '&mac_bkspc', h: '&soft_off'}
   - '&td_TAB'
   - '&td_a'
   - '&td_o'
