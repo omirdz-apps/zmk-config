@@ -13,7 +13,7 @@ layers:
   - C
   - {t: '&mac_r', h: '&mac_run'}
   - {t: '&mac_l', h: '&mac_block'}
-  - {t: '&mac_bkspc', h: '&soft_off'}
+  - {t: '$$mdi:backspace$$', type: backspace}
   - '&td_TAB'
   - '&td_a'
   - '&td_o'
@@ -31,7 +31,7 @@ layers:
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - '&td_SHFT'
   - '&td_sc'
-  - Q
+  - {t: '&mac_q', h: '&soft_off'}
   - J
   - K
   - X
