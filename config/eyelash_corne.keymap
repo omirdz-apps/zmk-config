@@ -29,7 +29,10 @@
 };
 
 // Apagado suave
-&soft_off { hold-time-ms = <2000>; };
+&soft_off {
+   hold-time-ms = <4000>;
+   /delete-property/ split-peripheral-off-on-press;
+};
 
 // =========================
 // BEHAVIORS
@@ -58,6 +61,16 @@
             #binding-cells = <0>;
             tapping-term-ms = <250>;
             bindings = <&tog 1>, <&tog 2>;
+         };
+
+         // Soft Off
+         mt_so: mod_so {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            bindings = <&soft_off>, <&kp BACKSPACE>;
+            display-name = "Mod-Tap-Soft_Off";
          };
 
          // =========================
@@ -351,6 +364,16 @@
             bindings = <&mac_init>, <&mac_del>;
             display-name = "Mod-Tap-Inicio";
          };
+         
+         // Run
+         mt_run: mod_run {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <300>;
+            bindings = <&mac_run>, <&mac_r>;
+            display-name = "Mod-Tap-Inicio";
+         };
       };
 
       macros {
@@ -507,6 +530,23 @@
             #binding-cells = <0>;
             bindings = <&kp DELETE>;
          };
+
+         mac_run: mac_run {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <10>;
+            tap-ms = <10>;
+            bindings = 
+               <&macro_press   &kp LEFT_GUI>,
+               <&macro_tap     &kp R>,
+               <&macro_release &kp LEFT_GUI>;
+         };
+
+         mac_r: mac_r {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp R>;
+         };
       };
 
       // =========================
@@ -524,18 +564,6 @@
          bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
          tap-ms = <100>;
       };
-
-      // =========================
-      // COMBOS
-      // =========================
-      combos {
-         compatible = "zmk,combos";
-
-         softoff {
-               bindings = <&soft_off>;
-               key-positions = <0 14 28>;
-         };
-      };
    
       // =========================
       // KEYMAP
@@ -547,9 +575,9 @@
          default_layer {
             display-name = "DVORAK";
             bindings = <
-               &mt_adm 0 0  &td_sdq  &td_clt  &td_dgt  &kp P   &kp Y                        &mm_pg_up                 &kp F   &kp G   &kp C   &kp R   &mt_l 0 0  &kp BSPC
-               &td_TAB      &td_a    &td_o    &td_e    &td_u   &td_i             &mm_pg_lf  &kp LG(SPACE)  &mm_pg_rh  &kp D   &kp H   &kp T   &td_n   &mt_s 0 0  &kp ENTER
-               &td_SHFT     &td_sc   &kp Q    &kp J    &kp K   &kp X    &kp C_PP            &mm_pg_dn                 &kp B   &kp M   &kp W   &kp V   &kp Z      &kp RSHIFT
+               &mt_adm 0 0  &td_sdq  &td_clt  &td_dgt  &kp P   &kp Y                        &mm_pg_up                 &kp F   &kp G   &kp C   &mt_l 0 0  &mt_l 0 0  &mt_so 0 0
+               &td_TAB      &td_a    &td_o    &td_e    &td_u   &td_i             &mm_pg_lf  &kp LG(SPACE)  &mm_pg_rh  &kp D   &kp H   &kp T   &td_n      &mt_s 0 0  &kp ENTER
+               &td_SHFT     &td_sc   &kp Q    &kp J    &kp K   &kp X    &kp C_PP            &mm_pg_dn                 &kp B   &kp M   &kp W   &kp V      &kp Z      &kp RSHIFT
                                      &kp LCTRL   &kp LGUI   &td_Layers                                             &kp SPACE   &none   &kp RALT   
             >;
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
