@@ -301,28 +301,28 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp UP>, <&kp PG_UP>;
-            mods = <MOD_LGUI>;
+            mods = <MOD_LCTL>;
          };
 
          mm_pg_dn: mm_pg_dn {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp DOWN>, <&kp PAGE_DOWN>;
-            mods = <MOD_LGUI>;
+            mods = <MOD_LCTL>;
          };
 
          mm_pg_lf: mm_pg_lf {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp LEFT>, <&kp HOME>;
-            mods = <MOD_LGUI>;
+            mods = <MOD_LCTL>;
          };
 
          mm_pg_rh: mm_pg_rh {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp RIGHT>, <&kp END>;
-            mods = <MOD_LGUI>;
+            mods = <MOD_LCTL>;
          };
 
          // Bloqueo
