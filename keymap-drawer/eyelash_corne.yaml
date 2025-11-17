@@ -1,19 +1,19 @@
 layout: {zmk_keyboard: eyelash_corne}
 layers:
   DVORAK:
-  - {t: '&mac_esc', h: '&mac_admin'}
-  - '&td_sdq'
-  - '&td_clt'
-  - '&td_dgt'
+  - $$mdi:keyboard-esc$$
+  - {t: '''', s: '"'}
+  - {t: ',', s: <}
+  - {t: ., s: '>'}
   - P
   - Y
   - {t: '$$mdi:arrow-up-bold$$', s: PG UP}
   - F
   - G
   - C
-  - {t: '&mac_r', h: '&mac_run'}
-  - {t: '&mac_l', h: '&mac_block'}
-  - {t: '$$mdi:backspace$$', type: backspace}
+  - R
+  - L
+  - {t: '$$mdi:backspace$$', s: '$$mdi:backspace-reverse-outline$$'}
   - '&td_TAB'
   - '&td_a'
   - '&td_o'
@@ -27,10 +27,10 @@ layers:
   - H
   - T
   - '&td_n'
-  - {t: '&mac_s', h: '&mac_capt'}
+  - S
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - '&td_SHFT'
-  - '&td_sc'
+  - {t: ;, s: ':'}
   - {t: '&mac_q', h: '&soft_off'}
   - J
   - K
@@ -43,9 +43,9 @@ layers:
   - V
   - Z
   - $$mdi:apple-keyboard-shift$$
-  - $$mdi:apple-keyboard-control$$
-  - LGUI
   - '&td_Layers'
+  - LGUI
+  - $$mdi:keyboard-space$$
   - $$mdi:keyboard-space$$
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-option$$
@@ -53,48 +53,48 @@ layers:
   - $$mdi:keyboard-esc$$
   - F5
   - F8
-  - '&td_grave'
-  - '&td_lbkt'
-  - '&td_rbkt'
-  - {t: '$$mdi:arrow-up-bold$$', s: PG UP}
-  - '&td_1'
-  - '&td_2'
-  - '&td_3'
-  - {t: Ctl+=, s: Ctl++}
-  - INS
-  - {t: '$$mdi:backspace$$', type: backspace}
-  - $$mdi:keyboard-tab$$
   - F10
   - F11
-  - '&mac_comment'
-  - '&td_slash'
-  - '&td_equal'
+  - F12
+  - {t: '$$mdi:arrow-up-bold$$', s: PG UP}
+  - '1'
+  - '2'
+  - '3'
+  - {t: Ctl+=, s: Ctl++}
+  - INS
+  - {t: '$$mdi:backspace$$', s: '$$mdi:backspace-reverse-outline$$'}
+  - $$mdi:keyboard-tab$$
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '`', s: '~'}
+  - {t: '[', s: '{'}
+  - {t: ']', s: '}'}
+  - {t: /, s: '?'}
   - {t: '$$mdi:arrow-left-bold$$', s: HOME}
   - Gui+$$mdi:keyboard-space$$
   - {t: '$$mdi:arrow-right-bold$$', s: END}
-  - '&td_4'
-  - '&td_5'
-  - '&td_6'
+  - '4'
+  - '5'
+  - '6'
   - {t: Ctl+-, s: Ctl+_}
-  - {t: '&mac_del', h: '&mac_init'}
+  - APPLICATION
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:apple-keyboard-shift$$
-  - F12
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - '&mac_uncomment'
-  - '&td_minus'
-  - '&td_bslh'
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '=', s: +}
+  - {t: '-', s: _}
+  - {t: \, s: '|'}
   - $$mdi:volume-off$$
   - {t: '$$mdi:arrow-down-bold$$', s: PgDn}
-  - '&td_7'
-  - '&td_8'
-  - '&td_9'
-  - '&td_0'
-  - APPLICATION
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - '&td_com_uncom'
   - $$mdi:apple-keyboard-shift$$
-  - $$mdi:apple-keyboard-control$$
-  - LGUI
   - {t: FnSyNu, h: toggle}
+  - LGUI
+  - $$mdi:keyboard-space$$
   - $$mdi:keyboard-space$$
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-option$$
@@ -141,9 +141,9 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: SYSTEM, h: toggle}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:progress-download$$
   - {t: '$$mdi:backup-restore$$', type: bootloader}
   - '&studio_unlock'
