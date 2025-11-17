@@ -236,6 +236,12 @@
                <&macro_release &kp LALT>;
          };
 
+         mac_q: mac_q {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap &kp Q>;
+         };
+
          // =========================
          // Comentarios
          // ========================= 
