@@ -185,55 +185,61 @@
          mac_a: mac_a {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = 
-               <&macro_press   &kp LALT>,
-               <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N2 &kp KP_N5>,
-               <&macro_release &kp LALT>;
+            bindings =
+               <&macro_press   &kp RGUI>,
+               <&macro_tap     &kp APOSTROPHE>,
+               <&macro_tap     &kp A>,
+               <&macro_release &kp RGUI>;
          };
 
          mac_e: mac_e {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = 
-               <&macro_press   &kp LALT>,
-               <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N3 &kp KP_N3>,
-               <&macro_release &kp LALT>;
+            bindings =
+               <&macro_press   &kp RGUI>,
+               <&macro_tap     &kp APOSTROPHE>,
+               <&macro_tap     &kp E>,
+               <&macro_release &kp RGUI>;
          };
 
          mac_i: mac_i {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = 
-               <&macro_press   &kp LALT>,
-               <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N3 &kp KP_N7>,
-               <&macro_release &kp LALT>;
+            bindings =
+               <&macro_press   &kp RGUI>,
+               <&macro_tap     &kp APOSTROPHE>,
+               <&macro_tap     &kp I>,
+               <&macro_release &kp RGUI>;
          };
 
          mac_o: mac_o {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = 
-               <&macro_press   &kp LALT>, 
-               <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N4 &kp KP_N3>,
-               <&macro_release &kp LALT>;
+            bindings =
+               <&macro_press   &kp RGUI>,
+               <&macro_tap     &kp APOSTROPHE>,
+               <&macro_tap     &kp O>,
+               <&macro_release &kp RGUI>;
          };
 
          mac_u: mac_u {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = 
-               <&macro_press   &kp LALT>,
-               <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N5 &kp KP_N0>,
-               <&macro_release &kp LALT>;
+            bindings =
+               <&macro_press   &kp RGUI>,
+               <&macro_tap     &kp APOSTROPHE>,
+               <&macro_tap     &kp U>,
+               <&macro_release &kp RGUI>;
          };
 
          mac_n: mac_n {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = 
-               <&macro_press   &kp LALT>,
-               <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N4 &kp KP_N1>,
-               <&macro_release &kp LALT>;
+            bindings =
+               <&macro_press   &kp RGUI>,
+               <&macro_tap     &kp TILDE>,
+               <&macro_tap     &kp N>,
+               <&macro_release &kp RGUI>;
          };
 
          mac_q: mac_q {
