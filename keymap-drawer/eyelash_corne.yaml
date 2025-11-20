@@ -5,7 +5,7 @@ layers:
   - {t: '''', s: '"'}
   - {t: ',', s: <}
   - {t: ., s: F1}
-  - '&mm_p_run'
+  - {t: P, s: F2}
   - {t: Y, s: F4}
   - {t: '$$mdi:arrow-up-bold$$', s: PG UP}
   - F
