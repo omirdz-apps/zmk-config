@@ -171,7 +171,7 @@
             mods = <MOD_RALT>;
          };
 
-         mm_g_run: mm_p_run {
+         mm_p_run: mm_p_run {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp P>, <&kp F2>;
