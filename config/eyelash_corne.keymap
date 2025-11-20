@@ -163,18 +163,48 @@
             bindings = <&kp BSPC>, <&kp DEL>;
             mods = <MOD_LSFT>;
          };
+
+         mm_dot_alter: mm_dot_alter {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp DOT>, <&kp F1>;
+            mods = <MOD_RALT>;
+         };
+
+         mm_g_run: mm_p_run {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp P>, <&kp F2>;
+            mods = <MOD_RALT>;
+         };
+
+         mm_y_close: mm_y_close {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp Y>, <&kp F4>;
+            mods = <MOD_RALT>;
+         };
+
          
          // =========================
          // Hold-Taps
          // =========================
          // Soft Off
-         mt_so_q: mod_so_q {
+         ht_so_q: ht_so_q {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "tap-preferred";
             tapping-term-ms = <200>;
-            bindings = <&soft_off>, <&mac_q>;
-            display-name = "Mod-Tap-Soft_Off";
+            bindings = <&soft_off>, <&mac_q>;        
+         };
+
+         // Soft Off
+         ht_cls_esc: ht_cls_esc {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            bindings = <&mac_cls>, <&mac_esc>;        
          };
       };
 
@@ -248,6 +278,12 @@
             bindings = <&macro_tap &kp Q>;
          };
 
+         mac_esc: mac_esc {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap &kp ESC>;
+         };
+
          // =========================
          // Comentarios
          // ========================= 
@@ -275,6 +311,19 @@
                <&macro_tap     &kp U>,
                <&macro_release &kp K>,
                <&macro_release &kp LEFT_CONTROL>;
+         };
+ 
+         mac_cls: mac_cls {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <10>;
+            tap-ms = <10>;
+            bindings = 
+               <&macro_press   &kp RCTRL>,
+               <&macro_press   &kp RALT>,
+               <&macro_tap     &kp DEL>,
+               <&macro_release &kp RALT>,
+               <&macro_release &kp RCTRL>;
          };
       };
 
@@ -304,10 +353,10 @@
          default_layer {
             display-name = "DVORAK";
             bindings = <
-               &kp ESC   &kp SINGLE_QUOTE  &kp COMMA     &kp DOT  &kp P  &kp Y                       &mm_pg_up                  &kp F  &kp G  &kp C  &kp R  &kp L  &mm_bks_del
-               &td_TAB   &td_a             &td_o         &td_e    &td_u  &td_i            &mm_pg_lf  &kp LG(SPACE)  &mm_pg_rh   &kp D  &kp H  &kp T  &td_n  &kp S  &kp ENTER
-               &td_SHFT  &kp SEMICOLON     &mt_so_q 0 0  &kp J    &kp K  &kp X    &kp C_PP           &mm_pg_dn                  &kp B  &kp M  &kp W  &kp V  &kp Z  &kp RSHIFT
-                                                 &td_Layers   &kp LGUI   &kp SPACE                                              &kp SPACE   &kp RCTRL   &kp RALT
+               &ht_cls_esc 0 0  &kp SINGLE_QUOTE  &kp COMMA     &mm_dot_alter  &mm_p_run  &mm_y_close                       &mm_pg_up                  &kp F  &kp G  &kp C  &kp R  &kp L  &mm_bks_del
+               &td_TAB          &td_a             &td_o         &td_e          &td_u      &td_i                  &mm_pg_lf  &kp LG(SPACE)  &mm_pg_rh   &kp D  &kp H  &kp T  &td_n  &kp S  &kp ENTER
+               &td_SHFT         &kp SEMICOLON     &ht_so_q 0 0  &kp J          &kp K      &kp X          &kp C_PP           &mm_pg_dn                  &kp B  &kp M  &kp W  &kp V  &kp Z  &kp RSHIFT
+                                                                   &kp LCTRL   &kp LGUI   &td_Layers                                                   &kp SPACE   &kp RCTRL   &kp RALT
             >;
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
          };
@@ -316,10 +365,10 @@
          functions_layer {
             display-name = "FnSyNu";
             bindings = <
-               &kp ESC     &kp F5  &kp F8     &kp F10    &kp F11    &kp F12                          &mm_pg_up                  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp LC(EQUAL)  &kp INS            &mm_bks_del
-               &kp TAB     &none   &kp GRAVE  &kp LBKT   &kp RBKT   &kp SLASH             &mm_pg_lf  &kp LG(SPACE)  &mm_pg_rh   &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp LC(MINUS)  &kp K_APPLICATION  &kp ENTER
-               &kp LSHIFT  &none   &none      &kp EQUAL  &kp MINUS  &kp BSLH    &kp C_MUTE           &mm_pg_dn                  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0   &td_com_uncom      &kp RSHIFT
-                                                &tog 1   &kp LGUI   &kp SPACE                                                   &kp SPACE   &kp RCTRL   &kp RALT
+               &kp ESC    &kp F5   &kp F12        &kp GRAVE     &kp LBKT     &kp RBKT                         &mm_pg_up                  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp LC(EQUAL)  &kp INS            &mm_bks_del
+               &td_TAB    &kp F10  &kp LS(PG_UP)  &kp SLASH     &kp EQUAL    &kp BSLH              &mm_pg_lf  &kp LG(SPACE)  &mm_pg_rh   &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp LC(MINUS)  &kp K_APPLICATION  &kp ENTER
+               &kp LSHFT  &kp F11  &kp LS(PG_DN)  &kp LS(HOME)  &kp LS(END)  &kp MINUS   &kp C_MUTE           &mm_pg_dn                  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0   &td_com_uncom      &kp RSHIFT
+                                                      &kp LCTRL   &kp LGUI   &tog 1                                                      &kp SPACE   &kp RCTRL   &kp RALT
             >;
             sensor-bindings = <&inc_dec_kp C_NEXT C_PREV>;
          };
