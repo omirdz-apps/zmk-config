@@ -1,12 +1,12 @@
 layout: {zmk_keyboard: eyelash_corne}
 layers:
   DVORAK:
-  - $$mdi:keyboard-esc$$
+  - {t: '&mac_esc', h: '&mac_cls'}
   - {t: '''', s: '"'}
   - {t: ',', s: <}
-  - {t: ., s: '>'}
-  - P
-  - Y
+  - {t: ., s: F1}
+  - '&mm_p_run'
+  - {t: Y, s: F4}
   - {t: '$$mdi:arrow-up-bold$$', s: PG UP}
   - F
   - G
@@ -43,19 +43,19 @@ layers:
   - V
   - Z
   - $$mdi:apple-keyboard-shift$$
-  - '&td_Layers'
+  - $$mdi:apple-keyboard-control$$
   - LGUI
-  - $$mdi:keyboard-space$$
+  - '&td_Layers'
   - $$mdi:keyboard-space$$
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-option$$
   FnSyNu:
   - $$mdi:keyboard-esc$$
   - F5
-  - F8
-  - F10
-  - F11
   - F12
+  - {t: '`', s: '~'}
+  - {t: '[', s: '{'}
+  - {t: ']', s: '}'}
   - {t: '$$mdi:arrow-up-bold$$', s: PG UP}
   - '1'
   - '2'
@@ -63,12 +63,12 @@ layers:
   - {t: Ctl+=, s: Ctl++}
   - INS
   - {t: '$$mdi:backspace$$', s: '$$mdi:backspace-reverse-outline$$'}
-  - $$mdi:keyboard-tab$$
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '`', s: '~'}
-  - {t: '[', s: '{'}
-  - {t: ']', s: '}'}
+  - '&td_TAB'
+  - F10
+  - Sft+PG UP
   - {t: /, s: '?'}
+  - {t: '=', s: +}
+  - {t: \, s: '|'}
   - {t: '$$mdi:arrow-left-bold$$', s: HOME}
   - Gui+$$mdi:keyboard-space$$
   - {t: '$$mdi:arrow-right-bold$$', s: END}
@@ -79,11 +79,11 @@ layers:
   - APPLICATION
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:apple-keyboard-shift$$
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '=', s: +}
+  - F11
+  - Sft+PG DN
+  - Sft+HOME
+  - Sft+END
   - {t: '-', s: _}
-  - {t: \, s: '|'}
   - $$mdi:volume-off$$
   - {t: '$$mdi:arrow-down-bold$$', s: PgDn}
   - '7'
@@ -92,9 +92,9 @@ layers:
   - '0'
   - '&td_com_uncom'
   - $$mdi:apple-keyboard-shift$$
-  - {t: FnSyNu, h: toggle}
+  - $$mdi:apple-keyboard-control$$
   - LGUI
-  - $$mdi:keyboard-space$$
+  - {t: FnSyNu, h: toggle}
   - $$mdi:keyboard-space$$
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-option$$
