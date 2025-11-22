@@ -330,35 +330,34 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <10>;
-            bindings = <
-               &macro_press   &kp LEFT_CTRL
-               &macro_press   &kp LEFT_SHIFT
-               &macro_tap     &kp U
-               &macro_release &kp LEFT_SHIFT
-               &macro_release &kp LEFT_CTRL
-               &macro_tap     &kp 0
-               &macro_tap     &kp 0
-               &macro_tap     &kp A
-               &macro_tap     &kp 9
-               &macro_tap     &kp ENTER
-            >;
+            bindings =
+               <&macro_press   &kp LEFT_CTRL>,
+               <&macro_press   &kp LEFT_SHIFT>,
+               <&macro_tap     &kp U>,
+               <&macro_release &kp LEFT_SHIFT>,
+               <&macro_release &kp LEFT_CTRL>,
+               <&macro_tap     &kp 0>,
+               <&macro_tap     &kp 0>,
+               <&macro_tap     &kp A>,
+               <&macro_tap     &kp 9>,
+               <&macro_tap     &kp ENTER>;
          };
 
          mac_reg: mac_reg {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <10>;
-            bindings = <
-               &macro_press   &kp LEFT_CTRL
-               &macro_press   &kp LEFT_SHIFT
-               &macro_tap     &kp U
-               &macro_release &kp LEFT_SHIFT
-               &macro_release &kp LEFT_CTRL
-               &macro_tap     &kp 0
-               &macro_tap     &kp 0
-               &macro_tap     &kp A
-               &macro_tap     &kp E
-               &macro_tap     &kp ENTER
+            bindings =
+               <&macro_press   &kp LEFT_CTRL>,
+               <&macro_press   &kp LEFT_SHIFT>,
+               <&macro_tap     &kp U>,
+               <&macro_release &kp LEFT_SHIFT>,
+               <&macro_release &kp LEFT_CTRL>,
+               <&macro_tap     &kp 0>,
+               <&macro_tap     &kp 0>,
+               <&macro_tap     &kp A>,
+               <&macro_tap     &kp E>,
+               <&macro_tap     &kp ENTER
             >;
          };
 
@@ -366,52 +365,52 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <10>;
-            bindings = <
-               &macro_press   &kp LEFT_CTRL
-               &macro_press   &kp LEFT_SHIFT
-               &macro_tap     &kp U
-               &macro_release &kp LEFT_SHIFT
-               &macro_release &kp LEFT_CTRL
-               &macro_tap     &kp 2
-               &macro_tap     &kp 1
-               &macro_tap     &kp 2
-               &macro_tap     &kp 2
-               &macro_tap     &kp ENTER
+            bindings =
+               <&macro_press   &kp LEFT_CTRL>,
+               <&macro_press   &kp LEFT_SHIFT>,
+               <&macro_tap     &kp U>,
+               <&macro_release &kp LEFT_SHIFT>,
+               <&macro_release &kp LEFT_CTRL>,
+               <&macro_tap     &kp 2>,
+               <&macro_tap     &kp 1>,
+               <&macro_tap     &kp 2>,
+               <&macro_tap     &kp 2>,
+             <  &macro_tap     &kp ENTER
             >;
          };
 
          mac_cent: mac_cent {
-         compatible = "zmk,behavior-macro";
-         #binding-cells = <0>;
-         wait-ms = <10>;
-         bindings = <
-            &macro_press &kp LEFT_CTRL
-            &macro_press &kp LEFT_SHIFT
-            &macro_tap   &kp U
-            &macro_release &kp LEFT_SHIFT
-            &macro_release &kp LEFT_CTRL
-            &macro_tap   &kp 0
-            &macro_tap   &kp 0
-            &macro_tap   &kp A
-            &macro_tap   &kp 2
-            &macro_tap   &kp ENTER
-         >;
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <10>;
+            bindings =
+               <&macro_press   &kp LEFT_CTRL>,
+               <&macro_press   &kp LEFT_SHIFT>,
+               <&macro_tap     &kp U>,
+               <&macro_release &kp LEFT_SHIFT>,
+               <&macro_release &kp LEFT_CTRL>,
+               <&macro_tap   &kp 0>,
+               <&macro_tap   &kp 0>,
+               <&macro_tap   &kp A>,
+               <&macro_tap   &kp 2>,
+               <&macro_tap   &kp ENTER>;
+         };
 
          mac_euro: mac_euro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <10>;
-            bindings = <
-               &macro_press   &kp LEFT_CTRL
-               &macro_press   &kp LEFT_SHIFT
-               &macro_tap     &kp U
-               &macro_release &kp LEFT_SHIFT
-               &macro_release &kp LEFT_CTRL
-               &macro_tap     &kp 2
-               &macro_tap     &kp 0
-               &macro_tap     &kp A
-               &macro_tap     &kp C
-               &macro_tap     &kp ENTER
+            bindings =
+               <&macro_press   &kp LEFT_CTRL>,
+               <&macro_press   &kp LEFT_SHIFT>,
+               <&macro_tap     &kp U>,
+               <&macro_release &kp LEFT_SHIFT>,
+               <&macro_release &kp LEFT_CTRL>,
+              < &macro_tap     &kp 2>,
+              < &macro_tap     &kp 0>,
+              < &macro_tap     &kp A>,
+              < &macro_tap     &kp C>,
+            <   &macro_tap     &kp ENTER
             >;
          };
 
@@ -419,17 +418,17 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <10>;
-            bindings = <
-               &macro_press   &kp LEFT_CTRL
-               &macro_press   &kp LEFT_SHIFT
-               &macro_tap     &kp U
-               &macro_release &kp LEFT_SHIFT
-               &macro_release &kp LEFT_CTRL
-               &macro_tap     &kp 0
-               &macro_tap     &kp 0
-               &macro_tap     &kp A
-               &macro_tap     &kp 3
-               &macro_tap     &kp ENTER
+            bindings =
+               <&macro_press   &kp LEFT_CTRL>,
+               <&macro_press   &kp LEFT_SHIFT>,
+               <&macro_tap     &kp U>,
+               <&macro_release &kp LEFT_SHIFT>,
+               <&macro_release &kp LEFT_CTRL>,
+               <&macro_tap     &kp 0>,
+               <&macro_tap     &kp 0>,
+               <&macro_tap     &kp A>,
+               <&macro_tap     &kp 3>,
+             <  &macro_tap     &kp ENTER
             >;
          };
 
@@ -437,16 +436,16 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <10>;
-            bindings = <
-               &macro_press   &kp LEFT_CTRL
-               &macro_press   &kp LEFT_SHIFT
-               &macro_tap     &kp U
-               &macro_release &kp LEFT_SHIFT
-               &macro_release &kp LEFT_CTRL
-               &macro_tap     &kp 0
-               &macro_tap     &kp 0
-               &macro_tap     &kp A
-               &macro_tap     &kp 5
+            bindings =
+               <&macro_press   &kp LEFT_CTRL>,
+               <&macro_press   &kp LEFT_SHIFT>,
+               <&macro_tap     &kp U>,
+               <&macro_release &kp LEFT_SHIFT>,
+               <&macro_release &kp LEFT_CTRL>,
+               <&macro_tap     &kp 0>,
+               <&macro_tap     &kp 0>,
+               <&macro_tap     &kp A>,
+             <  &macro_tap     &kp 5>,
                &macro_tap     &kp ENTER
             >;
          };
@@ -455,16 +454,16 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <10>;
-            bindings = <
-               &macro_press &kp LEFT_CTRL
-               &macro_press &kp LEFT_SHIFT
-               &macro_tap   &kp U
-               &macro_release &kp LEFT_SHIFT
-               &macro_release &kp LEFT_CTRL
-               &macro_tap   &kp 2
-               &macro_tap   &kp 0
-               &macro_tap   &kp A
-               &macro_tap   &kp 9
+            bindings =
+               <&macro_press   &kp LEFT_CTRL>,
+               <&macro_press   &kp LEFT_SHIFT>,
+               <&macro_tap     &kp U>,
+               <&macro_release &kp LEFT_SHIFT>,
+               <&macro_release &kp LEFT_CTRL>,
+               <&macro_tap   &kp 2>,
+               <&macro_tap   &kp 0>,
+               <&macro_tap   &kp A>,
+             <  &macro_tap   &kp 9>,
                &macro_tap   &kp ENTER
             >;
          };
@@ -473,17 +472,17 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <10>;
-            bindings = <
-               &macro_press &kp LEFT_CTRL
-               &macro_press &kp LEFT_SHIFT
-               &macro_tap   &kp U
-               &macro_release &kp LEFT_SHIFT
-               &macro_release &kp LEFT_CTRL
-               &macro_tap   &kp 2
-               &macro_tap   &kp 0
-               &macro_tap   &kp B
-               &macro_tap   &kp D
-               &macro_tap   &kp ENTER
+            bindings =
+               <&macro_press   &kp LEFT_CTRL>,
+               <&macro_press   &kp LEFT_SHIFT>,
+               <&macro_tap     &kp U>,
+               <&macro_release &kp LEFT_SHIFT>,
+               <&macro_release &kp LEFT_CTRL>,
+               <&macro_tap   &kp 2>,
+               <&macro_tap   &kp 0>,
+               <&macro_tap   &kp B>,
+               <&macro_tap   &kp D>,
+             <  &macro_tap   &kp ENTER
             >;
          };
 
@@ -491,16 +490,16 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <10>;
-            bindings = <
-               &macro_press &kp LEFT_CTRL
-               &macro_press &kp LEFT_SHIFT
-               &macro_tap   &kp U
-               &macro_release &kp LEFT_SHIFT
-               &macro_release &kp LEFT_CTRL
-               &macro_tap   &kp 2
-               &macro_tap   &kp 0
-               &macro_tap   &kp B
-               &macro_tap   &kp 9
+            bindings =
+               <&macro_press   &kp LEFT_CTRL>,
+               <&macro_press   &kp LEFT_SHIFT>,
+               <&macro_tap     &kp U>,
+               <&macro_release &kp LEFT_SHIFT>,
+               <&macro_release &kp LEFT_CTRL>,
+               <&macro_tap   &kp 2>,
+               <&macro_tap   &kp 0>,
+               <&macro_tap   &kp B>,
+             <  &macro_tap   &kp 9>,
                &macro_tap   &kp ENTER
             >;
          };
@@ -509,17 +508,17 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <10>;
-            bindings = <
-               &macro_press &kp LEFT_CTRL
-               &macro_press &kp LEFT_SHIFT
-               &macro_tap   &kp U
-               &macro_release &kp LEFT_SHIFT
-               &macro_release &kp LEFT_CTRL
-               &macro_tap   &kp 2
-               &macro_tap   &kp 0
-               &macro_tap   &kp A
-               &macro_tap   &kp 6
-               &macro_tap   &kp ENTER
+            bindings =
+               <&macro_press   &kp LEFT_CTRL>,
+               <&macro_press   &kp LEFT_SHIFT>,
+               <&macro_tap     &kp U>,
+               <&macro_release &kp LEFT_SHIFT>,
+               <&macro_release &kp LEFT_CTRL>,
+               <&macro_tap   &kp 2>,
+               <&macro_tap   &kp 0>,
+               <&macro_tap   &kp A>,
+               <&macro_tap   &kp 6>,
+             <  &macro_tap   &kp ENTER
             >;
          };
 
@@ -527,90 +526,85 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <10>;
-            bindings = <
-               &macro_press &kp LEFT_CTRL
-               &macro_press &kp LEFT_SHIFT
-               &macro_tap   &kp U
-               &macro_release &kp LEFT_SHIFT
-               &macro_release &kp LEFT_CTRL
-               &macro_tap   &kp 2
-               &macro_tap   &kp 0
-               &macro_tap   &kp A
-               &macro_tap   &kp A
-               &macro_tap   &kp ENTER
-            >;
+            bindings =
+               <&macro_press   &kp LEFT_CTRL>,
+               <&macro_press   &kp LEFT_SHIFT>,
+               <&macro_tap     &kp U>,
+               <&macro_release &kp LEFT_SHIFT>,
+               <&macro_release &kp LEFT_CTRL>,
+               <&macro_tap   &kp 2>,
+               <&macro_tap   &kp 0>,
+               <&macro_tap   &kp A>,
+               <&macro_tap   &kp A>,
+               <&macro_tap   &kp ENTER>;
          };
 
          mac_baht: mac_baht {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <10>;
-            bindings = <
-               &macro_press &kp LEFT_CTRL
-               &macro_press &kp LEFT_SHIFT
-               &macro_tap   &kp U
-               &macro_release &kp LEFT_SHIFT
-               &macro_release &kp LEFT_CTRL
-               &macro_tap   &kp 0
-               &macro_tap   &kp E
-               &macro_tap   &kp 3
-               &macro_tap   &kp F
-               &macro_tap   &kp ENTER
-            >;
+            bindings =
+               <&macro_press   &kp LEFT_CTRL>,
+               <&macro_press   &kp LEFT_SHIFT>,
+               <&macro_tap     &kp U>,
+               <&macro_release &kp LEFT_SHIFT>,
+               <&macro_release &kp LEFT_CTRL>,
+               <&macro_tap   &kp 0>,
+               <&macro_tap   &kp E>,
+               <&macro_tap   &kp 3>,
+               <&macro_tap   &kp F>,
+               <&macro_tap   &kp ENTER>;
          };
 
          mac_colon: mac_colon {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <10>;
-            bindings = <
-               &macro_press &kp LEFT_CTRL
-               &macro_press &kp LEFT_SHIFT
-               &macro_tap   &kp U
-               &macro_release &kp LEFT_SHIFT
-               &macro_release &kp LEFT_CTRL
-               &macro_tap   &kp 2
-               &macro_tap   &kp 0
-               &macro_tap   &kp A
-               &macro_tap   &kp 1
-               &macro_tap   &kp ENTER
-            >;
+            bindings =
+               <&macro_press   &kp LEFT_CTRL>,
+               <&macro_press   &kp LEFT_SHIFT>,
+               <&macro_tap     &kp U>,
+               <&macro_release &kp LEFT_SHIFT>,
+               <&macro_release &kp LEFT_CTRL>,
+               <&macro_tap   &kp 2>,
+               <&macro_tap   &kp 0>,
+               <&macro_tap   &kp A>,
+               <&macro_tap   &kp 1>,
+               <&macro_tap   &kp ENTER>;
          };
 
          mac_degree: mac_degree {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <10>;
-            bindings = <
-               &macro_press   &kp LEFT_CTRL
-               &macro_press   &kp LEFT_SHIFT
-               &macro_tap     &kp U
-               &macro_release &kp LEFT_SHIFT
-               &macro_release &kp LEFT_CTRL
-               &macro_tap     &kp 0
-               &macro_tap     &kp 0
-               &macro_tap     &kp B
-               &macro_tap     &kp 0
-               &macro_tap     &kp ENTER
-            >;
+            bindings =
+               <&macro_press   &kp LEFT_CTRL>,
+               <&macro_press   &kp LEFT_SHIFT>,
+               <&macro_tap     &kp U>,
+               <&macro_release &kp LEFT_SHIFT>,
+               <&macro_release &kp LEFT_CTRL>,
+               <&macro_tap     &kp 0>,
+               <&macro_tap     &kp 0>,
+               <&macro_tap     &kp B>,
+               <&macro_tap     &kp 0>,
+               <&macro_tap     &kp ENTER>;
          };
 
          mac_micro: mac_micro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <10>;
-            bindings = <
-               &macro_press   &kp LEFT_CTRL
-               &macro_press   &kp LEFT_SHIFT
-               &macro_tap     &kp U
-               &macro_release &kp LEFT_SHIFT
-               &macro_release &kp LEFT_CTRL
-               &macro_tap     &kp 0
-               &macro_tap     &kp 0
-               &macro_tap     &kp B
-               &macro_tap     &kp 5
-               &macro_tap     &kp ENTER
-            >;
+            bindings =
+               <&macro_press   &kp LEFT_CTRL>,
+               <&macro_press   &kp LEFT_SHIFT>,
+               <&macro_tap     &kp U>,
+               <&macro_release &kp LEFT_SHIFT>,
+               <&macro_release &kp LEFT_CTRL>,
+               <&macro_tap     &kp 0>,
+               <&macro_tap     &kp 0>,
+               <&macro_tap     &kp B>,
+               <&macro_tap     &kp 5>,
+               <&macro_tap     &kp ENTER>;
          };
 
          // Arbol
@@ -618,234 +612,221 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <20>;
-            bindings = <
-               &macro_press &kp LEFT_CTRL  
-               &macro_press &kp LEFT_SHIFT  
-               &macro_tap &kp U  
-               &macro_release &kp LEFT_SHIFT  
-               &macro_release &kp LEFT_CTRL
-               &macro_tap &kp 2 
-               &macro_tap &kp 5 
-               &macro_tap &kp 0 
-               &macro_tap &kp 0  
-               &macro_tap &kp ENTER
-            >;
+            bindings =
+               <&macro_press   &kp LEFT_CTRL>,
+               <&macro_press   &kp LEFT_SHIFT>,
+               <&macro_tap     &kp U>,
+               <&macro_release &kp LEFT_SHIFT>,
+               <&macro_release &kp LEFT_CTRL>,
+               <&macro_tap &kp 2>,
+               <&macro_tap &kp 5>,
+               <&macro_tap &kp 0>,
+               <&macro_tap &kp 0>,
+               <&macro_tap &kp ENTER>;
          };
 
          mac_vl: mac_vl { 
             compatible = "zmk,behavior-macro"; 
             #binding-cells = <0>; 
             wait-ms = <20>;
-            bindings = <
-               &macro_press &kp LEFT_CTRL  
-               &macro_press &kp LEFT_SHIFT  
-               &macro_tap &kp U  
-               &macro_release &kp LEFT_SHIFT  
-               &macro_release &kp LEFT_CTRL
-               &macro_tap &kp 2 
-               &macro_tap &kp 5 
-               &macro_tap &kp 0 
-               &macro_tap &kp 2  
-               &macro_tap &kp ENTER
-            >;
+            bindings =
+               <&macro_press   &kp LEFT_CTRL>,
+               <&macro_press   &kp LEFT_SHIFT>,
+               <&macro_tap     &kp U>,
+               <&macro_release &kp LEFT_SHIFT>,
+               <&macro_release &kp LEFT_CTRL>,
+               <&macro_tap &kp 2>,
+               <&macro_tap &kp 5>,
+               <&macro_tap &kp 0>,
+               <&macro_tap &kp 2>,
+               <&macro_tap &kp ENTER>;
          };
 
          mac_tr: mac_tr {
             compatible = "zmk,behavior-macro"; 
             #binding-cells = <0>; 
             wait-ms = <20>;
-            bindings = <
-               &macro_press &kp LEFT_CTRL  
-               &macro_press &kp LEFT_SHIFT  
-               &macro_tap &kp U  
-               &macro_release &kp LEFT_SHIFT  
-               &macro_release &kp LEFT_CTRL
-               &macro_tap &kp 2 
-               &macro_tap &kp 5 
-               &macro_tap &kp 1 
-               &macro_tap &kp C  
-               &macro_tap &kp ENTER
-            >;
+            bindings =
+               <&macro_press   &kp LEFT_CTRL>,
+               <&macro_press   &kp LEFT_SHIFT>,
+               <&macro_tap     &kp U>,
+               <&macro_release &kp LEFT_SHIFT>,
+               <&macro_release &kp LEFT_CTRL>,
+               <&macro_tap &kp 2>,
+               <&macro_tap &kp 5>,
+               <&macro_tap &kp 1>,
+               <&macro_tap &kp C>,
+               <&macro_tap &kp ENTER>;
          };
 
          mac_ce: mac_ce { 
             compatible = "zmk,behavior-macro"; 
             #binding-cells = <0>; 
             wait-ms = <20>;
-            bindings = <
-               &macro_press &kp LEFT_CTRL  
-               &macro_press &kp LEFT_SHIFT  
-               &macro_tap &kp U  
-               &macro_release &kp LEFT_SHIFT  
-               &macro_release &kp LEFT_CTRL
-               &macro_tap &kp 2 
-               &macro_tap &kp 5 
-               &macro_tap &kp 1 
-               &macro_tap &kp 4  
-               &macro_tap &kp ENTER
-            >;
+            bindings =
+               <&macro_press   &kp LEFT_CTRL>,
+               <&macro_press   &kp LEFT_SHIFT>,
+               <&macro_tap     &kp U>,
+               <&macro_release &kp LEFT_SHIFT>,
+               <&macro_release &kp LEFT_CTRL>,
+               <&macro_tap &kp 2>,
+               <&macro_tap &kp 5>,
+               <&macro_tap &kp 1>,
+               <&macro_tap &kp 4>,
+               <&macro_tap &kp ENTER>;
          };
 
          mac_arr: mac_arr { 
             compatible = "zmk,behavior-macro"; 
             #binding-cells = <0>; 
             wait-ms = <20>;
-            bindings = <
-               &macro_press &kp LEFT_CTRL  
-               &macro_press &kp LEFT_SHIFT  
-               &macro_tap &kp U  
-               &macro_release &kp LEFT_SHIFT  
-               &macro_release &kp LEFT_CTRL
-               &macro_tap &kp 2 
-               &macro_tap &kp 1 
-               &macro_tap &kp 9 
-               &macro_tap &kp 2  
-               &macro_tap &kp ENTER
-            >;
+            bindings =
+               <&macro_press   &kp LEFT_CTRL>,
+               <&macro_press   &kp LEFT_SHIFT>,
+               <&macro_tap     &kp U>,
+               <&macro_release &kp LEFT_SHIFT>,
+               <&macro_release &kp LEFT_CTRL>,
+               <&macro_tap &kp 2>,
+               <&macro_tap &kp 1>,
+               <&macro_tap &kp 9>,
+               <&macro_tap &kp 2>,
+               <&macro_tap &kp ENTER>;
          };
 
          mac_stp: mac_stp { 
             compatible = "zmk,behavior-macro"; 
             #binding-cells = <0>; 
             wait-ms = <20>;
-            bindings = <
-               &macro_press &kp LEFT_CTRL  
-               &macro_press &kp LEFT_SHIFT  
-               &macro_tap &kp U  
-               &macro_release &kp LEFT_SHIFT  
-               &macro_release &kp LEFT_CTRL
-               &macro_tap &kp 2 
-               &macro_tap &kp 7 
-               &macro_tap &kp A 
-               &macro_tap &kp 4  
-               &macro_tap &kp ENTER
-            >;
+            bindings =
+               <&macro_press   &kp LEFT_CTRL>,
+               <&macro_press   &kp LEFT_SHIFT>,
+               <&macro_tap     &kp U>,
+               <&macro_release &kp LEFT_SHIFT>,
+               <&macro_release &kp LEFT_CTRL>,
+               <&macro_tap &kp 2>,
+               <&macro_tap &kp 7>,
+               <&macro_tap &kp A>,
+               <&macro_tap &kp 4>,
+               <&macro_tap &kp ENTER>;
          };
 
          mac_cur: mac_cur { 
             compatible = "zmk,behavior-macro"; 
             #binding-cells = <0>; 
             wait-ms = <20>;
-            bindings = <
-               &macro_press &kp LEFT_CTRL  
-               &macro_press &kp LEFT_SHIFT  
-               &macro_tap &kp U  
-               &macro_release &kp LEFT_SHIFT  
-               &macro_release &kp LEFT_CTRL
-               &macro_tap &kp 2 
-               &macro_tap &kp 9 
-               &macro_tap &kp 3 
-               &macro_tap &kp 7  
-               &macro_tap &kp ENTER
-            >;
+            bindings =
+               <&macro_press   &kp LEFT_CTRL>,
+               <&macro_press   &kp LEFT_SHIFT>,
+               <&macro_tap     &kp U>,
+               <&macro_release &kp LEFT_SHIFT>,
+               <&macro_release &kp LEFT_CTRL>,
+               <&macro_tap &kp 2>,
+               <&macro_tap &kp 9>,
+               <&macro_tap &kp 3>,
+               <&macro_tap &kp 7>, 
+               <&macro_tap &kp ENTER>;
          };
 
          mac_bul: mac_bul { 
             compatible = "zmk,behavior-macro"; 
             #binding-cells = <0>; 
             wait-ms = <20>;
-            bindings = <
-               &macro_press &kp LEFT_CTRL  
-               &macro_press &kp LEFT_SHIFT  
-               &macro_tap &kp U  
-               &macro_release &kp LEFT_SHIFT  
-               &macro_release &kp LEFT_CTRL
-               &macro_tap &kp 2 
-               &macro_tap &kp 0 
-               &macro_tap &kp 2 
-               &macro_tap &kp 2  
-               &macro_tap &kp ENTER
-            >;
+            bindings =
+               <&macro_press   &kp LEFT_CTRL>,
+               <&macro_press   &kp LEFT_SHIFT>,
+               <&macro_tap     &kp U>,
+               <&macro_release &kp LEFT_SHIFT>,
+               <&macro_release &kp LEFT_CTRL>,
+               <&macro_tap &kp 2>,
+               <&macro_tap &kp 0>,
+               <&macro_tap &kp 2>,
+               <&macro_tap &kp 2>,
+               <&macro_tap &kp ENTER>;
          };
 
          mac_sbul: mac_sbul { 
             compatible = "zmk,behavior-macro"; 
             #binding-cells = <0>; 
             wait-ms = <20>;
-            bindings = <
-               &macro_press &kp LEFT_CTRL  
-               &macro_press &kp LEFT_SHIFT  
-               &macro_tap &kp U  
-               &macro_release &kp LEFT_SHIFT  
-               &macro_release &kp LEFT_CTRL
-               &macro_tap &kp 2 
-               &macro_tap &kp 5 
-               &macro_tap &kp E 
-               &macro_tap &kp 6  
-               &macro_tap &kp ENTER
-            >;
+            bindings =
+               <&macro_press   &kp LEFT_CTRL>,
+               <&macro_press   &kp LEFT_SHIFT>,
+               <&macro_tap     &kp U>,
+               <&macro_release &kp LEFT_SHIFT>,
+               <&macro_release &kp LEFT_CTRL>,
+               <&macro_tap &kp 2>,
+               <&macro_tap &kp 5>,
+               <&macro_tap &kp E>,
+               <&macro_tap &kp 6>,
+               <&macro_tap &kp ENTER>;
          };
 
          mac_chk: mac_chk { 
             compatible = "zmk,behavior-macro"; 
             #binding-cells = <0>; 
             wait-ms = <20>;
-            bindings = <
-               &macro_press &kp LEFT_CTRL  
-               &macro_press &kp LEFT_SHIFT  
-               &macro_tap &kp U  
-               &macro_release &kp LEFT_SHIFT  
-               &macro_release &kp LEFT_CTRL
-               &macro_tap &kp 2 
-               &macro_tap &kp 7 
-               &macro_tap &kp 0 
-               &macro_tap &kp 5  
-               &macro_tap &kp ENTER
-            >;
+            bindings =
+               <&macro_press   &kp LEFT_CTRL>,
+               <&macro_press   &kp LEFT_SHIFT>,
+               <&macro_tap     &kp U>,
+               <&macro_release &kp LEFT_SHIFT>,
+               <&macro_release &kp LEFT_CTRL>,
+               <&macro_tap &kp 2>,
+               <&macro_tap &kp 7>,
+               <&macro_tap &kp 0>,
+               <&macro_tap &kp 5>, 
+               <&macro_tap &kp ENTER>;
          };
 
          mac_fail: mac_fail { 
             compatible = "zmk,behavior-macro"; 
             #binding-cells = <0>; 
             wait-ms = <20>;
-            bindings = <
-               &macro_press &kp LEFT_CTRL  
-               &macro_press &kp LEFT_SHIFT  
-               &macro_tap &kp U  
-               &macro_release &kp LEFT_SHIFT  
-               &macro_release &kp LEFT_CTRL
-               &macro_tap &kp 2 
-               &macro_tap &kp 7 
-               &macro_tap &kp 4 
-               &macro_tap &kp C  
-               &macro_tap &kp ENTER
-            >;
+            bindings =
+               <&macro_press   &kp LEFT_CTRL>,
+               <&macro_press   &kp LEFT_SHIFT>,
+               <&macro_tap     &kp U>,
+               <&macro_release &kp LEFT_SHIFT>,
+               <&macro_release &kp LEFT_CTRL>,
+               <&macro_tap &kp 2>, 
+               <&macro_tap &kp 7>, 
+               <&macro_tap &kp 4>, 
+               <&macro_tap &kp C>,
+               <&macro_tap &kp ENTER>;
          };
 
          mac_xcl: mac_xcl {
             compatible = "zmk,behavior-macro"; 
             #binding-cells = <0>; 
             wait-ms = <20>;
-            bindings = <
-               &macro_press &kp LEFT_CTRL  
-               &macro_press &kp LEFT_SHIFT  
-               &macro_tap &kp U  
-               &macro_release &kp LEFT_SHIFT  
-               &macro_release &kp LEFT_CTRL
-               &macro_tap &kp 2 
-               &macro_tap &kp 7 
-               &macro_tap &kp 5 
-               &macro_tap &kp 7
-               &macro_tap &kp ENTER
-            >;
+            bindings =
+               <&macro_press   &kp LEFT_CTRL>,
+               <&macro_press   &kp LEFT_SHIFT>,
+               <&macro_tap     &kp U>,
+               <&macro_release &kp LEFT_SHIFT>,
+               <&macro_release &kp LEFT_CTRL>,
+               <&macro_tap &kp 2>,
+               <&macro_tap &kp 7>,
+               <&macro_tap &kp 5>,
+               <&macro_tap &kp 7>,
+               <&macro_tap &kp ENTER>;
          };
 
          mac_inc: mac_inc {
             compatible = "zmk,behavior-macro"; 
             #binding-cells = <0>; 
             wait-ms = <20>;
-            bindings = <
-               &macro_press &kp LEFT_CTRL  
-               &macro_press &kp LEFT_SHIFT  
-               &macro_tap &kp U  
-               &macro_release &kp LEFT_SHIFT  
-               &macro_release &kp LEFT_CTRL
-               &macro_tap &kp 2 
-               &macro_tap &kp 7 
-               &macro_tap &kp 5 
-               &macro_tap &kp 3
-               &macro_tap &kp ENTER
-            >;
+            bindings =
+               <&macro_press   &kp LEFT_CTRL>,
+               <&macro_press   &kp LEFT_SHIFT>,
+               <&macro_tap     &kp U>,
+               <&macro_release &kp LEFT_SHIFT>,
+               <&macro_release &kp LEFT_CTRL>,
+               <&macro_tap &kp 2>, 
+               <&macro_tap &kp 7>,
+               <&macro_tap &kp 5>,
+               <&macro_tap &kp 3>,
+               <&macro_tap &kp ENTER>;
          };
 
          mac_app: mac_app {
