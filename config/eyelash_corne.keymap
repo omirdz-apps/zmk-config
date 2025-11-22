@@ -357,8 +357,7 @@
                <&macro_tap     &kp 0>,
                <&macro_tap     &kp A>,
                <&macro_tap     &kp E>,
-               <&macro_tap     &kp ENTER
-            >;
+               <&macro_tap     &kp ENTER>;
          };
 
          mac_tm: mac_tm {
@@ -375,8 +374,7 @@
                <&macro_tap     &kp 1>,
                <&macro_tap     &kp 2>,
                <&macro_tap     &kp 2>,
-             <  &macro_tap     &kp ENTER
-            >;
+               <&macro_tap     &kp ENTER>;
          };
 
          mac_cent: mac_cent {
@@ -406,12 +404,11 @@
                <&macro_tap     &kp U>,
                <&macro_release &kp LSHFT>,
                <&macro_release &kp LCTRL>,
-              < &macro_tap     &kp 2>,
-              < &macro_tap     &kp 0>,
-              < &macro_tap     &kp A>,
-              < &macro_tap     &kp C>,
-            <   &macro_tap     &kp ENTER
-            >;
+               <&macro_tap     &kp 2>,
+               <&macro_tap     &kp 0>,
+               <&macro_tap     &kp A>,
+               <&macro_tap     &kp C>,
+               <&macro_tap     &kp ENTER>;
          };
 
          mac_pound: mac_pound {
@@ -428,8 +425,7 @@
                <&macro_tap     &kp 0>,
                <&macro_tap     &kp A>,
                <&macro_tap     &kp 3>,
-             <  &macro_tap     &kp ENTER
-            >;
+               <&macro_tap     &kp ENTER>;
          };
 
          mac_yen: mac_yen {
@@ -445,9 +441,8 @@
                <&macro_tap     &kp 0>,
                <&macro_tap     &kp 0>,
                <&macro_tap     &kp A>,
-             <  &macro_tap     &kp 5>,
-               &macro_tap     &kp ENTER
-            >;
+               <&macro_tap     &kp 5>,
+               <&macro_tap     &kp ENTER>;
          };
 
          mac_won: mac_won {
@@ -463,9 +458,8 @@
                <&macro_tap   &kp 2>,
                <&macro_tap   &kp 0>,
                <&macro_tap   &kp A>,
-             <  &macro_tap   &kp 9>,
-               &macro_tap   &kp ENTER
-            >;
+               <&macro_tap   &kp 9>,
+               <&macro_tap   &kp ENTER>;
          };
 
          mac_ruble: mac_ruble {
@@ -482,8 +476,7 @@
                <&macro_tap   &kp 0>,
                <&macro_tap   &kp B>,
                <&macro_tap   &kp D>,
-             <  &macro_tap   &kp ENTER
-            >;
+               <&macro_tap   &kp ENTER>;
          };
 
          mac_rupee: mac_rupee {
@@ -499,9 +492,8 @@
                <&macro_tap   &kp 2>,
                <&macro_tap   &kp 0>,
                <&macro_tap   &kp B>,
-             <  &macro_tap   &kp 9>,
-               &macro_tap   &kp ENTER
-            >;
+               <&macro_tap   &kp 9>,
+               <&macro_tap   &kp ENTER>;
          };
 
          mac_naira: mac_naira {
@@ -518,8 +510,7 @@
                <&macro_tap   &kp 0>,
                <&macro_tap   &kp A>,
                <&macro_tap   &kp 6>,
-             <  &macro_tap   &kp ENTER
-            >;
+               <&macro_tap   &kp ENTER>;
          };
 
          mac_shekel: mac_shekel {
