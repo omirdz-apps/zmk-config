@@ -80,18 +80,18 @@ layers:
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:apple-keyboard-shift$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - F12
+  - '&td_comment'
+  - {t: \, s: '|'}
+  - {t: '-', s: _}
+  - $$mdi:volume-off$$
+  - Sft+PG DN
+  - '7'
+  - '8'
+  - '9'
+  - '0'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:apple-keyboard-shift$$
   - $$mdi:apple-keyboard-control$$
   - LGUI
   - {t: FnSyNu, h: toggle}
