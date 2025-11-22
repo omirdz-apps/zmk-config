@@ -49,55 +49,55 @@ layers:
   - $$mdi:keyboard-space$$
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-option$$
-  FnSyNu:
-  - $$mdi:keyboard-esc$$
-  - F5
-  - F12
-  - {t: '`', s: '~'}
-  - {t: '[', s: '{'}
-  - {t: ']', s: '}'}
-  - Sft+PG UP
-  - '1'
-  - '2'
-  - '3'
-  - {t: Ctl+=, s: Ctl++}
-  - INS
-  - {t: '$$mdi:backspace$$', s: '$$mdi:backspace-reverse-outline$$'}
-  - '&td_TAB'
-  - F10
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: /, s: '?'}
-  - {t: '=', s: +}
-  - {t: \, s: '|'}
-  - Sft+HOME
+  SYMBOL:
+  - '&mac_vl'
+  - '&mac_hl'
+  - '&mac_tr'
+  - '&mac_ce'
+  - '&mac_arr'
+  - '&mac_stp'
+  - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
+  - '&mac_or'
+  - '&mac_reg'
+  - '&mac_tm'
+  - '&mac_degree'
+  - '&mac_micro'
+  - '&mac_cent'
+  - '&mac_cur'
+  - '&mac_bul'
+  - '&mac_sbul'
+  - '&mac_chk'
+  - '&mac_fail'
+  - '&mac_xcl'
+  - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - Gui+$$mdi:keyboard-space$$
-  - Sft+END
-  - '4'
-  - '5'
-  - '6'
-  - {t: Ctl+-, s: Ctl+_}
-  - APPLICATION
-  - {t: '$$mdi:keyboard-return$$', type: enter}
-  - $$mdi:apple-keyboard-shift$$
-  - F11
+  - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
+  - '&mac_euro'
+  - '&mac_pound'
+  - '&mac_yen'
+  - '&mac_baht'
+  - '&mac_colon'
+  - '&mac_naira'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '-', s: _}
-  - $$mdi:volume-off$$
-  - Sft+PG DN
-  - '7'
-  - '8'
-  - '9'
-  - '0'
-  - '&td_com_uncom'
-  - $$mdi:apple-keyboard-shift$$
-  - $$mdi:apple-keyboard-control$$
-  - LGUI
-  - {t: FnSyNu, h: toggle}
-  - $$mdi:keyboard-space$$
-  - $$mdi:apple-keyboard-control$$
-  - $$mdi:apple-keyboard-option$$
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - '&mac_inc'
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
+  - '&mac_ruble'
+  - '&mac_rupee'
+  - '&mac_shekel'
+  - '&mac_won'
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   SYSTEM:
   - BT CLR ALL
   - {h: '4', s: '$$mdi:bluetooth-connect$$'}
@@ -105,7 +105,7 @@ layers:
   - {h: '2', s: '$$mdi:bluetooth-connect$$'}
   - {h: '1', s: '$$mdi:bluetooth-connect$$'}
   - $$mdi:bluetooth-off$$
-  - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - PRINTSCREEN
   - SCROLLLOCK
   - PAUSE BREAK
@@ -118,9 +118,9 @@ layers:
   - RGB SAI
   - RGB SPI
   - OUT BLE
-  - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
-  - Gui+$$mdi:keyboard-space$$
-  - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -133,8 +133,8 @@ layers:
   - RGB SAD
   - RGB SPD
   - OUT USB
-  - $$mdi:play-pause$$
-  - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:mouse-left-click-outline$$
   - $$mdi:mouse-scroll-wheel$$
   - $$mdi:mouse-right-click-outline$$
