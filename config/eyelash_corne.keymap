@@ -865,9 +865,9 @@
          functions_layer {
             display-name = "FnSyNu";
             bindings = <
-               &kp ESC    &kp F5      &kp F10  &kp GRAVE         &kp LBKT   &kp RBKT                            &kp LS(PG_UP)                &kp N1  &kp N2  &kp N3  &kp LC(EQUAL)  &kp INS     &mm_bks_del
-               &td_TAB    &mac_app    &kp F11  &kp LS(LA(DOWN))  &kp SLASH  &kp EQUAL             &kp LS(HOME)  &kp LG(SPACE)  &kp LS(END)   &kp N4  &kp N5  &kp N6  &kp LC(MINUS)  &mac_app    &kp ENTER
-               &kp LSHFT  &mo SYMBOL  &kp F12  &none             &kp BSLH   &kp MINUS   &kp C_MUTE              &kp LS(PG_DN)                &kp N7  &kp N8  &kp N9  &kp N0         &mo SYMBOL  &kp RSHFT
+               &kp ESC    &kp F5      &kp F10  &kp GRAVE         &kp LBKT   &kp RBKT                            &kp LS(PG_UP)                &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp LC(EQUAL)  &kp INS     &mm_bks_del
+               &td_TAB    &mac_app    &kp F11  &kp LS(LA(DOWN))  &kp SLASH  &kp EQUAL             &kp LS(HOME)  &kp LG(SPACE)  &kp LS(END)   &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp LC(MINUS)  &mac_app    &kp ENTER
+               &kp LSHFT  &mo SYMBOL  &kp F12  &td_comment       &kp BSLH   &kp MINUS   &kp C_MUTE              &kp LS(PG_DN)                &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0   &mo SYMBOL  &kp RSHFT
                                                   &kp LCTRL   &kp LGUI   &tog 1                                                           &kp SPACE   &kp RCTRL   &kp RALT
             >;
             sensor-bindings = <&inc_dec_kp C_NEXT C_PREV>;
