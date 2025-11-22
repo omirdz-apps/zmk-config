@@ -865,23 +865,12 @@
          functions_layer {
             display-name = "FnSyNu";
             bindings = <
-               &kp ESC    &kp F5      &kp F10  &kp GRAVE         &kp LBKT   &kp RBKT                            &kp LS(PG_UP)                &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp LC(EQUAL)  &kp INS     &mm_bks_del
-               &td_TAB    &mac_app    &kp F11  &kp LS(LA(DOWN))  &kp SLASH  &kp EQUAL             &kp LS(HOME)  &kp LG(SPACE)  &kp LS(END)   &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp LC(MINUS)  &mac_app    &kp ENTER
-               &kp LSHFT  &none       &kp F12  &td_comment       &kp BSLH   &kp MINUS   &kp C_MUTE              &kp LS(PG_DN)                &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0   &none       &kp RSHFT
-                                                     &kp LCTRL   &kp LGUI   &tog 1                                                           &kp SPACE   &kp RCTRL   &kp RALT
+               &kp ESC    &kp F5    &kp F10  &kp GRAVE         &kp LBKT   &kp RBKT                            &kp LS(PG_UP)                &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp LC(EQUAL)  &kp INS   &mm_bks_del
+               &td_TAB    &mac_app  &kp F11  &kp LS(LA(DOWN))  &kp SLASH  &kp EQUAL             &kp LS(HOME)  &kp LG(SPACE)  &kp LS(END)   &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp LC(MINUS)  &mac_app  &kp ENTER
+               &kp LSHFT  &mo 3     &kp F12  &td_comment       &kp BSLH   &kp MINUS   &kp C_MUTE              &kp LS(PG_DN)                &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0   &mo 3     &kp RSHFT
+                                                   &kp LCTRL   &kp LGUI   &tog 1                                                           &kp SPACE   &kp RCTRL   &kp RALT
             >;
             sensor-bindings = <&inc_dec_kp C_NEXT C_PREV>;
-         };
-
-         symbols_layer {
-            display-name = "SYMBOL";
-            bindings = <
-               &mac_vl   &mac_hl   &mac_tr    &mac_ce   &mac_arr   &mac_stp                        &mmv MOVE_UP                      &mac_or     &mac_reg    &mac_tm      &mac_degree  &mac_micro  &mac_cent     
-               &mac_cur  &mac_bul  &mac_sbul  &mac_chk  &mac_fail  &mac_xcl        &mmv MOVE_LEFT  &kp LG(SPACE)   &mmv MOVE_RIGHT   &mac_euro   &mac_pound  &mac_yen     &mac_baht    &mac_colon  &mac_naira
-               &none     &none     &none      &none     &none      &mac_inc   &none                &mmv MOVE_DOWN                    &mac_ruble  &mac_rupee  &mac_shekel  &mac_won     &none       &none
-                                                   &none   &none   &none                                                             &none   &none   &none
-            >;
-            sensor-bindings = <&scroll_encoder>;
          };
          
          // SYSTEM
@@ -894,7 +883,17 @@
                                                                                     &none   &none   &tog 2                                    &bootloader   &sys_reset   &studio_unlock
             >;
          };
+
+         symbols_layer {
+            display-name = "SYMBOL";
+            bindings = <
+               &mac_vl   &mac_hl   &mac_tr    &mac_ce   &mac_arr   &mac_stp                        &mmv MOVE_UP                      &mac_or     &mac_reg    &mac_tm      &mac_degree  &mac_micro  &mac_cent     
+               &mac_cur  &mac_bul  &mac_sbul  &mac_chk  &mac_fail  &mac_xcl        &mmv MOVE_LEFT  &kp LG(SPACE)   &mmv MOVE_RIGHT   &mac_euro   &mac_pound  &mac_yen     &mac_baht    &mac_colon  &mac_naira
+               &none     &none     &none      &none     &none      &mac_inc   &none                &mmv MOVE_DOWN                    &mac_ruble  &mac_rupee  &mac_shekel  &mac_won     &none       &none
+                                                   &none   &none   &none                                                             &none   &none   &none
+            >;
+            sensor-bindings = <&scroll_encoder>;
+         };
       };
    };
-
-                  //   &mo SYMBOL     &mo SYMBOL
+     
