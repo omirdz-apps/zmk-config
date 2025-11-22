@@ -79,7 +79,7 @@ layers:
   - '&mac_app'
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:apple-keyboard-shift$$
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - SYMBOL
   - F12
   - '&td_comment'
   - {t: \, s: '|'}
@@ -90,7 +90,7 @@ layers:
   - '8'
   - '9'
   - '0'
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - SYMBOL
   - $$mdi:apple-keyboard-shift$$
   - $$mdi:apple-keyboard-control$$
   - LGUI
@@ -98,55 +98,6 @@ layers:
   - $$mdi:keyboard-space$$
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-option$$
-  SYMBOL:
-  - '&mac_vl'
-  - '&mac_hl'
-  - '&mac_tr'
-  - '&mac_ce'
-  - '&mac_arr'
-  - '&mac_stp'
-  - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
-  - '&mac_or'
-  - '&mac_reg'
-  - '&mac_tm'
-  - '&mac_degree'
-  - '&mac_micro'
-  - '&mac_cent'
-  - '&mac_cur'
-  - '&mac_bul'
-  - '&mac_sbul'
-  - '&mac_chk'
-  - '&mac_fail'
-  - '&mac_xcl'
-  - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
-  - Gui+$$mdi:keyboard-space$$
-  - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
-  - '&mac_euro'
-  - '&mac_pound'
-  - '&mac_yen'
-  - '&mac_baht'
-  - '&mac_colon'
-  - '&mac_naira'
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - '&mac_inc'
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
-  - '&mac_ruble'
-  - '&mac_rupee'
-  - '&mac_shekel'
-  - '&mac_won'
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
   SYSTEM:
   - BT CLR ALL
   - {h: '4', s: '$$mdi:bluetooth-connect$$'}
@@ -192,7 +143,56 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: SYMBOL, h: toggle}
+  - {t: SYSTEM, h: toggle}
   - $$mdi:progress-download$$
   - {t: '$$mdi:backup-restore$$', type: bootloader}
   - '&studio_unlock'
+  SYMBOL:
+  - '&mac_vl'
+  - '&mac_hl'
+  - '&mac_tr'
+  - '&mac_ce'
+  - '&mac_arr'
+  - '&mac_stp'
+  - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
+  - '&mac_or'
+  - '&mac_reg'
+  - '&mac_tm'
+  - '&mac_degree'
+  - '&mac_micro'
+  - '&mac_cent'
+  - '&mac_cur'
+  - '&mac_bul'
+  - '&mac_sbul'
+  - '&mac_chk'
+  - '&mac_fail'
+  - '&mac_xcl'
+  - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
+  - Gui+$$mdi:keyboard-space$$
+  - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
+  - '&mac_euro'
+  - '&mac_pound'
+  - '&mac_yen'
+  - '&mac_baht'
+  - '&mac_colon'
+  - '&mac_naira'
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: held}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - '&mac_inc'
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
+  - '&mac_ruble'
+  - '&mac_rupee'
+  - '&mac_shekel'
+  - '&mac_won'
+  - {t: '$$mdi:minus-circle-outline$$', type: held alternate}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
