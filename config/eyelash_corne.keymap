@@ -336,10 +336,10 @@
                <&macro_tap     &kp U>,
                <&macro_release &kp LSHFT>,
                <&macro_release &kp LCTRL>,
-               <&macro_tap     &kp 0>,
-               <&macro_tap     &kp 0>,
+               <&macro_tap     &kp NUMBER_0>,
+               <&macro_tap     &kp NUMBER_0>,
                <&macro_tap     &kp A>,
-               <&macro_tap     &kp 9>,
+               <&macro_tap     &kp NUMBER_9>,
                <&macro_tap     &kp ENTER>;
          };
 
@@ -353,8 +353,8 @@
                <&macro_tap     &kp U>,
                <&macro_release &kp LSHFT>,
                <&macro_release &kp LCTRL>,
-               <&macro_tap     &kp 0>,
-               <&macro_tap     &kp 0>,
+               <&macro_tap     &kp NUMBER_0>,
+               <&macro_tap     &kp NUMBER_0>,
                <&macro_tap     &kp A>,
                <&macro_tap     &kp E>,
                <&macro_tap     &kp ENTER>;
@@ -370,10 +370,10 @@
                <&macro_tap     &kp U>,
                <&macro_release &kp LSHFT>,
                <&macro_release &kp LCTRL>,
-               <&macro_tap     &kp 2>,
-               <&macro_tap     &kp 1>,
-               <&macro_tap     &kp 2>,
-               <&macro_tap     &kp 2>,
+               <&macro_tap     &kp NUMBER_2>,
+               <&macro_tap     &kp NUMBER_1>,
+               <&macro_tap     &kp NUMBER_2>,
+               <&macro_tap     &kp NUMBER_2>,
                <&macro_tap     &kp ENTER>;
          };
 
@@ -387,10 +387,10 @@
                <&macro_tap     &kp U>,
                <&macro_release &kp LSHFT>,
                <&macro_release &kp LCTRL>,
-               <&macro_tap   &kp 0>,
-               <&macro_tap   &kp 0>,
+               <&macro_tap   &kp NUMBER_0>,
+               <&macro_tap   &kp NUMBER_0>,
                <&macro_tap   &kp A>,
-               <&macro_tap   &kp 2>,
+               <&macro_tap   &kp NUMBER_2>,
                <&macro_tap   &kp ENTER>;
          };
 
@@ -404,8 +404,8 @@
                <&macro_tap     &kp U>,
                <&macro_release &kp LSHFT>,
                <&macro_release &kp LCTRL>,
-               <&macro_tap     &kp 2>,
-               <&macro_tap     &kp 0>,
+               <&macro_tap     &kp NUMBER_2>,
+               <&macro_tap     &kp NUMBER_0>,
                <&macro_tap     &kp A>,
                <&macro_tap     &kp C>,
                <&macro_tap     &kp ENTER>;
@@ -421,10 +421,10 @@
                <&macro_tap     &kp U>,
                <&macro_release &kp LSHFT>,
                <&macro_release &kp LCTRL>,
-               <&macro_tap     &kp 0>,
-               <&macro_tap     &kp 0>,
+               <&macro_tap     &kp NUMBER_0>,
+               <&macro_tap     &kp NUMBER_0>,
                <&macro_tap     &kp A>,
-               <&macro_tap     &kp 3>,
+               <&macro_tap     &kp NUMBER_3>,
                <&macro_tap     &kp ENTER>;
          };
 
@@ -438,10 +438,10 @@
                <&macro_tap     &kp U>,
                <&macro_release &kp LSHFT>,
                <&macro_release &kp LCTRL>,
-               <&macro_tap     &kp 0>,
-               <&macro_tap     &kp 0>,
+               <&macro_tap     &kp NUMBER_0>,
+               <&macro_tap     &kp NUMBER_0>,
                <&macro_tap     &kp A>,
-               <&macro_tap     &kp 5>,
+               <&macro_tap     &kp NUMBER_5>,
                <&macro_tap     &kp ENTER>;
          };
 
@@ -455,10 +455,10 @@
                <&macro_tap     &kp U>,
                <&macro_release &kp LSHFT>,
                <&macro_release &kp LCTRL>,
-               <&macro_tap   &kp 2>,
-               <&macro_tap   &kp 0>,
+               <&macro_tap   &kp NUMBER_2>,
+               <&macro_tap   &kp NUMBER_0>,
                <&macro_tap   &kp A>,
-               <&macro_tap   &kp 9>,
+               <&macro_tap   &kp NUMBER_9>,
                <&macro_tap   &kp ENTER>;
          };
 
@@ -472,8 +472,8 @@
                <&macro_tap     &kp U>,
                <&macro_release &kp LSHFT>,
                <&macro_release &kp LCTRL>,
-               <&macro_tap   &kp 2>,
-               <&macro_tap   &kp 0>,
+               <&macro_tap   &kp NUMBER_2>,
+               <&macro_tap   &kp NUMBER_0>,
                <&macro_tap   &kp B>,
                <&macro_tap   &kp D>,
                <&macro_tap   &kp ENTER>;
@@ -489,10 +489,10 @@
                <&macro_tap     &kp U>,
                <&macro_release &kp LSHFT>,
                <&macro_release &kp LCTRL>,
-               <&macro_tap   &kp 2>,
-               <&macro_tap   &kp 0>,
+               <&macro_tap   &kp NUMBER_2>,
+               <&macro_tap   &kp NUMBER_0>,
                <&macro_tap   &kp B>,
-               <&macro_tap   &kp 9>,
+               <&macro_tap   &kp NUMBER_9>,
                <&macro_tap   &kp ENTER>;
          };
 
@@ -506,10 +506,10 @@
                <&macro_tap     &kp U>,
                <&macro_release &kp LSHFT>,
                <&macro_release &kp LCTRL>,
-               <&macro_tap   &kp 2>,
-               <&macro_tap   &kp 0>,
+               <&macro_tap   &kp NUMBER_2>,
+               <&macro_tap   &kp NUMBER_0>,
                <&macro_tap   &kp A>,
-               <&macro_tap   &kp 6>,
+               <&macro_tap   &kp NUMBER_6>,
                <&macro_tap   &kp ENTER>;
          };
 
@@ -523,8 +523,8 @@
                <&macro_tap     &kp U>,
                <&macro_release &kp LSHFT>,
                <&macro_release &kp LCTRL>,
-               <&macro_tap   &kp 2>,
-               <&macro_tap   &kp 0>,
+               <&macro_tap   &kp NUMBER_2>,
+               <&macro_tap   &kp NUMBER_0>,
                <&macro_tap   &kp A>,
                <&macro_tap   &kp A>,
                <&macro_tap   &kp ENTER>;
@@ -540,9 +540,9 @@
                <&macro_tap     &kp U>,
                <&macro_release &kp LSHFT>,
                <&macro_release &kp LCTRL>,
-               <&macro_tap   &kp 0>,
+               <&macro_tap   &kp NUMBER_0>,
                <&macro_tap   &kp E>,
-               <&macro_tap   &kp 3>,
+               <&macro_tap   &kp NUMBER_3>,
                <&macro_tap   &kp F>,
                <&macro_tap   &kp ENTER>;
          };
@@ -557,10 +557,10 @@
                <&macro_tap     &kp U>,
                <&macro_release &kp LSHFT>,
                <&macro_release &kp LCTRL>,
-               <&macro_tap   &kp 2>,
-               <&macro_tap   &kp 0>,
+               <&macro_tap   &kp NUMBER_2>,
+               <&macro_tap   &kp NUMBER_0>,
                <&macro_tap   &kp A>,
-               <&macro_tap   &kp 1>,
+               <&macro_tap   &kp NUMBER_1>,
                <&macro_tap   &kp ENTER>;
          };
 
@@ -574,10 +574,10 @@
                <&macro_tap     &kp U>,
                <&macro_release &kp LSHFT>,
                <&macro_release &kp LCTRL>,
-               <&macro_tap     &kp 0>,
-               <&macro_tap     &kp 0>,
+               <&macro_tap     &kp NUMBER_0>,
+               <&macro_tap     &kp NUMBER_0>,
                <&macro_tap     &kp B>,
-               <&macro_tap     &kp 0>,
+               <&macro_tap     &kp NUMBER_0>,
                <&macro_tap     &kp ENTER>;
          };
 
@@ -591,10 +591,10 @@
                <&macro_tap     &kp U>,
                <&macro_release &kp LSHFT>,
                <&macro_release &kp LCTRL>,
-               <&macro_tap     &kp 0>,
-               <&macro_tap     &kp 0>,
+               <&macro_tap     &kp NUMBER_0>,
+               <&macro_tap     &kp NUMBER_0>,
                <&macro_tap     &kp B>,
-               <&macro_tap     &kp 5>,
+               <&macro_tap     &kp NUMBER_5>,
                <&macro_tap     &kp ENTER>;
          };
 
@@ -609,10 +609,10 @@
                <&macro_tap     &kp U>,
                <&macro_release &kp LSHFT>,
                <&macro_release &kp LCTRL>,
-               <&macro_tap &kp 2>,
-               <&macro_tap &kp 5>,
-               <&macro_tap &kp 0>,
-               <&macro_tap &kp 0>,
+               <&macro_tap &kp NUMBER_2>,
+               <&macro_tap &kp NUMBER_5>,
+               <&macro_tap &kp NUMBER_0>,
+               <&macro_tap &kp NUMBER_0>,
                <&macro_tap &kp ENTER>;
          };
 
@@ -626,10 +626,10 @@
                <&macro_tap     &kp U>,
                <&macro_release &kp LSHFT>,
                <&macro_release &kp LCTRL>,
-               <&macro_tap &kp 2>,
-               <&macro_tap &kp 5>,
-               <&macro_tap &kp 0>,
-               <&macro_tap &kp 2>,
+               <&macro_tap &kp NUMBER_2>,
+               <&macro_tap &kp NUMBER_5>,
+               <&macro_tap &kp NUMBER_0>,
+               <&macro_tap &kp NUMBER_2>,
                <&macro_tap &kp ENTER>;
          };
 
@@ -643,9 +643,9 @@
                <&macro_tap     &kp U>,
                <&macro_release &kp LSHFT>,
                <&macro_release &kp LCTRL>,
-               <&macro_tap &kp 2>,
-               <&macro_tap &kp 5>,
-               <&macro_tap &kp 1>,
+               <&macro_tap &kp NUMBER_2>,
+               <&macro_tap &kp NUMBER_5>,
+               <&macro_tap &kp NUMBER_1>,
                <&macro_tap &kp C>,
                <&macro_tap &kp ENTER>;
          };
@@ -660,10 +660,10 @@
                <&macro_tap     &kp U>,
                <&macro_release &kp LSHFT>,
                <&macro_release &kp LCTRL>,
-               <&macro_tap &kp 2>,
-               <&macro_tap &kp 5>,
-               <&macro_tap &kp 1>,
-               <&macro_tap &kp 4>,
+               <&macro_tap &kp NUMBER_2>,
+               <&macro_tap &kp NUMBER_5>,
+               <&macro_tap &kp NUMBER_1>,
+               <&macro_tap &kp NUMBER_4>,
                <&macro_tap &kp ENTER>;
          };
 
@@ -677,10 +677,10 @@
                <&macro_tap     &kp U>,
                <&macro_release &kp LSHFT>,
                <&macro_release &kp LCTRL>,
-               <&macro_tap &kp 2>,
-               <&macro_tap &kp 1>,
-               <&macro_tap &kp 9>,
-               <&macro_tap &kp 2>,
+               <&macro_tap &kp NUMBER_2>,
+               <&macro_tap &kp NUMBER_1>,
+               <&macro_tap &kp NUMBER_9>,
+               <&macro_tap &kp NUMBER_2>,
                <&macro_tap &kp ENTER>;
          };
 
@@ -694,10 +694,10 @@
                <&macro_tap     &kp U>,
                <&macro_release &kp LSHFT>,
                <&macro_release &kp LCTRL>,
-               <&macro_tap &kp 2>,
-               <&macro_tap &kp 7>,
+               <&macro_tap &kp NUMBER_2>,
+               <&macro_tap &kp NUMBER_7>,
                <&macro_tap &kp A>,
-               <&macro_tap &kp 4>,
+               <&macro_tap &kp NUMBER_4>,
                <&macro_tap &kp ENTER>;
          };
 
@@ -711,10 +711,10 @@
                <&macro_tap     &kp U>,
                <&macro_release &kp LSHFT>,
                <&macro_release &kp LCTRL>,
-               <&macro_tap &kp 2>,
-               <&macro_tap &kp 9>,
-               <&macro_tap &kp 3>,
-               <&macro_tap &kp 7>, 
+               <&macro_tap &kp NUMBER_2>,
+               <&macro_tap &kp NUMBER_9>,
+               <&macro_tap &kp NUMBER_3>,
+               <&macro_tap &kp NUMBER_7>, 
                <&macro_tap &kp ENTER>;
          };
 
@@ -728,10 +728,10 @@
                <&macro_tap     &kp U>,
                <&macro_release &kp LSHFT>,
                <&macro_release &kp LCTRL>,
-               <&macro_tap &kp 2>,
-               <&macro_tap &kp 0>,
-               <&macro_tap &kp 2>,
-               <&macro_tap &kp 2>,
+               <&macro_tap &kp NUMBER_2>,
+               <&macro_tap &kp NUMBER_0>,
+               <&macro_tap &kp NUMBER_2>,
+               <&macro_tap &kp NUMBER_2>,
                <&macro_tap &kp ENTER>;
          };
 
@@ -745,10 +745,10 @@
                <&macro_tap     &kp U>,
                <&macro_release &kp LSHFT>,
                <&macro_release &kp LCTRL>,
-               <&macro_tap &kp 2>,
-               <&macro_tap &kp 5>,
+               <&macro_tap &kp NUMBER_2>,
+               <&macro_tap &kp NUMBER_5>,
                <&macro_tap &kp E>,
-               <&macro_tap &kp 6>,
+               <&macro_tap &kp NUMBER_6>,
                <&macro_tap &kp ENTER>;
          };
 
@@ -762,10 +762,10 @@
                <&macro_tap     &kp U>,
                <&macro_release &kp LSHFT>,
                <&macro_release &kp LCTRL>,
-               <&macro_tap &kp 2>,
-               <&macro_tap &kp 7>,
-               <&macro_tap &kp 0>,
-               <&macro_tap &kp 5>, 
+               <&macro_tap &kp NUMBER_2>,
+               <&macro_tap &kp NUMBER_7>,
+               <&macro_tap &kp NUMBER_0>,
+               <&macro_tap &kp NUMBER_5>,
                <&macro_tap &kp ENTER>;
          };
 
@@ -779,9 +779,9 @@
                <&macro_tap     &kp U>,
                <&macro_release &kp LSHFT>,
                <&macro_release &kp LCTRL>,
-               <&macro_tap &kp 2>, 
-               <&macro_tap &kp 7>, 
-               <&macro_tap &kp 4>, 
+               <&macro_tap &kp NUMBER_2>,
+               <&macro_tap &kp NUMBER_7>,
+               <&macro_tap &kp NUMBER_4>,
                <&macro_tap &kp C>,
                <&macro_tap &kp ENTER>;
          };
@@ -796,10 +796,10 @@
                <&macro_tap     &kp U>,
                <&macro_release &kp LSHFT>,
                <&macro_release &kp LCTRL>,
-               <&macro_tap &kp 2>,
-               <&macro_tap &kp 7>,
-               <&macro_tap &kp 5>,
-               <&macro_tap &kp 7>,
+               <&macro_tap &kp NUMBER_2>,
+               <&macro_tap &kp NUMBER_7>,
+               <&macro_tap &kp NUMBER_5>,
+               <&macro_tap &kp NUMBER_7>,
                <&macro_tap &kp ENTER>;
          };
 
@@ -813,10 +813,10 @@
                <&macro_tap     &kp U>,
                <&macro_release &kp LSHFT>,
                <&macro_release &kp LCTRL>,
-               <&macro_tap &kp 2>, 
-               <&macro_tap &kp 7>,
-               <&macro_tap &kp 5>,
-               <&macro_tap &kp 3>,
+               <&macro_tap &kp NUMBER_2>,
+               <&macro_tap &kp NUMBER_7>,
+               <&macro_tap &kp NUMBER_5>,
+               <&macro_tap &kp NUMBER_3>,
                <&macro_tap &kp ENTER>;
          };
 
@@ -896,4 +896,3 @@
          };
       };
    };
-     
