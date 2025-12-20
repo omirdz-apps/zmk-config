@@ -890,7 +890,7 @@
                &none  &none     &mac_tr   &mac_vl    &mac_hl   &mac_ce                         &mmv MOVE_UP                      &mac_or     &mac_reg    &mac_tm      &mac_degree  &mac_micro  &mac_cent     
                &none  &mac_arr  &mac_stp  &mac_cur   &mac_bul  &mac_sbul       &mmv MOVE_LEFT  &kp LG(SPACE)   &mmv MOVE_RIGHT   &mac_euro   &mac_pound  &mac_yen     &mac_baht    &mac_colon  &mac_naira
                &none  &none     &mac_chk  &mac_fail  &mac_xcl  &mac_inc   &none                &mmv MOVE_DOWN                    &mac_ruble  &mac_rupee  &mac_shekel  &mac_won     &none       &none
-                                                   &none   &none   &none                                                             &none   &none   &kp F1
+                                                   &none   &none   &none                                                             &none   &none   &none
             >;
             sensor-bindings = <&scroll_encoder>;
          };
